@@ -149,6 +149,9 @@ def validate_media_file(
 
     if expected:
         _compare_manifest_expected(result, expected)
+        # A file much shorter than the manifest promises is truncated (e.g. a killed mux): never VALID.
+        if any(c["check"] == "vs_manifest_duration" and not c["pass"] for c in result.checks):
+            result.verdict = "INVALID"
 
     return result
 

@@ -6,6 +6,7 @@ no fabrication). Measurements are recorded from the actual transfer.
 """
 from __future__ import annotations
 
+import os
 import subprocess
 import time
 from dataclasses import dataclass, field
@@ -162,32 +163,44 @@ def mux_to_mp4(
 
     concat_list = tmp_dir / "concat.txt"
     _write_concat_list(paths, concat_list)
+    # Write to a sibling ".part.mp4" and only rename onto output_path once ffmpeg exits 0: a killed or failed
+    # mux must never leave a partial MP4 at the final path (a retry would take it for a finished download).
+    part = output_path.with_name(output_path.stem + ".part.mp4")
+    part.unlink(missing_ok=True)
+
+    def _ok(rc: int) -> bool:
+        return rc == 0 and part.exists() and part.stat().st_size > 0
+
     cmd = [
         str(ffmpeg_bin), "-y", "-loglevel", "error",
         "-f", "concat", "-safe", "0", "-i", str(concat_list),
         "-c", "copy", "-bsf:a", "aac_adtstoasc",
         "-movflags", "+faststart",
-        str(output_path),
+        str(part),
     ]
-    rc, stderr = _run(cmd, timeout_seconds)
-
-    if rc != 0 or not output_path.exists() or output_path.stat().st_size == 0:
-        cmd2 = [
-            str(ffmpeg_bin), "-y", "-loglevel", "error",
-            "-i", f"concat:{'|'.join(p.as_posix() for p in paths)}",
-            "-c", "copy", "-bsf:a", "aac_adtstoasc",
-            "-movflags", "+faststart",
-            str(output_path),
-        ]
-        rc2, stderr2 = _run(cmd2, timeout_seconds)
-        if rc2 != 0 or not output_path.exists() or output_path.stat().st_size == 0:
-            raise DownloadError(
-                f"mux failed (concat rc={rc}, fallback rc={rc2}): {stderr} | {stderr2}",
-                "MUX_FAILED",
-            )
-        return " ".join(cmd2), rc2, stderr2
-
-    return " ".join(cmd), rc, stderr
+    try:
+        rc, stderr = _run(cmd, timeout_seconds)
+        used = cmd
+        if not _ok(rc):
+            part.unlink(missing_ok=True)
+            cmd2 = [
+                str(ffmpeg_bin), "-y", "-loglevel", "error",
+                "-i", f"concat:{'|'.join(p.as_posix() for p in paths)}",
+                "-c", "copy", "-bsf:a", "aac_adtstoasc",
+                "-movflags", "+faststart",
+                str(part),
+            ]
+            rc2, stderr2 = _run(cmd2, timeout_seconds)
+            if not _ok(rc2):
+                raise DownloadError(
+                    f"mux failed (concat rc={rc}, fallback rc={rc2}): {stderr} | {stderr2}",
+                    "MUX_FAILED",
+                )
+            rc, stderr, used = rc2, stderr2, cmd2
+        os.replace(part, output_path)
+        return " ".join(used), rc, stderr
+    finally:
+        part.unlink(missing_ok=True)
 
 
 def download_and_mux(

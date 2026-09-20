@@ -290,3 +290,57 @@ def test_over_ceiling_rendition_refused_before_download(conn, tmp_path):
     ep = repo.get(conn, eid)
     assert "plafond" in (ep.last_error or "") or ep.last_error
     assert ep.file_path is None and ep.video_message_id is None
+
+# ── regressions: PNG poster ignored (frame used instead) / truncated cached MP4 reused ──────────────────────────────
+PNG = b"\x89PNG\r\n\x1a\n" + b"\x00" * 32
+JPG = b"\xff\xd8\xff\xe0" + b"\x00" * 32
+
+
+@pytest.mark.parametrize("payload,ext", [(PNG, ".png"), (JPG, ".jpg"), (b"RIFF\x00\x00\x00\x00WEBPVP8 ", ".webp"),
+                                         (b"<html>", None)])
+def test_image_ext_by_magic_bytes(payload, ext):
+    from v2_automation.downloader import _image_ext
+    assert _image_ext(payload) == ext
+
+
+@pytest.mark.parametrize("payload,ext", [(PNG, ".png"), (JPG, ".jpg")])
+def test_source_poster_used_whatever_its_format(conn, tmp_path, monkeypatch, payload, ext):
+    import httpx
+    monkeypatch.setattr(evidence, "evidence_dir", lambda name: (tmp_path / name).resolve() if (tmp_path / name).mkdir(parents=True, exist_ok=True) is None else None)
+
+    class R:
+        status_code = 200
+        content = payload
+        headers = {"content-type": "image/x"}
+    monkeypatch.setattr(httpx, "get", lambda *a, **k: R())
+    mgr = DownloadManager(conn, _cfg(tmp_path), deps=_build_deps(tmp_path))
+    eid = _mk_episode(conn)
+    out = mgr._make_thumbnail(repo.get(conn, eid), tmp_path / "v.mp4", "https://x.example/p")
+    assert out.name == f"thumb_{eid}_source{ext}" and out.read_bytes() == payload   # the poster, not a video frame
+
+
+def test_reuse_cached_rejects_truncated_mp4(conn, tmp_path):
+    v = _build_deps(tmp_path)
+    mgr = DownloadManager(conn, _cfg(tmp_path), deps=v)
+    f = tmp_path / "ep.mp4"
+    f.write_bytes(b"x" * 10)
+
+    class Bad(FakeValidation):
+        verdict = "INVALID"
+        checks = [{"check": "vs_manifest_duration", "pass": False}]
+    mgr.deps.validate = lambda path, ffprobe, expected=None: Bad()
+    assert mgr._reuse_cached(f, {"duration_seconds": 1430}) is None
+    assert not f.exists()                                   # partial file removed -> re-download
+
+
+def test_direct_mp4_truncation_detected_from_sibling_durations(conn, tmp_path):
+    mgr = DownloadManager(conn, _cfg(tmp_path), deps=_build_deps(tmp_path))
+    sib = [_mk_episode(conn, key=f"https://www.example.com/anime/a1/e0{i}-vostfr") for i in (2, 3)]
+    for i, e in enumerate(sib):
+        conn.execute("UPDATE episodes SET video_message_id=? WHERE id=?", (900 + i, e))
+        mgr._remember_duration(e, 1430.0 + 10 * i)
+    cur = _mk_episode(conn, key="https://www.example.com/anime/a1/e09-vostfr")
+    assert mgr._reference_duration(repo.get(conn, cur)) == 1435.0          # median of the siblings
+    other = _mk_episode(conn, key="https://www.example.com/anime/zz/e01-vostfr")
+    conn.execute("UPDATE episodes SET anime_key='zz' WHERE id=?", (other,))
+    assert mgr._reference_duration(repo.get(conn, other)) is None           # no history: no reference

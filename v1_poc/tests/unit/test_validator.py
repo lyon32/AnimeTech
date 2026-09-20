@@ -74,3 +74,9 @@ def test_validate_duration_mismatch_flagged(tmp_path):
     dur = [c for c in result.checks if c["check"] == "vs_manifest_duration"][0]
     assert dur["pass"] is False
     assert any("duration" in m for m in result.mismatches_vs_manifest)
+
+def test_truncated_vs_manifest_duration_is_invalid(tmp_path):
+    video = tmp_path / "short.mp4"
+    _make_real_video(video)  # 2s real file
+    result = validate_media_file(video, ffprobe_bin(), expected={"duration_seconds": 120.0})
+    assert result.verdict == "INVALID"

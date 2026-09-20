@@ -17,6 +17,7 @@ Everything outside the DB is injectable so unit tests never touch the network.
 from __future__ import annotations
 
 import logging
+import statistics
 import threading
 from contextlib import contextmanager
 import time
@@ -38,7 +39,20 @@ from .timeutil import add_seconds, now_utc
 
 logger = logging.getLogger(__name__)
 
-JPEG_SOI = bytes([0xFF, 0xD8])
+PNG_SIGNATURE = bytes([0x89, 0x50, 0x4E, 0x47, 0x0D, 0x0A, 0x1A, 0x0A])
+DIRECT_MIN_DURATION_RATIO = 0.6   # a direct MP4 shorter than 60 % of its siblings' median is truncated
+
+IMAGE_SIGNATURES = ((bytes([0xFF, 0xD8]), ".jpg"), (PNG_SIGNATURE, ".png"))   # + WebP below: what sendPhoto accepts
+
+
+def _image_ext(data: bytes) -> str | None:
+    """Extension for a real JPEG / PNG / WebP payload (by magic bytes), else None."""
+    for sig, ext in IMAGE_SIGNATURES:
+        if data.startswith(sig):
+            return ext
+    if data[:4] == b"RIFF" and data[8:12] == b"WEBP":
+        return ".webp"
+    return None
 
 
 @dataclass
@@ -364,7 +378,12 @@ class DownloadManager:
             output_path = self._output_path(ep)
 
             if direct_url:
-                media_playlist, best, expected = None, None, None
+                # a direct MP4 announces no duration: the reference is what this anime's other episodes lasted
+                ref = self._reference_duration(ep)
+                media_playlist, best = None, None
+                expected = {"duration_seconds": ref * DIRECT_MIN_DURATION_RATIO} if ref else None
+                if ref is None:
+                    logger.warning("job=%s aucune durée de référence (premier épisode de cet anime) : durée non contrôlée", ep.id)
                 est = getattr(extraction, "direct_size", None)
                 self._disk_gate(est, f"MP4 direct {player}")
                 self._step(2, "Rendition", f"MP4 direct ({(est or 0) // (1024 * 1024)} Mio)")
@@ -453,6 +472,7 @@ class DownloadManager:
             self._step(5, "Validation", f"{result.format_name} {result.duration_seconds}s "
                                         f"{result.video.get('width')}x{result.video.get('height')}")
 
+            self._remember_duration(ep.id, result.duration_seconds)
             sha = self.deps.sha256(output_path)
             # the download is finished: take our place in line NOW (arrival order); released in every case
             with self._gate.arrive() as ticket:
@@ -520,9 +540,10 @@ class DownloadManager:
         """Thumbnail = the source's own poster when available; otherwise a frame of the video.
         An intact cached file is reused."""
         if source_url:
-            poster = evidence.evidence_dir("thumbnail") / f"thumb_{ep.id}_source.jpg"
-            if self._intact_jpeg(poster):
-                return poster
+            thumb_dir = evidence.evidence_dir("thumbnail")
+            for cached in sorted(thumb_dir.glob(f"thumb_{ep.id}_source.*")):
+                if self._intact_image(cached):
+                    return cached
             try:
                 import httpx
                 from urllib.parse import urlsplit
@@ -530,14 +551,17 @@ class DownloadManager:
                 r = httpx.get(source_url, timeout=30, follow_redirects=True,
                               headers={"User-Agent": "v2_automation-research-bot/2.0 (+contact: lionelyvan24@gmail.com)",
                                        "Referer": origin})
-                if r.status_code == 200 and r.content[:2] == JPEG_SOI:
+                ext = _image_ext(r.content) if r.status_code == 200 else None
+                if ext:
+                    poster = thumb_dir / f"thumb_{ep.id}_source{ext}"
                     poster.write_bytes(r.content)
                     return poster
-                logger.warning("poster source inutilisable (HTTP %s), repli sur une image de la vidéo", r.status_code)
+                logger.warning("poster source inutilisable (HTTP %s, %s, %d octets), repli sur une image de la vidéo",
+                               r.status_code, r.headers.get("content-type"), len(r.content))
             except Exception as exc:
                 logger.warning("poster source injoignable (%s), repli sur une image de la vidéo", exc)
         thumb = evidence.evidence_dir("thumbnail") / f"thumb_{ep.id}.jpg"
-        if self._intact_jpeg(thumb):
+        if self._intact_image(thumb):
             return thumb
         thumb.unlink(missing_ok=True)
         try:
@@ -550,8 +574,8 @@ class DownloadManager:
         return out
 
     @staticmethod
-    def _intact_jpeg(path: Path) -> bool:
-        return path.exists() and path.stat().st_size > 0 and path.read_bytes()[:2] == JPEG_SOI
+    def _intact_image(path: Path) -> bool:
+        return path.exists() and path.stat().st_size > 0 and _image_ext(path.read_bytes()) is not None
 
     def _cleanup_at(self) -> str:
         """Scheduled local-file cleanup: published_at + retention (the local file only, never the messages)."""
@@ -764,6 +788,26 @@ class DownloadManager:
                                                  free_disk_bytes=self._free_disk(), next_estimated_bytes=est)
             if allowance.paused:
                 raise RuntimeError(f"scheduler disk gate: {allowance.reason}")
+
+    def _remember_duration(self, episode_id: int, seconds: float | None) -> None:
+        """Validated duration of an episode: the reference for the direct-MP4 truncation check of its siblings."""
+        if not seconds:
+            return
+        try:
+            self.conn.execute("INSERT INTO control (ckey, cvalue, updated_at) VALUES (?, ?, ?) ON CONFLICT(ckey) "
+                              "DO UPDATE SET cvalue=excluded.cvalue, updated_at=excluded.updated_at",
+                              (f"duration:{episode_id}", str(float(seconds)), now_utc()))
+            self.conn.commit()
+        except Exception as exc:
+            logger.warning("durée non enregistrée: %s", exc)
+
+    def _reference_duration(self, ep) -> float | None:
+        """Median validated duration of the OTHER published episodes of the same anime, None when there is none."""
+        rows = self.conn.execute(
+            "SELECT c.cvalue FROM control c JOIN episodes e ON c.ckey = 'duration:' || e.id "
+            "WHERE e.anime_key = ? AND e.id <> ? AND e.video_message_id IS NOT NULL", (ep.anime_key, ep.id)).fetchall()
+        vals = sorted(float(r[0]) for r in rows if r[0])
+        return statistics.median(vals) if vals else None
 
     def _remember_player(self, episode_id: int, player: str) -> None:
         """Which player served the episode (shown in the panels)."""
