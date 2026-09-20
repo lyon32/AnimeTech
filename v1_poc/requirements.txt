@@ -1,0 +1,7 @@
+httpx>=0.27
+requests>=2.31
+python-dotenv>=1.0
+PyYAML>=6.0
+source_audit @ file://../../source_audit
+python-telegram-bot>=21.0
+pytest>=8.0

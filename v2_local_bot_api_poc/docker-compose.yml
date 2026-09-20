@@ -1,0 +1,31 @@
+# Deploy Local Bot API (--local) — local or VPS.
+#
+# Image : built from ../Dockerfile (official source, HEAD = 2026-08-25).
+# Local : docker compose up -d --build   (peers: ports bound to 127.0.0.1 only)
+# VPS   : transfer the image tar and this file, then the same command.
+#
+# SECURITY : 8082 (/stat) prints the loaded bot tokens in cleartext — keep it
+# bound to 127.0.0.1 (default here). Never publish it on the public interface.
+# The bot tokens are NOT stored in this repo/envs beyond .env (gitignored).
+services:
+  local-bot-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: v2-telegram-bot-api
+    container_name: v2-telegram-bot-api
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:8081:8081"
+      - "127.0.0.1:8082:8082"
+    volumes:
+      - ./data:/data
+    command:
+      - --local
+      - --http-port=8081
+      - --http-stat-port=8082
+      - --dir=/data
+      - --temp-dir=/tmp/v2botapi
+    tmpfs:
+      - /tmp/v2botapi
+    memswap_limit: -1

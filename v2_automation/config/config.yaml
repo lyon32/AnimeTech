@@ -1,0 +1,68 @@
+# V2_automation — configuration centralisee. Aucun secret ici : les secrets vivent dans .env (gitignore).
+app:
+  name: v2_automation
+  version: 2.0.0
+  data_dir: data                 # sqlite + persistence des files
+  legacy_state_file: ../v1_poc/output/state/published_state.json   # reconciliation V1 (lecture seule)
+
+source:
+  base_url: https://voir-anime.to/
+  poll_interval_seconds: 1800     # PRODUCTION : verification des anime actifs toutes les 30 minutes
+  test_poll_interval_seconds: 10  # utilise UNIQUEMENT si V2_TEST_MODE=1 (jamais en production)
+  site_feed_enabled: true       # scan du flux "derniers episodes" du site (accueil + page/N/) a chaque cycle : tout anime poste aujourd'hui est ajoute et publie
+  catchup_today: true            # 1er controle : les episodes SORTIS AUJOURD'HUI (depuis minuit, heure locale) sont mis en file meme si l'heure est passee ; hier et avant = baseline
+  backfill_latest_on_first_check: 0  # 1er controle d'un anime = baseline (rien n'est mis en file) ; N>0 met en file les N plus recents
+  cache_min_homepage: 138        # TTL prouve (source_audit)
+  cache_min_anime: 231           # TTL prouve (source_audit)
+  structure_change_gate: true    # blocage STRUCTURE_CHANGED via fingerprint
+  max_pages: 3                   # borne exploration homepage/page/N/ par cycle
+
+authorization:
+  gate_enabled: false
+
+queues:
+  fifo_strict_per_anime: true    # E01 avant E02 (jamais de parallelisme intra-anime)
+  max_concurrent_downloads: 3    # borne initiale (anime en parallele) ; le scheduler la module (debit, disque, CPU, RAM)
+  max_cpu_percent: 90            # au-dessus : un seul telechargement a la fois
+  max_ram_percent: 90
+  max_concurrent_publications: 1
+  dynamic_scheduler: true
+
+downloads:
+  min_free_disk_bytes: 5368709120    # 5 GiB garde-fou avant chaque download
+  timeout_seconds: 600
+  not_available_retry_minutes: 30   # episode pas encore publie par la source : on re-verifie toutes les 30 min
+  not_available_window_days: 30
+  source_processing_retry_minutes: 3   # lecteur present mais fichier video 404 : nouvelle tentative toutes les 3 min (fenetre 24 h)
+  persistent_error_alert_minutes: 20 # video inaccessible (404...) qui dure : UN signalement (Telegram + panneau) apres 20 min de reessais automatiques
+  retry_window_hours: 24             # apres -> FAILED + notif admin
+  structure_changed_on_retry: block
+
+telegram:
+  api_base_url: http://127.0.0.1:8081  # serveur Local Bot API (vide = cloud api.telegram.org)
+  upload_timeout_seconds: 7200          # doit rester > durée d'un envoi (~15 min/700 Mo) ; serveur Local Bot API patché IDLE_TIMEOUT=7200
+  local_upload_container: v2-telegram-bot-api   # envoi par file:// (docker cp) ; vide = multipart (crash sur gros fichiers)
+  thumbnail_before_video: true         # message vignette PUIS message video (cible immediatete de publication)
+
+publication:
+  channel_tag: "[@otakuu_verse]"          # ligne finale de la fiche (légende de la miniature)
+  cleanup_after_days: 14               # fichiers supprimes, messages Telegram conserves
+
+limits:
+  documented_upload_limit_mb: 2000     # limite DOCUMENTEE du local server (pas atteignable: le build crash)
+  tested_upload_limit_mb: 800          # MAX PROUVEE Phase 6 (800 MiB, sendDocument + sha256sum serveur)
+  first_failed_upload_mb: 900          # premiere taille en CRASH (server worker segfault, build c3e9dd8)
+  max_safe_publish_mib: 1800           # decision du proprietaire 2026-09-20 : 1804.8 MiB prouves en file:// sur le serveur patche IDLE_TIMEOUT=7200 (aucune marge ; plantage documente a >= 1900 MiB)
+  big_campaign_sizes_mib: [700, 800]   # realise; 900/1024+ crash => campagne arretee
+  campaign_halted_reason: "Local Bot API build e3e9dd8 segfault ~900 MiB; 2000 MB non atteignable pour l'instant"
+
+monitoring:
+  web_enabled: true
+  web_host: 127.0.0.1
+  web_port: 8085
+  admin_telegram_enabled: true
+  daily_summary_hour: 9          # heure locale du resume quotidien envoye aux administrateurs
+
+logging:
+  level: INFO
+  dir: logs

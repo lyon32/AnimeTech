@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "v1-poc"
+version = "1.0.0"
+description = "V1 POC — pipeline end-to-end source -> Telegram (proven). Imported by v2_automation for REUSE, never edited."
+requires-python = ">=3.11"
+
+[tool.setuptools.packages.find]
+where = ["src"]

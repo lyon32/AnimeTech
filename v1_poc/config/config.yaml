@@ -1,0 +1,26 @@
+# V1_POC configuration. No secrets here — credentials live in the gitignored .env.
+
+source:
+  # Single authorized test episode designated by the project owner.
+  authorized_episode_url: "https://voir-anime.to/anime/bleach-sennen-kessen-hen/bleach-sennen-kessen-hen-48-vostfr/"
+
+http:
+  timeout_seconds: 20
+  max_retries: 2
+  retry_backoff_seconds: 1.5
+  # Self-identifying UA with contact info, consistent with source_audit policy.
+  user_agent: "v1_poc-research-bot/0.1 (+contact: lionelyvan24@gmail.com)"
+
+media:
+  ffmpeg_bin_dir: "C:/Users/DELL/Desktop/Anime/source_audit/tools/ffmpeg/bin"
+  output_dir: "downloads"
+
+telegram:
+  upload_timeout_seconds: 600
+  api_base_url: ""   # leave empty to use https://api.telegram.org; a local Bot API server URL can be set here if needed
+
+state:
+  file: "output/state/published_state.json"
+
+logging:
+  level: "INFO"

@@ -1,0 +1,21 @@
+<!-- Hand-trimmed excerpt reproducing real structure observed on voembed.net on
+     2026-09-17 (see SESSION_REPORT.md Phase 5). Token/host values are invented
+     placeholders, not the real signed URL. -->
+<html>
+<head><title>Sample Show - 08 VF</title></head>
+<body>
+<script>console.log('setup');</script>
+<script>
+eval(function(p,a,c,k,e,d){e=String;if(!''.replace(/^/,String)){while(c--)d[c]=k[c]||c;k=[d];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('0 1=2',3,3,'var|x|1'.split('|'),0,{}))
+</script>
+<script>
+jwplayer("vplayer");
+var baseTracks = [
+    { file: '/api/v1/slides?length=100&url=https%3A%2F%2Fexample.invalid%2Fthumb.jpg', kind: 'thumbnails' }
+];
+var playerInstance = player.setup({
+  sources: [{ file: 'https://cdn.example.invalid/hls2/01/00000/sample1234_n/master.m3u8?t=PLACEHOLDER_TOKEN&s=1700000000&e=43200' }]
+});
+</script>
+</body>
+</html>

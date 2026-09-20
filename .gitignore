@@ -1,0 +1,63 @@
+# ── Secrets: never committed ─────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.env
+.env copy
+**/.env
+**/.env.*
+!**/.env.example
+*.session
+*.session-journal
+
+# ── Runtime data, media, evidence, logs (large / private / regenerated) ──────────
+data/
+**/data/
+output/
+**/output/
+logs/
+**/logs/
+*.log
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+*.db
+*.mp4
+*.mkv
+*.ts
+*.part
+*.jpg
+*.jpeg
+*.png
+!**/web_ui/**/*.png
+
+# ── Tools and dependencies downloaded locally ────────────────────────────────────
+**/tools/
+node_modules/
+.venv/
+venv/
+env/
+
+# ── Python / test caches ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# ── Editors / OS / assistant local state ─────────────────────────────────────────
+.claude/
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# ── Personal / legal documents and working prompts (not part of the code) ────────
+*.pdf
+generate_license_pdf.py
+\# MASTER PROMPT*.md

@@ -1,0 +1,25 @@
+# Secrets
+.env
+*.env
+!*.env.example
+
+# Runtime data / state
+data/
+logs/
+downloads/
+output/evidence/
+output/state/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Media
+*.mp4
+*.mkv
+*.ts
+*.part
+*.tmp

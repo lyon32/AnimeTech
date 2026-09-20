@@ -1,0 +1,9 @@
+source_audit @ file://../../source_audit
+v1-poc @ file://../../v1_poc
+httpx>=0.27
+requests>=2.31
+python-dotenv>=1.0
+PyYAML>=6.0
+python-telegram-bot>=21.0
+psutil>=5.9
+pytest>=8.0

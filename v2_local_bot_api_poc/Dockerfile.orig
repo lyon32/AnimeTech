@@ -1,0 +1,40 @@
+# Official Telegram Local Bot API server image (build from official source).
+# Base recipe follows the official build/generator instructions (Debian 10+):
+#   git clone --recursive https://github.com/tdlib/telegram-bot-api.git
+#   cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build . --target install
+# Pinned to official commit: e3e9dd8e5b3d7ab8537cd5a10dc31d5ffa8f82d1 (master, 2026-08-25)
+# NOTE (2026-09-18) : verifie via api.github.com, ce commit est le HEAD actuel de master.
+# Il n'existe donc PAS d'image/binaire officiel plus recent — ARG COMMIT restera inchange.
+
+FROM debian:bookworm-slim AS build
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        git ca-certificates cmake make g++ gperf libssl-dev zlib1g-dev \
+ && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /src
+RUN git clone --recursive https://github.com/tdlib/telegram-bot-api.git
+
+WORKDIR /src/telegram-bot-api
+ARG COMMIT=e3e9dd8e5b3d7ab8537cd5a10dc31d5ffa8f82d1
+RUN git checkout ${COMMIT} \
+ && git submodule update --init --recursive \
+ && mkdir build \
+ && cd build \
+ && cmake -DCMAKE_BUILD_TYPE=Release .. \
+ && cmake --build . --target install -j$(nproc)
+
+FROM debian:bookworm-slim
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        libssl3 zlib1g ca-certificates \
+ && rm -rf /var/lib/apt/lists/* \
+ && mkdir -p /data /tmp/v2botapi
+
+COPY --from=build /usr/local/ /usr/local/
+
+EXPOSE 8081 8082
+VOLUME ["/data"]
+
+ENTRYPOINT ["telegram-bot-api"]
+CMD ["--http-port=8081", "--http-stat-port=8082", "--dir=/data", "--temp-dir=/tmp/v2botapi"]
