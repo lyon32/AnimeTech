@@ -36,3 +36,6 @@ Un seul moment : apparition de la page (opacité + 6 px, 200 ms, ease-out expone
 
 ## Icônes
 Jeu unique dessiné en SVG, trait 1,6 px, arrondi, 20 px. Aucun emoji.
+
+## Mise en page « tout dans l'écran » (bureau ≥ 60 rem de large et ≥ 38 rem de haut)
+`.app`/`.col` ont la hauteur de la fenêtre : l'en-tête reste fixe et `main` défile seul. La Vue d'ensemble (`.overview`) remplit `main` : bande de 5 chiffres, puis 2 colonnes (`.ov-grid` 3fr/2fr) — gauche : En cours, En attente (4 max), Derniers publiés (8, défilement interne) ; droite : Système (jauges + cycle) et Anime surveillés (`.chips-grid`, une ligne de 32 px par anime, point d'état, défilement interne). Un état normal n'a pas de badge ; seuls « en pause » et les échecs sont signalés. Épisodes : tableau à défilement interne, en-têtes collants, pagination toujours visible. Anime : liste et cycles côte à côte dès 95 rem. File : couloirs en grille (`.lanes`). Erreurs et Santé : colonnes automatiques. Sous 60 rem (téléphone/tablette) : flux normal, page qui défile.

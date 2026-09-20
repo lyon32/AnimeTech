@@ -189,55 +189,45 @@ function overview(d) {
     : `${clock(d.next_check)} · ${until(d.next_check)}`;
   const figure = (v, l, page, tone) => html`<a class="figure" href="#/${page}" ${tone ? raw(`data-tone="${tone}"`) : ""}><div class="v">${v}</div><div class="l">${l}</div></a>`;
   const attention = d.attention.length + d.alerts_open;
-  return html`<div class="stack">
+  const jobLine = (j, extra) => html`<div class="grow"><div class="title">${animeName(j)} · ${epLabel(j.episode_number)}</div><div class="sub">${extra}</div></div>`;
+  const waitMax = 4;
+  return html`<div class="overview">
     ${d.banner.issues.length ? html`<div class="issues">${d.banner.issues.map((i) => html`<a class="issue" href="#/${i.page}"><span class="badge" data-tone="${i.tone}"><span class="dot"></span></span>${i.text}</a>`)}</div>` : ""}
-    <div class="figures">
-      ${figure(d.published_total, "Publiés", "episodes?status=published")}
-      ${figure(d.running.length, "En cours", "episodes?status=running")}
+    <div class="figures five">
+      ${figure(`${d.today.published}/${d.today.detected}`, "Publiés aujourd’hui", "episodes?status=published")}
+      ${figure(d.published_total, "Publiés au total", "episodes?status=published")}
+      ${figure(d.running.length, "En cours", "file")}
       ${figure(d.waiting.length, "En attente", "file")}
       ${figure(attention, "À traiter", "erreurs", attention ? "bad" : "")}
     </div>
-    <div class="grid2">
-      <div class="stack">
-        <section class="panel"><header><h2>En cours<span class="n">${d.running.length || ""}</span></h2></header>
+    <div class="ov-grid">
+      <div class="ov-col">
+        <section class="panel compact"><header><h2>En cours<span class="n">${d.running.length || ""}</span></h2></header>
           ${d.running.length ? html`<ul class="rows">${d.running.map((j) => html`<li>
-            <div class="grow"><div class="title">${animeName(j)} · ${epLabel(j.episode_number)}</div>
-              <div class="sub">${cap(j.status_label)} · étape ${j.progress.step}/${j.progress.of}</div>
-              <div style="margin-top:8px">${meter(j.progress.percent, "info")}</div></div>
-            <div class="muted">${pct(j.progress.percent)}</div></li>`)}</ul>`
-            : empty("Rien en cours", "Le prochain épisode démarrera dès qu’il sera détecté.")}</section>
-        <section class="panel"><header><h2>En attente<span class="n">${d.waiting.length || ""}</span></h2><a class="btn sm ghost" href="#/file">Voir la file</a></header>
-          ${d.waiting.length ? html`<ul class="rows">${d.waiting.slice(0, 6).map((j) => html`<li>
-            <div class="grow"><div class="title">${animeName(j)} · ${epLabel(j.episode_number)}</div>
-              <div class="sub">${cap(j.reason)}${j.status === "retry_wait" && j.next_retry_at && j.reason !== "source pas encore prête" ? ` · prochain essai ${clock(j.next_retry_at)}` : ""}</div></div>
+            ${jobLine(j, `${cap(j.status_label)} · étape ${j.progress.step}/${j.progress.of}`)}
+            <div class="inline-meter">${meter(j.progress.percent, "info")}</div><div class="muted pct">${pct(j.progress.percent)}</div></li>`)}</ul>`
+            : html`<div class="empty one">Rien en cours — le prochain épisode démarrera dès qu’il sera détecté.</div>`}</section>
+        <section class="panel compact"><header><h2>En attente<span class="n">${d.waiting.length || ""}</span></h2><a class="btn sm ghost" href="#/file">Voir la file${d.waiting.length > waitMax ? ` (+${d.waiting.length - waitMax})` : ""}</a></header>
+          ${d.waiting.length ? html`<ul class="rows">${d.waiting.slice(0, waitMax).map((j) => html`<li>
+            ${jobLine(j, `${cap(j.reason)}${j.status === "retry_wait" && j.next_retry_at && j.reason !== "source pas encore prête" ? ` · essai ${clock(j.next_retry_at)}` : ""}`)}
             ${stateBadge(j)}</li>`)}</ul>`
-            : empty("Aucun épisode en attente")}</section>
-        <section class="panel"><header><h2>Derniers publiés</h2><a class="btn sm ghost" href="#/episodes?status=published">Tout voir</a></header>
-          ${d.recent.length ? html`<ul class="rows">${d.recent.map((r) => html`<li>
-            <div class="grow"><div class="title">${animeName(r)} · ${epLabel(r.episode_number)}</div>
-              <div class="sub">${ago(r.published_at)}${r.file_size ? ` · ${size(r.file_size)}` : ""}</div></div>
-            <button class="btn sm ghost" type="button" data-act="open-ep" data-id="${r.id}">Détails</button></li>`)}</ul>`
-            : empty("Aucune publication pour l’instant")}</section>
+            : html`<div class="empty one">Aucun épisode en attente.</div>`}</section>
+        <section class="panel compact grow-panel"><header><h2>Derniers publiés</h2><a class="btn sm ghost" href="#/episodes?status=published">Tout voir</a></header>
+          ${d.recent.length ? html`<ul class="rows scroll">${d.recent.map((r) => html`<li class="click" tabindex="0" data-act="open-ep" data-id="${r.id}" role="button" aria-label="Détails de ${animeName(r)} ${epLabel(r.episode_number)}">
+            <div class="grow"><div class="title">${animeName(r)} · ${epLabel(r.episode_number)}</div></div>
+            <div class="muted nowrap">${ago(r.published_at)}${r.file_size ? ` · ${size(r.file_size)}` : ""}</div></li>`)}</ul>`
+            : html`<div class="empty one">Aucune publication pour l’instant.</div>`}</section>
       </div>
-      <div class="stack">
-        <section class="panel"><header><h2>Aujourd’hui</h2></header>
-          <div class="body"><dl class="kv"><dt>Détectés</dt><dd>${d.today.detected} épisode${d.today.detected > 1 ? "s" : ""}</dd>
-            <dt>Publiés</dt><dd>${d.today.published} épisode${d.today.published > 1 ? "s" : ""}</dd></dl></div></section>
-        <section class="panel"><header><h2>Anime surveillés<span class="n">${d.animes_watched || ""}</span></h2><a class="btn sm ghost" href="#/anime">Gérer</a></header>
-          ${d.animes.length ? html`<ul class="rows">${d.animes.map((a) => html`<li>
-            <div class="grow"><div class="title">${a.title || a.anime_key}</div>
-              <div class="sub">${a.published} publié${a.published > 1 ? "s" : ""}${a.queued ? ` · ${a.queued} en file` : ""}</div></div>
-            ${a.enabled ? badge("ok", "Surveillé") : badge("muted", "En pause")}</li>`)}</ul>`
+      <div class="ov-col">
+        <section class="panel compact"><header><h2>Système</h2><span class="muted">${d.worker_alive ? "Worker actif" : "Worker arrêté"}</span></header>
+          ${machine(s)}
+          <dl class="kv tight"><dt>Prochain cycle</dt><dd>${nextCheck}</dd>
+            <dt>Dernier cycle</dt><dd>${d.last_cycle ? `${d.last_cycle.checked} vérifié${d.last_cycle.checked > 1 ? "s" : ""} · ${d.last_cycle.new_episodes} nouveau${d.last_cycle.new_episodes > 1 ? "x" : ""} · ${ago(d.last_cycle.finished_at)}` : "—"}</dd>
+            <dt>Fréquence</dt><dd>toutes les ${Math.round(d.poll_interval_seconds / 60)}${NB}min</dd></dl></section>
+        <section class="panel compact grow-panel"><header><h2>Anime surveillés<span class="n">${d.animes_watched || ""}</span></h2><a class="btn sm ghost" href="#/anime">Gérer</a></header>
+          ${d.animes.length ? html`<ul class="chips-grid scroll">${d.animes.map((a) => html`<li title="${a.title || a.anime_key}${a.enabled ? "" : " — en pause"}"><span class="dot" data-tone="${a.enabled ? "ok" : "muted"}"></span>
+            <span class="t">${a.title || a.anime_key}${a.enabled ? "" : html` <em>en pause</em>`}</span><span class="c">${a.published}${a.queued ? html` <b>+${a.queued}</b>` : ""}</span></li>`)}</ul>`
             : empty("Aucun anime", raw('<a href="#/anime">Ajouter un anime</a>'))}</section>
-        <section class="panel"><header><h2>Surveillance</h2></header>
-          <div class="body"><dl class="kv">
-            <dt>Prochain cycle</dt><dd>${nextCheck}</dd>
-            <dt>Dernier contrôle réussi</dt><dd>${d.last_check_ok ? `${clock(d.last_check_ok)} · ${ago(d.last_check_ok)}` : "—"}</dd>
-            <dt>Dernier cycle</dt><dd>${d.last_cycle ? `${d.last_cycle.checked} anime vérifié${d.last_cycle.checked > 1 ? "s" : ""} · ${d.last_cycle.new_episodes} nouveau${d.last_cycle.new_episodes > 1 ? "x" : ""} · ${ago(d.last_cycle.finished_at)}` : "—"}</dd>
-            <dt>Fréquence</dt><dd>toutes les ${Math.round(d.poll_interval_seconds / 60)}${NB}min</dd>
-            <dt>Worker</dt><dd>${d.worker_alive ? badge("ok", "Actif") : badge("warn", "Arrêté")}</dd></dl></div></section>
-        <section class="panel"><header><h2>Machine</h2></header>
-          ${machine(s)}</section>
       </div>
     </div></div>`;
 }
@@ -284,7 +274,7 @@ function episodesPaint() {
 }
 async function episodesLoad() {
   const f = state.ep;
-  const qs = new URLSearchParams({ limit: 25, offset: f.offset });
+  const qs = new URLSearchParams({ limit: 50, offset: f.offset });
   if (f.status) qs.set("status", f.status);
   if (f.q) qs.set("q", f.q);
   if (f.anime) qs.set("anime", f.anime);
@@ -295,11 +285,12 @@ async function episodesLoad() {
 function file(d) {
   if (!d.lanes.length) return html`<div class="stack">${d.paused ? pausedNote() : ""}<section class="panel">${empty("La file est vide", "Les nouveaux épisodes apparaîtront ici dès qu’ils seront détectés.")}</section></div>`;
   return html`<div class="stack">${d.paused ? pausedNote() : ""}
-    ${d.lanes.map((l) => html`<section class="panel lane"><header><h2>${l.anime_title}<span class="n">${l.items.length} épisode${l.items.length > 1 ? "s" : ""}</span></h2>${l.enabled ? "" : badge("muted", "Anime en pause")}</header>
+    <p class="muted note">Les épisodes d’un même anime passent l’un après l’autre, dans l’ordre des numéros.</p>
+    <div class="lanes">${d.lanes.map((l) => html`<section class="panel lane"><header><h2>${l.anime_title}<span class="n">${l.items.length} épisode${l.items.length > 1 ? "s" : ""}</span></h2>${l.enabled ? "" : badge("muted", "Anime en pause")}</header>
       <div class="steps">${l.items.map((i) => html`<button class="step" type="button" data-act="open-ep" data-id="${i.id}" data-active="${i.progress.step >= 3 && i.status !== "retry_wait" ? 1 : 0}">
         <span class="t">${epLabel(i.episode_number)}${stateBadge(i)}</span>
         <span class="s">${i.reason ? cap(i.reason) : `Étape ${i.progress.step}/${i.progress.of} · ${pct(i.progress.percent)}`}${i.status === "retry_wait" && i.next_retry_at && i.reason !== "source pas encore prête" ? ` · essai ${clock(i.next_retry_at)}` : ""}</span></button>`)}</div>
-      <div class="body muted">Les épisodes de cet anime passent l’un après l’autre, dans l’ordre des numéros.</div></section>`)}</div>`;
+      </section>`)}</div></div>`;
 }
 const pausedNote = () => html`<div class="errbox" style="border-color:var(--warn);background:color-mix(in oklch,var(--warn) 8%,var(--surface))"><div><strong>La file est en pause</strong><div class="muted">Aucun nouveau téléchargement ne démarre tant qu’elle n’est pas reprise.</div></div><button class="btn primary" type="button" data-act="resume">${icon("play")}Reprendre la file</button></div>`;
 
@@ -322,8 +313,8 @@ function animePage(d, animes, cycles) {
       <form id="add-form" class="addrow" novalidate><input class="field" id="add-url" type="url" inputmode="url" autocomplete="off" placeholder="https://voir-anime.to/anime/nom-de-l-anime/" aria-label="Adresse de la page de l’anime">
         <button class="btn primary" type="submit">${icon("plus")}Surveiller</button></form>
       <div class="formerr" id="add-err" role="alert" hidden></div></section>
-    <section class="panel" id="anime-list"><header><h2>Anime surveillés<span class="n">${animes.length || ""}</span></h2></header>${animeTable(animes)}</section>
-    <section class="panel" id="cycles">${cyclesPanel(cycles)}</section></div>`;
+    <div class="anime-split"><section class="panel" id="anime-list"><header><h2>Anime surveillés<span class="n">${animes.length || ""}</span></h2></header>${animeTable(animes)}</section>
+    <section class="panel" id="cycles">${cyclesPanel(cycles)}</section></div></div>`;
 }
 function animeTable(animes) {
   if (!animes.length) return empty("Aucun anime surveillé", "Collez l’adresse d’une page d’anime ci-dessus pour commencer.");
@@ -339,7 +330,7 @@ function animeTable(animes) {
 
 function errorsPage(d) {
   if (!d.total) return html`<section class="panel">${empty("Rien à traiter", "Aucun échec et aucune alerte ouverte.")}</section>`;
-  return html`<div class="stack">
+  return html`<div class="grid2 even">
     ${d.episodes.length ? html`<section class="panel"><header><h2>Épisodes à traiter<span class="n">${d.episodes.length}</span></h2></header>
       ${d.episodes.map((e) => html`<div class="problem"><div class="head">${stateBadge(e)}<div class="grow"><strong>${e.subject}</strong>${e.retry_count ? html` <span class="muted">· ${e.retry_count} tentative${e.retry_count > 1 ? "s" : ""}</span>` : ""}</div><span class="muted">${ago(e.last_error_at)}</span></div>
         ${e.detail ? html`<details class="tech"><summary>Détail technique</summary><pre>${e.detail}</pre></details>` : ""}
@@ -376,8 +367,8 @@ function capacityPage(d) {
 function healthPage(d) {
   const mark = (ok) => html`<span class="mark" data-tone="${ok ? "ok" : "warn"}">${icon(ok ? "check" : "alert")}</span>`;
   return html`<div class="stack"><section class="panel"><header><h2>Contrôles</h2>${d.ok && d.worker.alive ? badge("ok", "Tout est bon") : badge("warn", "À vérifier")}</header>
-    <div class="check">${mark(d.worker.alive)}<div><div class="t">Worker</div><div class="d">${d.worker.explain}</div></div></div>
-    ${d.checks_list.map((c) => html`<div class="check">${mark(c.ok)}<div><div class="t">${c.label}</div><div class="d">${c.explain}</div><div class="muted mono" style="margin-top:4px">${c.detail}</div></div></div>`)}</section></div>`;
+    <div class="checks"><div class="check">${mark(d.worker.alive)}<div><div class="t">Worker</div><div class="d">${d.worker.explain}</div></div></div>
+    ${d.checks_list.map((c) => html`<div class="check">${mark(c.ok)}<div><div class="t">${c.label}</div><div class="d">${c.explain}</div><div class="muted mono" style="margin-top:4px">${c.detail}</div></div></div>`)}</div></section></div>`;
 }
 
 function settingsPage(d) {
@@ -493,7 +484,7 @@ async function onRoute() {
     state.ep = { status: r.query.status || "", q: "", anime: "", offset: 0 };
   }
   if (!$("#drawer").hidden) closeDrawer();
-  window.scrollTo(0, 0);
+  window.scrollTo(0, 0); main.scrollTop = 0;
   await showPage(true);
 }
 
@@ -543,13 +534,13 @@ document.addEventListener("click", async (ev) => {
       el.setAttribute("aria-checked", String(r.enabled)); el.disabled = false; return toast(r.enabled ? "Notification activée" : "Notification désactivée");
     }
     if (act === "ep-status") { el.disabled = false; state.ep.status = el.dataset.status; state.ep.offset = 0; return episodesLoad(); }
-    if (act === "ep-page") { el.disabled = false; state.ep.offset = Math.max(0, state.ep.offset + 25 * Number(el.dataset.dir)); return episodesLoad(); }
+    if (act === "ep-page") { el.disabled = false; state.ep.offset = Math.max(0, state.ep.offset + 50 * Number(el.dataset.dir)); return episodesLoad(); }
   } finally { if (el.isConnected && el.tagName === "BUTTON" && act !== "notif") el.disabled = false; }
 });
 
 document.addEventListener("keydown", (ev) => {
   if (ev.key === "Escape" && !$("#drawer").hidden) return closeDrawer();
-  if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches && ev.target.matches("tr.click")) { ev.preventDefault(); ev.target.click(); }
+  if ((ev.key === "Enter" || ev.key === " ") && ev.target.matches && ev.target.matches("tr.click, li.click")) { ev.preventDefault(); ev.target.click(); }
   if (ev.key === "Tab" && !$("#drawer").hidden) {                       // keep focus inside the open drawer
     const f = [...$("#drawer").querySelectorAll("button:not(:disabled), summary, a[href], input, select")];
     if (!f.length) return;

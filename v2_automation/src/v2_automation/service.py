@@ -379,7 +379,7 @@ def dashboard(conn: sqlite3.Connection, cfg, *, now: str | None = None) -> dict[
                e.file_size, e.cleanup_at
         FROM episodes e LEFT JOIN animes a ON a.anime_key = e.anime_key
         WHERE e.status IN ({marks}) AND e.published_at IS NOT NULL
-        ORDER BY e.published_at DESC LIMIT 3""", PUBLISHED_STATES).fetchall()]
+        ORDER BY e.published_at DESC LIMIT 8""", PUBLISHED_STATES).fetchall()]
     counts = {r["status"]: r["n"] for r in conn.execute(
         "SELECT status, COUNT(*) AS n FROM episodes GROUP BY status").fetchall()}
     attention = [dict(r) for r in conn.execute(f"""
