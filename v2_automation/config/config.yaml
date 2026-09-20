@@ -45,8 +45,8 @@ telegram:
   thumbnail_before_video: true         # message vignette PUIS message video (cible immediatete de publication)
 
 publication:
-  channel_tag: "[@otakuu_verse]"          # ligne finale de la fiche (légende de la miniature)
-  cleanup_after_days: 14               # fichiers supprimes, messages Telegram conserves
+  channel_tag: "[@Anime_vostfr_mangas]"          # ligne finale de la fiche (légende de la miniature)
+  cleanup_after_days: 14               # fichiers video locaux supprimes 14 jours apres la publication (messages Telegram conserves : la video reste dans le canal)
 
 limits:
   documented_upload_limit_mb: 2000     # limite DOCUMENTEE du local server (pas atteignable: le build crash)

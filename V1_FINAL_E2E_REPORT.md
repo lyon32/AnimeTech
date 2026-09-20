@@ -295,3 +295,28 @@ Web : « Cycles de surveillance » avec ligne « Site : N du jour · N nouveaux 
 - MOON et VOE ne sont pas pris en charge (pages qui demandent un navigateur) ; seul Stape sert de repli.
 - Le débit du lecteur Stape est faible (~0,5 Mo/s : 11 min pour 310 Mo).
 - Rien n'a encore été observé sur plusieurs cycles avec de nombreux anime du jour à la fois (cette journée : 2 nouveaux anime seulement au premier cycle du flux).
+
+# Décisions et suites de la session (récapitulatif)
+
+## Conservation des fichiers : 14 jours (maintenue)
+Un passage à 3 jours a été essayé puis **annulé à la demande du propriétaire** : `publication.cleanup_after_days` reste à **14**. Signification : le **fichier vidéo local** est supprimé de l'ordinateur 14 jours après sa publication, mais **la vidéo reste toujours disponible dans le canal Telegram** (les messages ne sont jamais supprimés). Les dates de nettoyage des 19 épisodes déjà publiés ont été remises à publication + 14 j. Point d'attention inchangé : `C:` a ~33 Go libres (94 % utilisé) ; à ~450 Mo par épisode, l'espace demande une surveillance (le programme suspend les téléchargements sous 5 Gio libres et alerte).
+
+## Dépôt GitHub
+Code poussé sur https://github.com/lyon32/AnimeTech.git (branche `main`, un commit) avec `.gitignore` (secrets, données, médias, journaux, PDF personnels) et `README.md`. Les `.env`, bases, vidéos, preuves (`output/`) et le prompt de travail ne sont pas versionnés ; l'identifiant Telegram réel a été remplacé par un exemple dans `.env.example`. La mention « Claude » comme co-auteur a été retirée du commit (l'affichage « Contributors » de GitHub est mis en cache et peut mettre quelques heures à se corriger).
+
+## Chronologie de la session (tout ce qui a été fait)
+1. **Panneau web refait** (8 pages en français, thème sombre, mobile) avec des données corrigées (santé sans fausse alerte, capacités en direct, compteurs sans baseline), refus des actions venant d'un autre site.
+2. **Contrôle du worker depuis les panneaux** : arrêt propre (les jobs en cours se terminent), démarrage par tâche planifiée Windows (`install_tasks.ps1`).
+3. **Watcher global** : un cycle de 30 min visite tous les anime actifs ; logs `[WATCHER]` ; résumé et historique de cycles ; « aucun nouvel épisode » n'est pas une erreur. Défauts trouvés et corrigés : lectures SQLite erronées en parallèle (104 anomalies mesurées → 0), dossier de segments partagé entre téléchargements.
+4. **Règles de publication** : uniquement le jour même (jamais hier), aucun doublon, pas de miniature sans vidéo accessible, réessais silencieux et un signalement après 20 min, publication un épisode à la fois dans l'ordre d'arrivée (porte équitable), un problème sur un anime ne bloque pas les autres, cycle jamais interrompu.
+5. **Test réel dans le canal** : 3 épisodes publiés dans l'ordre sans intercalage, un 404 sans rien poster puis signalement à 20 min, 4 cycles réels à 30 min sans redétection.
+6. **Détection de tout le site** (flux « derniers épisodes ») : anime inconnus ajoutés et publiés (Iron Wok Jan!, Digimon Beatbreak), aucun doublon aux cycles suivants.
+7. **Black Torch E12** : cause = seul le lecteur myTV était lu et son fichier répondait 404 ; repli sur Stape (MP4 direct) ; avertissement ffprobe bénin ignoré ; publié à 14:19.
+8. **File glissante de 3 téléchargements** (la place est libérée dès la fin du téléchargement, pas de l'envoi).
+9. **Correctifs annexes** : notifications perdues quand plusieurs partaient ensemble, « Relancer » immédiat, bouton pressé pendant que le bot était éteint, filtre de masquage des jetons.
+10. **Tests** : v2_automation 384, v1_poc 21 (source_audit non relancé, non modifié).
+
+## Reste à faire / non prouvé dans la durée
+- Fenêtre de 24 h de réessais et nettoyage réel à J+14 : prouvés par tests, pas encore par le temps réel.
+- Beaucoup d'anime du jour en même temps (quinzaine) : jamais observé de bout en bout ; MOON et VOE non pris en charge comme lecteurs de repli.
+- Espace disque : à surveiller (~450 Mo par épisode).

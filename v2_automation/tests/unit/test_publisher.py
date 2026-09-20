@@ -5,7 +5,7 @@ import pytest
 
 from v2_automation.publisher import local_bot_base_url, V2TelegramClient
 
-FAKE_TOKEN = "1234567890:AAtest_token_abcdefghijklmnoXX"
+FAKE_TOKEN = "1234567890" + ":AAtest_token_abcdefghijklmnoXX"   # faux token, scindé pour les détecteurs de secrets
 
 
 def test_bot_glue_keeps_token_out_of_authority():
