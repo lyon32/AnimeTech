@@ -1,0 +1,120 @@
+___ASPSTART_HTML___<div id="asp-res-3069" class='item asp_r_pagepost asp_r_pagepost_3069 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate-fuka-ryouiki-no-deja-vu/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365bb5f988.png">
+	                <img loading="lazy" alt="Steins;Gate: Fuka Ryouiki no Déjà vu" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365bb5f988.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate-fuka-ryouiki-no-deja-vu/'>
+                Steins;Gate: Fuka Ryouiki no Déjà vu                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Après un an passé en Amérique, Kurisu est de retour à Akihabara. Elle et Okabe se retrouvent enfin. ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1736" class='item asp_r_pagepost asp_r_pagepost_1736 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c78fcba5a.jpg">
+	                <img loading="lazy" alt="Steins;Gate" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c78fcba5a.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate/'>
+                Steins;Gate                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Dans un quartier d'Otaku à Akihabara, un groupe d'amis modifient leurs micro-ondes de manière à en ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1738" class='item asp_r_pagepost asp_r_pagepost_1738 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate-0/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c791c4286.jpg">
+	                <img loading="lazy" alt="Steins;Gate 0" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c791c4286.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate-0/'>
+                Steins;Gate 0                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Suite de Steins;Gate L'histoire prend place en novembre 2010, dans la continuité de la bêta world ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-96230" class='item asp_r_pagepost asp_r_pagepost_96230 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate-oukoubakko-no-poriomania/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/08/thumb_64e4dbfd2e206.png">
+	                <img loading="lazy" alt="Steins;Gate: Oukoubakko no Poriomania" src="https://voir-anime.to/wp-content/uploads/2023/08/thumb_64e4dbfd2e206.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate-oukoubakko-no-poriomania/'>
+                Steins;Gate: Oukoubakko no Poriomania                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Quelque mois après les derniers événements de la série anime, Okabe et les autres membres du ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79206" class='item asp_r_pagepost asp_r_pagepost_79206 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate-kyoukaimenjou-no-missing-link-divide-by-zero/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc73b88a9.jpg">
+	                <img loading="lazy" alt="Steins;Gate: Kyoukaimenjou no Missing Link &#8211; Divide By Zero" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc73b88a9.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate-kyoukaimenjou-no-missing-link-divide-by-zero/'>
+                Steins;Gate: Kyoukaimenjou no Missing Link &#8211; Divide By Zero                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Version alternative du 23ème épisode de Steins;Gate qui mène à l'histoire de Steins;Gate 0.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-68523" class='item asp_r_pagepost asp_r_pagepost_68523 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate-0-kesshou-takei-no-valentine-bittersweet-day/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/01/thumb_5ff04518752a1.png">
+	                <img loading="lazy" alt="Steins;Gate 0: Kesshou Takei no Valentine &#8211; Bittersweet Day" src="https://voir-anime.to/wp-content/uploads/2021/01/thumb_5ff04518752a1.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate-0-kesshou-takei-no-valentine-bittersweet-day/'>
+                Steins;Gate 0: Kesshou Takei no Valentine &#8211; Bittersweet Day                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Cet épisode spécial narre la journée de la Saint-Valentin, peu après l'attaque des membres du labo ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-74197" class='item asp_r_pagepost asp_r_pagepost_74197 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate-soumei-eichi-no-cognitive-computing/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/02/thumb_6019ee1f12718.jpg">
+	                <img loading="lazy" alt="Steins;Gate: Soumei Eichi no Cognitive Computing" src="https://voir-anime.to/wp-content/uploads/2021/02/thumb_6019ee1f12718.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate-soumei-eichi-no-cognitive-computing/'>
+                Steins;Gate: Soumei Eichi no Cognitive Computing                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Episodes spéciaux de la série Steins;gate. Courte série animée, du studio White Fox en ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":7,"full_results_count":7,"results":[{"id":3069,"blogid":1,"title":"Steins;Gate: Fuka Ryouiki no D\u00e9j\u00e0 vu","post_title":"Steins;Gate: Fuka Ryouiki no D\u00e9j\u00e0 vu","content":"Apr\u00e8s un an pass\u00e9 en Am\u00e9rique, Kurisu est de retour \u00e0 Akihabara. Elle et Okabe se retrouvent enfin. ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1365bb5f988.png","date":"2020-01-09 08:29:59","post_date":"2020-01-09 08:29:59","post_modified":"2020-06-28 16:00:05","menu_order":0,"relevance":1010312,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/steinsgate-fuka-ryouiki-no-deja-vu\/"},{"id":1736,"blogid":1,"title":"Steins;Gate","post_title":"Steins;Gate","content":"Dans un quartier d'Otaku \u00e0 Akihabara, un groupe d'amis modifient leurs micro-ondes de mani\u00e8re \u00e0 en ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c78fcba5a.jpg","date":"2020-01-05 12:39:40","post_date":"2020-01-05 12:39:40","post_modified":"2020-06-28 15:59:28","menu_order":0,"relevance":1002592,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/steinsgate\/"},{"id":1738,"blogid":1,"title":"Steins;Gate 0","post_title":"Steins;Gate 0","content":"Suite de Steins;Gate L'histoire prend place en novembre 2010, dans la continuit\u00e9 de la b\u00eata world ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c791c4286.jpg","date":"2020-01-05 12:40:22","post_date":"2020-01-05 12:40:22","post_modified":"2020-06-28 15:59:44","menu_order":0,"relevance":1002528,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/steinsgate-0\/"},{"id":96230,"blogid":1,"title":"Steins;Gate: Oukoubakko no Poriomania","post_title":"Steins;Gate: Oukoubakko no Poriomania","content":"Quelque mois apr\u00e8s les derniers \u00e9v\u00e9nements de la s\u00e9rie anime, Okabe et les autres membres du ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/08\/thumb_64e4dbfd2e206.png","date":"2023-08-22 16:03:01","post_date":"2023-08-22 16:03:01","post_modified":"2023-08-22 16:03:01","menu_order":0,"relevance":1002408,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/steinsgate-oukoubakko-no-poriomania\/"},{"id":79206,"blogid":1,"title":"Steins;Gate: Kyoukaimenjou no Missing Link &#8211; Divide By Zero","post_title":"Steins;Gate: Kyoukaimenjou no Missing Link - Divide By Zero","content":"Version alternative du 23\u00e8me \u00e9pisode de Steins;Gate qui m\u00e8ne \u00e0 l'histoire de Steins;Gate 0.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dc73b88a9.jpg","date":"2021-03-05 09:13:14","post_date":"2021-03-05 09:13:14","post_modified":"2021-03-05 09:13:14","menu_order":0,"relevance":1002400,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/steinsgate-kyoukaimenjou-no-missing-link-divide-by-zero\/"},{"id":68523,"blogid":1,"title":"Steins;Gate 0: Kesshou Takei no Valentine &#8211; Bittersweet Day","post_title":"Steins;Gate 0: Kesshou Takei no Valentine - Bittersweet Day","content":"Cet \u00e9pisode sp\u00e9cial narre la journ\u00e9e de la Saint-Valentin, peu apr\u00e8s l'attaque des membres du labo ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/01\/thumb_5ff04518752a1.png","date":"2021-01-04 11:12:22","post_date":"2021-01-04 11:12:22","post_modified":"2021-01-04 11:12:22","menu_order":0,"relevance":1002368,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/steinsgate-0-kesshou-takei-no-valentine-bittersweet-day\/"},{"id":74197,"blogid":1,"title":"Steins;Gate: Soumei Eichi no Cognitive Computing","post_title":"Steins;Gate: Soumei Eichi no Cognitive Computing","content":"Episodes sp\u00e9ciaux de la s\u00e9rie Steins;gate. Courte s\u00e9rie anim\u00e9e, du studio White Fox en ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/02\/thumb_6019ee1f12718.jpg","date":"2021-02-06 18:20:26","post_date":"2021-02-06 18:20:26","post_modified":"2021-02-06 18:20:26","menu_order":0,"relevance":1002088,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":6,"link":"https:\/\/voir-anime.to\/anime\/steinsgate-soumei-eichi-no-cognitive-computing\/"}]}___ASPEND_DATA___

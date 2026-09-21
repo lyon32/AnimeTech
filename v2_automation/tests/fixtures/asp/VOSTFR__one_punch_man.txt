@@ -1,0 +1,103 @@
+___ASPSTART_HTML___<div id="asp-res-1345" class='item asp_r_pagepost asp_r_pagepost_1345 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/one-punch-man/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1095a13f677.jpg">
+	                <img loading="lazy" alt="One Punch Man" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1095a13f677.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/one-punch-man/'>
+                One Punch Man                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saitama est un homme tout ce qu'il y a de plus banal, du moins, en apparence. En effet, malgré sa ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79008" class='item asp_r_pagepost asp_r_pagepost_79008 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/one-punch-man-road-to-hero/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc24ec228.jpg">
+	                <img loading="lazy" alt="One Punch Man: Road to Hero" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc24ec228.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/one-punch-man-road-to-hero/'>
+                One Punch Man: Road to Hero                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Alors qu'il n'est encore qu'un héros amateur "pour le plaisir", Saitama combat vêtu d'un vieux ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79284" class='item asp_r_pagepost asp_r_pagepost_79284 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/one-punch-man-2-specials/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc95dfb8e.png">
+	                <img loading="lazy" alt="One Punch Man 2 Specials" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc95dfb8e.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/one-punch-man-2-specials/'>
+                One Punch Man 2 Specials                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Episodes speciaux de la saison 2 inclus dans le DVD/bluray        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-109222" class='item asp_r_pagepost asp_r_pagepost_109222 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/one-punch-man-3/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2025/09/thumb_68c8218cb35a2.jpg">
+	                <img loading="lazy" alt="One Punch Man 3" src="https://voir-anime.to/wp-content/uploads/2025/09/thumb_68c8218cb35a2.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/one-punch-man-3/'>
+                One Punch Man 3                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de "One Punch Man"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79282" class='item asp_r_pagepost asp_r_pagepost_79282 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/one-punch-man-ova/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc952c884.jpg">
+	                <img loading="lazy" alt="One Punch Man OVA" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc952c884.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/one-punch-man-ova/'>
+                One Punch Man OVA                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            OAV de One Punch Man        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1347" class='item asp_r_pagepost asp_r_pagepost_1347 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/one-punch-man-2/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1095a33d07f.jpg">
+	                <img loading="lazy" alt="One Punch Man 2" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1095a33d07f.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/one-punch-man-2/'>
+                One Punch Man 2                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Alors que les héros reprennent peu à peu leur train-train quotidien après l'attaque de Boros, une ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":6,"full_results_count":6,"results":[{"id":1345,"blogid":1,"title":"One Punch Man","post_title":"One Punch Man","content":"Saitama est un homme tout ce qu'il y a de plus banal, du moins, en apparence. En effet, malgr\u00e9 sa ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1095a13f677.jpg","date":"2020-01-04 15:40:13","post_date":"2020-01-04 15:40:13","post_modified":"2020-01-04 15:40:13","menu_order":0,"relevance":1302452,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/one-punch-man\/"},{"id":79008,"blogid":1,"title":"One Punch Man: Road to Hero","post_title":"One Punch Man: Road to Hero","content":"Alors qu'il n'est encore qu'un h\u00e9ros amateur \"pour le plaisir\", Saitama combat v\u00eatu d'un vieux ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dc24ec228.jpg","date":"2021-03-04 22:54:04","post_date":"2021-03-04 22:54:04","post_modified":"2021-03-04 22:54:04","menu_order":0,"relevance":1110484,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/one-punch-man-road-to-hero\/"},{"id":79284,"blogid":1,"title":"One Punch Man 2 Specials","post_title":"One Punch Man 2 Specials","content":"Episodes speciaux de la saison 2 inclus dans le DVD\/bluray","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dc95dfb8e.png","date":"2021-03-04 22:52:23","post_date":"2021-03-04 22:52:23","post_modified":"2021-03-04 22:52:23","menu_order":0,"relevance":1110484,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/one-punch-man-2-specials\/"},{"id":109222,"blogid":1,"title":"One Punch Man 3","post_title":"One Punch Man 3","content":"Saison 3 de \"One Punch Man\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2025\/09\/thumb_68c8218cb35a2.jpg","date":"2025-09-15 15:02:16","post_date":"2025-09-15 15:02:16","post_modified":"2025-10-05 16:57:49","menu_order":0,"relevance":1102548,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/one-punch-man-3\/"},{"id":79282,"blogid":1,"title":"One Punch Man OVA","post_title":"One Punch Man OVA","content":"OAV de One Punch Man","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dc952c884.jpg","date":"2021-03-04 22:53:19","post_date":"2021-03-04 22:53:19","post_modified":"2021-03-04 22:53:43","menu_order":0,"relevance":1102452,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/one-punch-man-ova\/"},{"id":1347,"blogid":1,"title":"One Punch Man 2","post_title":"One Punch Man 2","content":"Alors que les h\u00e9ros reprennent peu \u00e0 peu leur train-train quotidien apr\u00e8s l'attaque de Boros, une ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1095a33d07f.jpg","date":"2020-01-04 15:40:44","post_date":"2020-01-04 15:40:44","post_modified":"2020-01-04 15:40:45","menu_order":0,"relevance":1102436,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/one-punch-man-2\/"}]}___ASPEND_DATA___

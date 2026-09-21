@@ -1,0 +1,35 @@
+___ASPSTART_HTML___<div id="asp-res-104686" class='item asp_r_pagepost asp_r_pagepost_104686 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/solo-leveling-2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/12/thumb_6762e7936c248.png">
+	                <img loading="lazy" alt="Solo Leveling 2 (VF)" src="https://voir-anime.to/wp-content/uploads/2024/12/thumb_6762e7936c248.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/solo-leveling-2-vf/'>
+                Solo Leveling 2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de "Solo Leveling"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-98327" class='item asp_r_pagepost asp_r_pagepost_98327 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/solo-leveling-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/12/thumb_65816659a04de.png">
+	                <img loading="lazy" alt="Solo Leveling (VF)" src="https://voir-anime.to/wp-content/uploads/2023/12/thumb_65816659a04de.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/solo-leveling-vf/'>
+                Solo Leveling (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Lorsque d'étranges portails sont apparus aux quatre coins du monde, l'humanité a dû trouver une ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":2,"full_results_count":2,"results":[{"id":104686,"blogid":1,"title":"Solo Leveling 2 (VF)","post_title":"Solo Leveling 2 (VF)","content":"Saison 2 de \"Solo Leveling\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/12\/thumb_6762e7936c248.png","date":"2025-01-26 08:26:24","post_date":"2025-01-26 08:26:24","post_modified":"2025-01-26 08:26:24","menu_order":0,"relevance":1101944,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/solo-leveling-2-vf\/"},{"id":98327,"blogid":1,"title":"Solo Leveling (VF)","post_title":"Solo Leveling (VF)","content":"Lorsque d'\u00e9tranges portails sont apparus aux quatre coins du monde, l'humanit\u00e9 a d\u00fb trouver une ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/12\/thumb_65816659a04de.png","date":"2024-01-20 23:28:28","post_date":"2024-01-20 23:28:28","post_modified":"2024-01-20 23:28:28","menu_order":0,"relevance":1101944,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/solo-leveling-vf\/"}]}___ASPEND_DATA___

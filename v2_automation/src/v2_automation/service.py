@@ -42,13 +42,13 @@ def episodes_query(conn: sqlite3.Connection, status: str | None, limit: int,
     if status:
         rows = conn.execute(
             "SELECT id, anime_key, episode_number, language, label, status, retry_count, "
-            "published_at, updated_at, last_error, file_size, video_message_id "
+            "published_at, updated_at, last_error, file_size, video_message_id, media_ref, origin "
             "FROM episodes WHERE status=? ORDER BY updated_at DESC LIMIT ? OFFSET ?",
             (status, limit, offset)).fetchall()
     else:
         rows = conn.execute(
             "SELECT id, anime_key, episode_number, language, label, status, retry_count, "
-            "published_at, updated_at, last_error, file_size, video_message_id "
+            "published_at, updated_at, last_error, file_size, video_message_id, media_ref, origin "
             "FROM episodes ORDER BY updated_at DESC LIMIT ? OFFSET ?",
             (limit, offset)).fetchall()
     return [dict(r) for r in rows]
@@ -307,7 +307,11 @@ def system_status(conn: sqlite3.Connection, cfg) -> dict[str, Any]:
     snap: dict[str, Any] = {"ts": now_utc()}
     try:
         import psutil
-        p = app_config.DATA_DIR if app_config.DATA_DIR.exists() else app_config.DATA_DIR.parent
+        from pathlib import Path
+        raw = (getattr(cfg, "downloads", None) or {}).get("dir")      # le disque qui reçoit les vidéos
+        p = Path(raw) if raw else app_config.DATA_DIR
+        while not p.exists() and p != p.parent:
+            p = p.parent
         du = psutil.disk_usage(str(p))
         net = psutil.net_io_counters()
         snap.update(cpu_percent=psutil.cpu_percent(interval=None), ram_percent=psutil.virtual_memory().percent,
@@ -482,3 +486,292 @@ def start_worker(conn: sqlite3.Connection, *, runner=None, platform: str | None 
     if r.returncode != 0:
         return {"ok": False, "message": "tâche planifiée introuvable : exécutez une fois scripts/install_tasks.ps1"}
     return {"ok": True, "message": "démarrage demandé : le worker sera actif dans quelques secondes"}
+
+
+# ── V2 user side: requests, users, deliveries, Telegram — shared by the web panel and the Telegram admin ──────────
+
+def requests_overview(conn: sqlite3.Connection, *, state: str | None = None, user_id: int | None = None,
+                      limit: int = 100) -> list[dict[str, Any]]:
+    """Requests with their user, anime, episode, version, state, progress, creation/expiry and error."""
+    where, args = [], []
+    if state:
+        where.append("r.state=?")
+        args.append(state.upper())
+    if user_id is not None:
+        where.append("r.user_id=?")
+        args.append(user_id)
+    rows = conn.execute(f"""
+        SELECT r.id, r.user_id, u.username, r.kind, r.anime_key, r.title, r.season, r.episode_number, r.version, r.state,
+               r.created_at, r.updated_at, r.expires_at, r.completed_at, r.error_code, r.last_error,
+               (SELECT COUNT(*) FROM request_items i WHERE i.request_id=r.id) AS items_total,
+               (SELECT COUNT(*) FROM request_items i WHERE i.request_id=r.id AND i.state='COMPLETED') AS items_done
+        FROM requests r LEFT JOIN users u ON u.telegram_id=r.user_id
+        {('WHERE ' + ' AND '.join(where)) if where else ''} ORDER BY r.id DESC LIMIT ?""", (*args, max(1, min(limit, 300)))).fetchall()
+    out = []
+    for r in rows:
+        d = dict(r)
+        d["progress"] = {"done": d["items_done"], "total": d["items_total"],
+                         "percent": round(100 * d["items_done"] / d["items_total"]) if d["items_total"] else 0}
+        out.append(d)
+    return out
+
+
+def request_detail(conn: sqlite3.Connection, request_id: int) -> dict[str, Any] | None:
+    r = conn.execute("SELECT * FROM requests WHERE id=?", (request_id,)).fetchone()
+    if r is None:
+        return None
+    items = [dict(i) for i in conn.execute(
+        "SELECT i.*, e.status AS media_status, e.media_key AS media_key FROM request_items i "
+        "LEFT JOIN episodes e ON e.id=i.episode_id WHERE i.request_id=? ORDER BY i.episode_number", (request_id,)).fetchall()]
+    deliveries = [dict(d) for d in conn.execute("SELECT * FROM deliveries WHERE request_id=? ORDER BY id", (request_id,)).fetchall()]
+    return {"request": dict(r), "items": items, "deliveries": deliveries}
+
+
+def cancel_request(conn: sqlite3.Connection, request_id: int, *, confirm: bool = False) -> dict[str, Any]:
+    """Cancel a user's request (its job stays if anyone else — or the channel — still needs the media)."""
+    if not confirm:
+        return {"ok": False, "needs_confirmation": True, "message": "confirmation requise"}
+    from .requests_mgr import RequestManager
+    res = RequestManager(conn, None).cancel(request_id)
+    return {**res, "request_id": request_id, "message": "demande annulée" if res.get("ok") else res.get("message")}
+
+
+def users_overview(conn: sqlite3.Connection, limit: int = 200) -> list[dict[str, Any]]:
+    rows = conn.execute("""
+        SELECT u.telegram_id, u.username, u.first_seen_at, u.last_seen_at, u.access_status, u.access_checked_at, u.blocked,
+               (SELECT COUNT(*) FROM requests r WHERE r.user_id=u.telegram_id) AS requests_total,
+               (SELECT COUNT(*) FROM requests r WHERE r.user_id=u.telegram_id
+                  AND r.state NOT IN ('COMPLETED','CANCELLED','EXPIRED','FAILED')) AS requests_active,
+               (SELECT COUNT(*) FROM deliveries d WHERE d.user_id=u.telegram_id AND d.status='sent') AS deliveries_sent
+        FROM users u ORDER BY u.last_seen_at DESC LIMIT ?""", (max(1, min(limit, 500)),)).fetchall()
+    return [dict(r) for r in rows]
+
+
+def user_detail(conn: sqlite3.Connection, telegram_id: int) -> dict[str, Any] | None:
+    u = conn.execute("SELECT * FROM users WHERE telegram_id=?", (telegram_id,)).fetchone()
+    if u is None:
+        return None
+    return {"user": dict(u), "history": requests_overview(conn, user_id=telegram_id, limit=50)}
+
+
+def deliveries_recent(conn: sqlite3.Connection, limit: int = 100) -> list[dict[str, Any]]:
+    return [dict(r) for r in conn.execute(
+        "SELECT d.id, d.request_id, d.user_id, d.media_id, e.anime_key, e.episode_number, e.language, d.status, d.method, "
+        "d.telegram_message_id, d.attempt_count, d.last_error, d.created_at, d.completed_at FROM deliveries d "
+        "LEFT JOIN episodes e ON e.id=d.media_id ORDER BY d.id DESC LIMIT ?", (max(1, min(limit, 300)),)).fetchall()]
+
+
+def bot_activity(conn: sqlite3.Connection, limit: int = 100) -> dict[str, Any]:
+    """What the user bot is doing right now: each user's conversation (step, last search, chosen anime) and request count."""
+    import json
+    rows = conn.execute("""
+        SELECT u.telegram_id, u.username, u.access_status, u.last_seen_at, c.step, c.data, c.updated_at,
+               (SELECT COUNT(*) FROM requests r WHERE r.user_id=u.telegram_id) AS requests_total,
+               (SELECT COUNT(*) FROM requests r WHERE r.user_id=u.telegram_id
+                  AND r.state NOT IN ('COMPLETED','CANCELLED','EXPIRED','FAILED')) AS requests_active
+        FROM users u LEFT JOIN conversations c ON c.user_id=u.telegram_id
+        ORDER BY COALESCE(c.updated_at, u.last_seen_at) DESC LIMIT ?""", (max(1, min(limit, 300)),)).fetchall()
+    items = []
+    for r in rows:
+        d = dict(r)
+        try:
+            data = json.loads(d.pop("data") or "{}")
+        except ValueError:
+            data = {}
+        d["last_search"] = (data.get("query") or {}).get("raw")
+        d["chosen"] = ((data.get("hit") or {}).get("title")) or None
+        d["version"] = data.get("version")
+        items.append(d)
+    waiting = sum(1 for i in items if i["step"] not in (None, "idle") and not i["requests_active"])
+    return {"items": items, "conversations_in_progress": waiting,
+            "requests_total": sum(i["requests_total"] for i in items)}
+
+
+def telegram_overview(conn: sqlite3.Connection, cfg) -> dict[str, Any]:
+    """Configuration and activity of the Telegram side (no token, ever): transports, channels, publications, deliveries."""
+    tg = cfg.telegram or {}
+    local = tg.get("api_base_url") or ""
+    by_chan = {r["chat_id"]: r["n"] for r in conn.execute(
+        "SELECT chat_id, COUNT(*) AS n FROM publications WHERE status='sent' GROUP BY chat_id").fetchall()}
+    channels = list(cfg.channels or [])
+    return {
+        "bot_api": {"mode": "local" if local else "standard", "local_url_configured": bool(local),
+                    "upload_by_file_path": bool(tg.get("local_upload_container")),
+                    "channel_bot_configured": bool(cfg.bot_token), "user_bot_configured": bool(getattr(cfg, "user_bot_token", "")),
+                    "admin_bot_configured": bool(cfg.admin_bot_token)},
+        "capacity": {"getme_ok": getattr(cfg.bot_capacity, "getme_ok", None),
+                     "server_version": getattr(cfg.bot_capacity, "http_server_version", None)},
+        "channels": [{"channel": c, "primary": (str(c) == str(cfg.channel_id)) or (i == 0 and not cfg.channel_id)}
+                     for i, c in enumerate(channels)],
+        "required_channels": list(getattr(cfg, "required_channels", []) or []),
+        "publications_by_chat": by_chan,
+        "deliveries": {r["status"]: r["n"] for r in conn.execute("SELECT status, COUNT(*) AS n FROM deliveries GROUP BY status")},
+        "copies": {r["status"]: r["n"] for r in conn.execute(
+            "SELECT status, COUNT(*) AS n FROM publications WHERE publication_type LIKE 'copy\\_%' ESCAPE '\\' GROUP BY status")},
+    }
+
+
+def stats(conn: sqlite3.Connection) -> dict[str, Any]:
+    def one(sql, *a):
+        return conn.execute(sql, a).fetchone()[0]
+    since = local_midnight_utc()
+    return {
+        "episodes": {r["status"]: r["n"] for r in conn.execute("SELECT status, COUNT(*) AS n FROM episodes GROUP BY status")},
+        "requests": {r["state"]: r["n"] for r in conn.execute("SELECT state, COUNT(*) AS n FROM requests GROUP BY state")},
+        "deliveries": {r["status"]: r["n"] for r in conn.execute("SELECT status, COUNT(*) AS n FROM deliveries GROUP BY status")},
+        "users": one("SELECT COUNT(*) FROM users"),
+        "published_today": one("SELECT COUNT(*) FROM episodes WHERE published_at >= ?", since),
+        "deliveries_today": one("SELECT COUNT(*) FROM deliveries WHERE status='sent' AND completed_at >= ?", since),
+        "requests_today": one("SELECT COUNT(*) FROM requests WHERE created_at >= ?", since),
+        "shared_media": one("SELECT COUNT(*) FROM (SELECT episode_id FROM request_items GROUP BY episode_id HAVING COUNT(*) > 1)"),
+        "audit_actions": one("SELECT COUNT(*) FROM audit_log"),
+        "ts": now_utc(),
+    }
+
+
+def download_now(conn: sqlite3.Connection, episode_id: int) -> dict[str, Any]:
+    """Make a media eligible immediately: a baseline/failed one is queued, a waiting retry no longer waits for its backoff."""
+    ep = repo.get(conn, episode_id)
+    if ep is None:
+        return {"ok": False, "message": "inconnu"}
+    if ep.status in ("discovered", "identified"):
+        if ep.status == "discovered":
+            repo.transition(conn, episode_id, "identified")
+        repo.transition(conn, episode_id, "queued")
+        repo.enqueue(conn, ep.anime_key, episode_id)
+    elif ep.status in RECOVERABLE:
+        return {**requeue_episode.__wrapped_unaudited__(conn, episode_id), "episode_id": episode_id}
+    elif ep.status == "retry_wait":
+        conn.execute("UPDATE episodes SET next_retry_at=NULL WHERE id=?", (episode_id,))
+    elif ep.status != "queued":
+        return {"ok": False, "message": f"statut {ep.status} : rien à télécharger"}
+    conn.commit()
+    return {"ok": True, "episode_id": episode_id, "message": f"épisode {episode_id} : téléchargement immédiat"}
+
+
+def send_to_user(conn: sqlite3.Connection, episode_id: int, user_id: int, *, confirm: bool = False) -> dict[str, Any]:
+    """Deliver an existing media to a user now (a delivery with no request: the user's own request limit is untouched)."""
+    from . import media
+    if not confirm:
+        return {"ok": False, "needs_confirmation": True, "message": "confirmation requise"}
+    ep = repo.get(conn, episode_id)
+    if ep is None or not media.is_deliverable(ep):
+        return {"ok": False, "message": "média inconnu ou pas encore prêt à être livré"}
+    now = now_utc()
+    conn.execute("INSERT OR IGNORE INTO users (telegram_id, username, first_seen_at, last_seen_at) VALUES (?,NULL,?,?)",
+                 (user_id, now, now))
+    try:
+        conn.execute("INSERT INTO deliveries (request_id, request_item_id, user_id, media_id, status, created_at, updated_at) "
+                     "VALUES (NULL, NULL, ?, ?, 'pending', ?, ?)", (user_id, episode_id, now, now))
+    except sqlite3.IntegrityError:
+        conn.rollback()
+        return {"ok": False, "message": "un envoi identique est déjà en cours"}
+    conn.commit()
+    return {"ok": True, "episode_id": episode_id, "user_id": user_id, "message": "envoi planifié (livraison privée)"}
+
+
+def retry_delivery(conn: sqlite3.Connection, delivery_id: int, *, confirm: bool = False) -> dict[str, Any]:
+    """Manual decision on a failed or UNCERTAIN delivery (an uncertain one may already be in the user's chat)."""
+    d = conn.execute("SELECT status FROM deliveries WHERE id=?", (delivery_id,)).fetchone()
+    if d is None:
+        return {"ok": False, "message": "livraison inconnue"}
+    if d["status"] not in ("failed", "uncertain"):
+        return {"ok": False, "message": f"statut {d['status']} : rien à relancer"}
+    if not confirm:
+        return {"ok": False, "needs_confirmation": True, "message": "confirmation requise (risque de doublon si incertaine)"}
+    conn.execute("UPDATE deliveries SET status='pending', attempt_count=0, updated_at=? WHERE id=?", (now_utc(), delivery_id))
+    conn.execute("UPDATE request_items SET state='PENDING' WHERE id=(SELECT request_item_id FROM deliveries WHERE id=?)", (delivery_id,))
+    conn.commit()
+    return {"ok": True, "message": f"livraison {delivery_id} relancée"}
+
+
+def republish_episode(conn: sqlite3.Connection, episode_id: int, *, confirm: bool = False) -> dict[str, Any]:
+    """DANGEROUS, only on explicit request: forget the channel publication so the media is published AGAIN (a duplicate in
+    the channel).  Needs the local file or a fresh download."""
+    ep = repo.get(conn, episode_id)
+    if ep is None:
+        return {"ok": False, "message": "inconnu"}
+    if ep.status not in ("published", "cleanup_pending", "cleaned", "cleanup_blocked"):
+        return {"ok": False, "message": f"statut {ep.status} : pas publié, rien à republier"}
+    if not confirm:
+        return {"ok": False, "needs_confirmation": True,
+                "message": "confirmation requise : cela crée un DOUBLON dans le canal"}
+    conn.execute("DELETE FROM publications WHERE episode_id=?", (episode_id,))
+    conn.execute("UPDATE episodes SET status='failed', video_message_id=NULL, thumbnail_message_id=NULL, published_at=NULL, "
+                 "cleanup_at=NULL, updated_at=? WHERE id=?", (now_utc(), episode_id))
+    conn.commit()
+    res = requeue_episode.__wrapped_unaudited__(conn, episode_id)
+    return {**res, "message": "republication demandée (le média sera publié de nouveau)"}
+
+
+# ── audit: every mutating admin action is logged, with the actor the surface declared ─────────────────────
+
+from . import audit as _audit  # noqa: E402
+
+
+def panel_download(conn, source_url, *, cfg, **kw):
+    """Admin download from the panel (target of the audit line = the anime page)."""
+    from . import panel_downloads
+    return panel_downloads.download(conn, cfg, source_url=source_url, **kw)
+
+
+
+requeue_episode = _audit.audited("retry")(requeue_episode)
+fail_episode = _audit.audited("fail")(fail_episode)
+bulk_requeue = _audit.audited("retry_bulk")(bulk_requeue)
+cancel_episode = _audit.audited("cancel")(cancel_episode)
+add_anime_from_url = _audit.audited("anime_add")(add_anime_from_url)
+panel_download = _audit.audited("panel_download")(panel_download)
+update_anime = _audit.audited("anime_edit")(update_anime)
+request_force_check = _audit.audited("force_check")(request_force_check)
+request_worker_stop = _audit.audited("worker_stop")(request_worker_stop)
+start_worker = _audit.audited("worker_start")(start_worker)
+cancel_request = _audit.audited("request_cancel")(cancel_request)
+download_now = _audit.audited("download_now")(download_now)
+send_to_user = _audit.audited("send_to_user")(send_to_user)
+retry_delivery = _audit.audited("retry_delivery")(retry_delivery)
+republish_episode = _audit.audited("republish")(republish_episode)
+
+_set_paused_raw = set_paused
+_set_enabled_raw = set_anime_enabled
+
+
+def set_paused(conn: sqlite3.Connection, paused: bool) -> dict[str, Any]:              # noqa: F811
+    res = _set_paused_raw(conn, paused)
+    who = _audit.current_actor()
+    if who:
+        _audit.record(conn, admin_id=who[1], surface=who[0], action="pause" if paused else "resume", target="queue",
+                      metadata={"message": res.get("message")})
+    return res
+
+
+def set_anime_enabled(conn: sqlite3.Connection, anime_key: str, enabled: bool) -> dict[str, Any]:   # noqa: F811
+    res = _set_enabled_raw(conn, anime_key, enabled)
+    who = _audit.current_actor()
+    if who:
+        _audit.record(conn, admin_id=who[1], surface=who[0], action="anime_enable" if enabled else "anime_disable",
+                      target=anime_key, result="success" if res.get("ok", True) else "failure",
+                      metadata={"message": res.get("message")})
+    return res
+
+
+def trace_media(conn: sqlite3.Connection, media_key: str) -> dict[str, Any] | None:
+    """Everything that happened to ONE media, from its identity alone: requests -> media -> job -> download -> validation ->
+    publication -> private deliveries.  What the logs, `/history` and the panel show for a `media_key` / `media_ref`."""
+    ep = conn.execute("SELECT * FROM episodes WHERE media_key=?", (media_key,)).fetchone()
+    if ep is None:
+        return None
+    e = dict(ep)
+    return {
+        "media_key": media_key, "media_ref": e["media_ref"], "origin": e["origin"], "publish_channel": bool(e["publish_channel"]),
+        "job": {"episode_id": e["id"], "status": e["status"], "attempts": e["attempt_count"], "claimed_by": e["claimed_by"],
+                "queue": [dict(r) for r in conn.execute("SELECT status, position FROM queue_items WHERE episode_id=?", (e["id"],))]},
+        "download": {"file_path": e["file_path"], "file_size": e["file_size"], "sha256": e["video_sha256"]},
+        "requests": [dict(r) for r in conn.execute(
+            "SELECT r.id, r.user_id, r.state, r.kind FROM request_items i JOIN requests r ON r.id=i.request_id "
+            "WHERE i.media_key=? ORDER BY r.id", (media_key,))],
+        "publications": [dict(r) for r in conn.execute(
+            "SELECT publication_type, status, chat_id, message_id, media_key FROM publications WHERE episode_id=? ORDER BY id", (e["id"],))],
+        "deliveries": [dict(r) for r in conn.execute(
+            "SELECT id, user_id, status, method, telegram_message_id FROM deliveries WHERE media_id=? ORDER BY id", (e["id"],))],
+    }

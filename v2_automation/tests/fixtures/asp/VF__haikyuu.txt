@@ -1,0 +1,86 @@
+___ASPSTART_HTML___<div id="asp-res-112359" class='item asp_r_pagepost asp_r_pagepost_112359 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/haikyuu-4-to-the-top-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/02/thumb_5e528b10f23a6.png">
+	                <img loading="lazy" alt="Haikyuu 4 !! TO THE TOP (VF)" src="https://voir-anime.to/wp-content/uploads/2020/02/thumb_5e528b10f23a6.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/haikyuu-4-to-the-top-vf/'>
+                Haikyuu 4 !! TO THE TOP (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Il s'agit de la quatrième saison de la série Haikyu !!        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-107542" class='item asp_r_pagepost asp_r_pagepost_107542 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/haikyuu-3-karasuno-koukou-vs-shiratorizawa-gakuen-koukou-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0f44aa2dbc3.jpg">
+	                <img loading="lazy" alt="Haikyuu 3 !!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0f44aa2dbc3.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/haikyuu-3-karasuno-koukou-vs-shiratorizawa-gakuen-koukou-vf/'>
+                Haikyuu 3 !!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Cette saison est la suite directe de la deuxième. Après avoir réussi l'exploit de battre ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2116" class='item asp_r_pagepost asp_r_pagepost_2116 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/haikyuu-3-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0f44a619cd6.jpg">
+	                <img loading="lazy" alt="Haikyuu!! (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0f44a619cd6.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/haikyuu-3-vf/'>
+                Haikyuu!! (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Shôyô Hinata, surnommé Shô, aime plus que tout jouer au volley-ball et ce, malgré sa petite taille. ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-101463" class='item asp_r_pagepost asp_r_pagepost_101463 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/haikyuu-2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0f44a823a4a.jpg">
+	                <img loading="lazy" alt="Haikyuu!! 2 (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0f44a823a4a.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/haikyuu-2-vf/'>
+                Haikyuu!! 2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Les événements de cette seconde saison suivent ceux de la saison 1. Après leur défaite contre ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-103046" class='item asp_r_pagepost asp_r_pagepost_103046 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/haikyu-the-dumpster-battle-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/11/thumb_6724da1c3ae12.jpg">
+	                <img loading="lazy" alt="HAIKYU!! The Dumpster Battle (VF)" src="https://voir-anime.to/wp-content/uploads/2024/11/thumb_6724da1c3ae12.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/haikyu-the-dumpster-battle-vf/'>
+                HAIKYU!! The Dumpster Battle (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Il s'agit de la suite directe de la saison Haikyu !! To the Top. Après avoir vaincu Inarizaki, une ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":5,"full_results_count":5,"results":[{"id":112359,"blogid":1,"title":"Haikyuu 4 !! TO THE TOP (VF)","post_title":"Haikyuu 4 !! TO THE TOP (VF)","content":"Il s'agit de la quatri\u00e8me saison de la s\u00e9rie Haikyu !!","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/02\/thumb_5e528b10f23a6.png","date":"2026-03-19 16:12:01","post_date":"2026-03-19 16:12:01","post_modified":"2026-03-19 16:12:01","menu_order":0,"relevance":1101820,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/haikyuu-4-to-the-top-vf\/"},{"id":107542,"blogid":1,"title":"Haikyuu 3 !!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou (VF)","post_title":"Haikyuu 3 !!: Karasuno Koukou VS Shiratorizawa Gakuen Koukou (VF)","content":"Cette saison est la suite directe de la deuxi\u00e8me. Apr\u00e8s avoir r\u00e9ussi l'exploit de battre ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0f44aa2dbc3.jpg","date":"2025-06-27 15:04:33","post_date":"2025-06-27 15:04:33","post_modified":"2025-06-27 15:05:43","menu_order":0,"relevance":1101740,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/haikyuu-3-karasuno-koukou-vs-shiratorizawa-gakuen-koukou-vf\/"},{"id":2116,"blogid":1,"title":"Haikyuu!! (VF)","post_title":"Haikyuu!! (VF)","content":"Sh\u00f4y\u00f4 Hinata, surnomm\u00e9 Sh\u00f4, aime plus que tout jouer au volley-ball et ce, malgr\u00e9 sa petite taille. ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0f44a619cd6.jpg","date":"2020-01-05 22:49:57","post_date":"2020-01-05 22:49:57","post_modified":"2020-01-05 23:02:15","menu_order":0,"relevance":1101740,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/haikyuu-3-vf\/"},{"id":101463,"blogid":1,"title":"Haikyuu!! 2 (VF)","post_title":"Haikyuu!! 2 (VF)","content":"Les \u00e9v\u00e9nements de cette seconde saison suivent ceux de la saison 1. Apr\u00e8s leur d\u00e9faite contre ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0f44a823a4a.jpg","date":"2024-08-14 21:52:39","post_date":"2024-08-14 21:52:39","post_modified":"2024-08-14 21:52:39","menu_order":0,"relevance":1101700,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/haikyuu-2-vf\/"},{"id":103046,"blogid":1,"title":"HAIKYU!! The Dumpster Battle (VF)","post_title":"HAIKYU!! The Dumpster Battle (VF)","content":"Il s'agit de la suite directe de la saison Haikyu !! To the Top. Apr\u00e8s avoir vaincu Inarizaki, une ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/11\/thumb_6724da1c3ae12.jpg","date":"2024-11-01 13:41:22","post_date":"2024-11-01 13:41:22","post_modified":"2024-11-01 13:41:22","menu_order":0,"relevance":1000360,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/haikyu-the-dumpster-battle-vf\/"}]}___ASPEND_DATA___

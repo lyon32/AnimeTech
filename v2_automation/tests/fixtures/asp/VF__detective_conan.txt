@@ -1,0 +1,120 @@
+___ASPSTART_HTML___<div id="asp-res-4207" class='item asp_r_pagepost asp_r_pagepost_4207 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/02/thumb_5e53bbbc81c8f.jpg">
+	                <img loading="lazy" alt="Détective Conan (VF)" src="https://voir-anime.to/wp-content/uploads/2020/02/thumb_5e53bbbc81c8f.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-vf/'>
+                Détective Conan (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Shinichi Kudo est élève en première au lycée Tivedétec (Teitan). Pour avoir résolu plusieurs ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-89664" class='item asp_r_pagepost asp_r_pagepost_89664 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/detective-conan-zeros-tea-time-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/04/thumb_6256e241c0c07.jpg">
+	                <img loading="lazy" alt="Detective Conan: Zero&#8217;s Tea Time (VF)" src="https://voir-anime.to/wp-content/uploads/2022/04/thumb_6256e241c0c07.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/detective-conan-zeros-tea-time-vf/'>
+                Detective Conan: Zero&#8217;s Tea Time (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Spin-off de la série Détective Conan. Celui-ci est centré sur le personnage de Toru Amuro.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3280" class='item asp_r_pagepost asp_r_pagepost_3280 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-04-hitomi-no-naka-no-ansatsusha-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649ae5294.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 04: Hitomi no Naka no Ansatsusha (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649ae5294.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-04-hitomi-no-naka-no-ansatsusha-vf/'>
+                Meitantei Conan Movie 04: Hitomi no Naka no Ansatsusha (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Des meurtres en série dont les victimes sont des policiers provoquent un gros tremblement de terre ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3278" class='item asp_r_pagepost asp_r_pagepost_3278 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-03-seikimatsu-no-majutsushi-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364992baaa.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 03: Seikimatsu no Majutsushi (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364992baaa.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-03-seikimatsu-no-majutsushi-vf/'>
+                Meitantei Conan Movie 03: Seikimatsu no Majutsushi (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Kid l'insaisissable continue ses agissements et veut cette fois s'emparer d'un œuf de Pâques de ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3276" class='item asp_r_pagepost asp_r_pagepost_3276 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-01-tokei-jikake-no-matenrou-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649553f45.png">
+	                <img loading="lazy" alt="Meitantei Conan Movie 01: Tokei Jikake no Matenrou (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649553f45.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-01-tokei-jikake-no-matenrou-vf/'>
+                Meitantei Conan Movie 01: Tokei Jikake no Matenrou (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Sous l'identité de Shinichi, Conan téléphone à Ran, et tous deux organisent un rendez-vous. Ce ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3277" class='item asp_r_pagepost asp_r_pagepost_3277 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-02-juuyonbanme-no-target-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649766ba3.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 02: Juuyonbanme no Target (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649766ba3.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-02-juuyonbanme-no-target-vf/'>
+                Meitantei Conan Movie 02: Juuyonbanme no Target (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            L'entourage de Kogoro Mouri est en danger ! Un ancien détenu, que notre détective a mis sous les ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3279" class='item asp_r_pagepost asp_r_pagepost_3279 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-05-tengoku-e-no-count-down-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649ca0181.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 05: Tengoku e no Count Down (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649ca0181.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-05-tengoku-e-no-count-down-vf/'>
+                Meitantei Conan Movie 05: Tengoku e no Count Down (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            L'histoire se déroule avec Conan Edogawa, Ai Haibara et leurs trois camarades de classe, les ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":7,"full_results_count":7,"results":[{"id":4207,"blogid":1,"title":"D\u00e9tective Conan (VF)","post_title":"D\u00e9tective Conan (VF)","content":"Shinichi Kudo est \u00e9l\u00e8ve en premi\u00e8re au lyc\u00e9e Tived\u00e9tec (Teitan). Pour avoir r\u00e9solu plusieurs ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/02\/thumb_5e53bbbc81c8f.jpg","date":"2020-02-24 12:46:11","post_date":"2020-02-24 12:46:11","post_modified":"2020-05-01 15:18:29","menu_order":0,"relevance":1110168,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-vf\/"},{"id":89664,"blogid":1,"title":"Detective Conan: Zero&#8217;s Tea Time (VF)","post_title":"Detective Conan: Zero's Tea Time (VF)","content":"Spin-off de la s\u00e9rie D\u00e9tective Conan. Celui-ci est centr\u00e9 sur le personnage de Toru Amuro.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/04\/thumb_6256e241c0c07.jpg","date":"2022-08-13 12:46:41","post_date":"2022-08-13 12:46:41","post_modified":"2022-08-13 12:46:41","menu_order":0,"relevance":1102160,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/detective-conan-zeros-tea-time-vf\/"},{"id":3280,"blogid":1,"title":"Meitantei Conan Movie 04: Hitomi no Naka no Ansatsusha (VF)","post_title":"Meitantei Conan Movie 04: Hitomi no Naka no Ansatsusha (VF)","content":"Des meurtres en s\u00e9rie dont les victimes sont des policiers provoquent un gros tremblement de terre ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e13649ae5294.jpg","date":"2020-01-09 16:08:31","post_date":"2020-01-09 16:08:31","post_modified":"2020-01-09 16:08:31","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-04-hitomi-no-naka-no-ansatsusha-vf\/"},{"id":3278,"blogid":1,"title":"Meitantei Conan Movie 03: Seikimatsu no Majutsushi (VF)","post_title":"Meitantei Conan Movie 03: Seikimatsu no Majutsushi (VF)","content":"Kid l'insaisissable continue ses agissements et veut cette fois s'emparer d'un \u0153uf de P\u00e2ques de ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364992baaa.jpg","date":"2020-01-09 16:08:24","post_date":"2020-01-09 16:08:24","post_modified":"2020-01-09 16:08:24","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-03-seikimatsu-no-majutsushi-vf\/"},{"id":3276,"blogid":1,"title":"Meitantei Conan Movie 01: Tokei Jikake no Matenrou (VF)","post_title":"Meitantei Conan Movie 01: Tokei Jikake no Matenrou (VF)","content":"Sous l'identit\u00e9 de Shinichi, Conan t\u00e9l\u00e9phone \u00e0 Ran, et tous deux organisent un rendez-vous. Ce ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e13649553f45.png","date":"2020-01-09 16:08:10","post_date":"2020-01-09 16:08:10","post_modified":"2020-01-09 16:08:10","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-01-tokei-jikake-no-matenrou-vf\/"},{"id":3277,"blogid":1,"title":"Meitantei Conan Movie 02: Juuyonbanme no Target (VF)","post_title":"Meitantei Conan Movie 02: Juuyonbanme no Target (VF)","content":"L'entourage de Kogoro Mouri est en danger ! Un ancien d\u00e9tenu, que notre d\u00e9tective a mis sous les ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e13649766ba3.jpg","date":"2020-01-09 16:08:16","post_date":"2020-01-09 16:08:16","post_modified":"2020-01-09 16:08:16","menu_order":0,"relevance":1008492,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-02-juuyonbanme-no-target-vf\/"},{"id":3279,"blogid":1,"title":"Meitantei Conan Movie 05: Tengoku e no Count Down (VF)","post_title":"Meitantei Conan Movie 05: Tengoku e no Count Down (VF)","content":"L'histoire se d\u00e9roule avec Conan Edogawa, Ai Haibara et leurs trois camarades de classe, les ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e13649ca0181.jpg","date":"2020-01-09 16:10:20","post_date":"2020-01-09 16:10:20","post_modified":"2020-01-09 16:10:20","menu_order":0,"relevance":1000492,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":6,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-05-tengoku-e-no-count-down-vf\/"}]}___ASPEND_DATA___

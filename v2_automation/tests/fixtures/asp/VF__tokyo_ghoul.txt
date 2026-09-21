@@ -1,0 +1,69 @@
+___ASPSTART_HTML___<div id="asp-res-2255" class='item asp_r_pagepost asp_r_pagepost_2255 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoul-%e2%88%9aa-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd61d4cec.jpg">
+	                <img loading="lazy" alt="Tokyo Ghoul √A (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd61d4cec.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoul-%e2%88%9aa-vf/'>
+                Tokyo Ghoul √A (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de l'anime Tokyo Ghoul. Kaneki Ken accepte enfin son côté goule et décide d'affronter ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2254" class='item asp_r_pagepost asp_r_pagepost_2254 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoul-vf-a/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd5fde801.jpg">
+	                <img loading="lazy" alt="Tokyo Ghoul (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd5fde801.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoul-vf-a/'>
+                Tokyo Ghoul (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Tokyo est devenue une ville cruelle et impitoyable, un endroit où des créatures vicieuses appelées ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-49303" class='item asp_r_pagepost asp_r_pagepost_49303 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoulre-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd63e2a89.jpg">
+	                <img loading="lazy" alt="Tokyo Ghoul:re (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd63e2a89.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoulre-vf/'>
+                Tokyo Ghoul:re (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de Tokyo Ghoul Deux ans après les événements qui ont impliqué les goules du 20ème et le ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-49304" class='item asp_r_pagepost asp_r_pagepost_49304 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoulre-2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1f4fd49e0ea.png">
+	                <img loading="lazy" alt="Tokyo Ghoul:re 2 (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1f4fd49e0ea.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoulre-2-vf/'>
+                Tokyo Ghoul:re 2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Il s'agit de la seconde saison de la série animée Tokyo Ghoul:re.        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":4,"full_results_count":4,"results":[{"id":2255,"blogid":1,"title":"Tokyo Ghoul \u221aA (VF)","post_title":"Tokyo Ghoul \u221aA (VF)","content":"Saison 2 de l'anime Tokyo Ghoul. Kaneki Ken accepte enfin son c\u00f4t\u00e9 goule et d\u00e9cide d'affronter ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11dd61d4cec.jpg","date":"2020-01-06 11:20:33","post_date":"2020-01-06 11:20:33","post_modified":"2020-01-06 11:20:33","menu_order":0,"relevance":1102632,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoul-%e2%88%9aa-vf\/"},{"id":2254,"blogid":1,"title":"Tokyo Ghoul (VF)","post_title":"Tokyo Ghoul (VF)","content":"Tokyo est devenue une ville cruelle et impitoyable, un endroit o\u00f9 des cr\u00e9atures vicieuses appel\u00e9es ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11dd5fde801.jpg","date":"2020-01-06 11:20:27","post_date":"2020-01-06 11:20:27","post_modified":"2020-07-28 07:21:48","menu_order":0,"relevance":1102568,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoul-vf-a\/"},{"id":49303,"blogid":1,"title":"Tokyo Ghoul:re (VF)","post_title":"Tokyo Ghoul:re (VF)","content":"Saison 3 de Tokyo Ghoul Deux ans apr\u00e8s les \u00e9v\u00e9nements qui ont impliqu\u00e9 les goules du 20\u00e8me et le ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11dd63e2a89.jpg","date":"2020-04-17 14:27:18","post_date":"2020-04-17 14:27:18","post_modified":"2020-04-17 14:27:19","menu_order":0,"relevance":1102536,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoulre-vf\/"},{"id":49304,"blogid":1,"title":"Tokyo Ghoul:re 2 (VF)","post_title":"Tokyo Ghoul:re 2 (VF)","content":"Il s'agit de la seconde saison de la s\u00e9rie anim\u00e9e Tokyo Ghoul:re.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1f4fd49e0ea.png","date":"2020-04-17 14:27:01","post_date":"2020-04-17 14:27:01","post_modified":"2020-04-17 14:27:02","menu_order":0,"relevance":1102536,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoulre-2-vf\/"}]}___ASPEND_DATA___

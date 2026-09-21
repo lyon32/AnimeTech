@@ -1,0 +1,69 @@
+___ASPSTART_HTML___<div id="asp-res-111526" class='item asp_r_pagepost asp_r_pagepost_111526 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/jujutsu-kaisen-3-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2025/12/thumb_69467a444ab5e.jpg">
+	                <img loading="lazy" alt="Jujutsu Kaisen 3 (VF)" src="https://voir-anime.to/wp-content/uploads/2025/12/thumb_69467a444ab5e.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/jujutsu-kaisen-3-vf/'>
+                Jujutsu Kaisen 3 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de "Jujutsu Kaisen"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-96537" class='item asp_r_pagepost asp_r_pagepost_96537 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/jujutsu-kaisen-2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/06/thumb_648c7c4cceff8.jpg">
+	                <img loading="lazy" alt="Jujutsu Kaisen 2 (VF)" src="https://voir-anime.to/wp-content/uploads/2023/06/thumb_648c7c4cceff8.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/jujutsu-kaisen-2-vf/'>
+                Jujutsu Kaisen 2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de "Jujutsu Kaisen"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-90510" class='item asp_r_pagepost asp_r_pagepost_90510 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/jujutsu-kaisen-0-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/09/thumb_632ad06840ead.jpg">
+	                <img loading="lazy" alt="Jujutsu Kaisen 0 (VF)" src="https://voir-anime.to/wp-content/uploads/2022/09/thumb_632ad06840ead.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/jujutsu-kaisen-0-vf/'>
+                Jujutsu Kaisen 0 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Yuta Okkotsu est hanté par l'esprit de Rika, son amie d'enfance morte dans un accident de la route. ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-66520" class='item asp_r_pagepost asp_r_pagepost_66520 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/jujutsu-kaisen-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/09/thumb_5f736888bbad7.jpg">
+	                <img loading="lazy" alt="Jujutsu Kaisen (VF)" src="https://voir-anime.to/wp-content/uploads/2020/09/thumb_5f736888bbad7.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/jujutsu-kaisen-vf/'>
+                Jujutsu Kaisen (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Chaque année au Japon, on recense plus de 10 000 morts inexpliquées et portés disparus. Dans la ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":4,"full_results_count":4,"results":[{"id":111526,"blogid":1,"title":"Jujutsu Kaisen 3 (VF)","post_title":"Jujutsu Kaisen 3 (VF)","content":"Saison 3 de \"Jujutsu Kaisen\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2025\/12\/thumb_69467a444ab5e.jpg","date":"2026-01-30 17:20:06","post_date":"2026-01-30 17:20:06","post_modified":"2026-01-30 17:20:06","menu_order":0,"relevance":1110552,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/jujutsu-kaisen-3-vf\/"},{"id":96537,"blogid":1,"title":"Jujutsu Kaisen 2 (VF)","post_title":"Jujutsu Kaisen 2 (VF)","content":"Saison 2 de \"Jujutsu Kaisen\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/06\/thumb_648c7c4cceff8.jpg","date":"2023-09-18 09:46:13","post_date":"2023-09-18 09:46:13","post_modified":"2023-09-18 09:46:13","menu_order":0,"relevance":1102312,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/jujutsu-kaisen-2-vf\/"},{"id":90510,"blogid":1,"title":"Jujutsu Kaisen 0 (VF)","post_title":"Jujutsu Kaisen 0 (VF)","content":"Yuta Okkotsu est hant\u00e9 par l'esprit de Rika, son amie d'enfance morte dans un accident de la route. ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/09\/thumb_632ad06840ead.jpg","date":"2022-09-21 09:50:40","post_date":"2022-09-21 09:50:40","post_modified":"2022-09-21 09:50:40","menu_order":0,"relevance":1102248,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/jujutsu-kaisen-0-vf\/"},{"id":66520,"blogid":1,"title":"Jujutsu Kaisen (VF)","post_title":"Jujutsu Kaisen (VF)","content":"Chaque ann\u00e9e au Japon, on recense plus de 10 000 morts inexpliqu\u00e9es et port\u00e9s disparus. Dans la ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/09\/thumb_5f736888bbad7.jpg","date":"2020-11-21 00:18:17","post_date":"2020-11-21 00:18:17","post_modified":"2021-10-01 15:23:40","menu_order":0,"relevance":1102032,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/jujutsu-kaisen-vf\/"}]}___ASPEND_DATA___

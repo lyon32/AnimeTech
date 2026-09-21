@@ -1,0 +1,52 @@
+___ASPSTART_HTML___<div id="asp-res-94333" class='item asp_r_pagepost asp_r_pagepost_94333 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/made-in-abyss-dawn-of-the-deep-soul-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/11/thumb_5fa8861cdf1cc.jpg">
+	                <img loading="lazy" alt="Made in Abyss: Dawn of the Deep Soul (VF)" src="https://voir-anime.to/wp-content/uploads/2020/11/thumb_5fa8861cdf1cc.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/made-in-abyss-dawn-of-the-deep-soul-vf/'>
+                Made in Abyss: Dawn of the Deep Soul (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film adaptera la suite des aventures de Riko, Reg et Nanachi. Suite à la guérison de Riko, le ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-93156" class='item asp_r_pagepost asp_r_pagepost_93156 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/made-in-abyss-2-retsujitsu-no-ougonkyou-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/06/thumb_62a7783a0ecd0.jpg">
+	                <img loading="lazy" alt="Made in Abyss 2: Retsujitsu no Ougonkyou (VF)" src="https://voir-anime.to/wp-content/uploads/2022/06/thumb_62a7783a0ecd0.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/made-in-abyss-2-retsujitsu-no-ougonkyou-vf/'>
+                Made in Abyss 2: Retsujitsu no Ougonkyou (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Suite directe du film "Made in Abyss: Dawn of the Deep Soul" Après avoir affronté Bondrewd, le ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-86710" class='item asp_r_pagepost asp_r_pagepost_86710 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/made-in-abyss-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e107ff998880.jpg">
+	                <img loading="lazy" alt="Made in Abyss (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e107ff998880.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/made-in-abyss-vf/'>
+                Made in Abyss (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            À la surface de cette planète, un seul endroit demeure encore mystérieux et inexploré : un trou ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":3,"full_results_count":3,"results":[{"id":94333,"blogid":1,"title":"Made in Abyss: Dawn of the Deep Soul (VF)","post_title":"Made in Abyss: Dawn of the Deep Soul (VF)","content":"Ce film adaptera la suite des aventures de Riko, Reg et Nanachi. Suite \u00e0 la gu\u00e9rison de Riko, le ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/11\/thumb_5fa8861cdf1cc.jpg","date":"2023-04-08 13:39:34","post_date":"2023-04-08 13:39:34","post_modified":"2023-04-08 13:39:35","menu_order":0,"relevance":1110596,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/made-in-abyss-dawn-of-the-deep-soul-vf\/"},{"id":93156,"blogid":1,"title":"Made in Abyss 2: Retsujitsu no Ougonkyou (VF)","post_title":"Made in Abyss 2: Retsujitsu no Ougonkyou (VF)","content":"Suite directe du film \"Made in Abyss: Dawn of the Deep Soul\" Apr\u00e8s avoir affront\u00e9 Bondrewd, le ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/06\/thumb_62a7783a0ecd0.jpg","date":"2023-03-02 14:34:39","post_date":"2023-03-02 14:34:39","post_modified":"2023-03-02 14:34:39","menu_order":0,"relevance":1110356,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/made-in-abyss-2-retsujitsu-no-ougonkyou-vf\/"},{"id":86710,"blogid":1,"title":"Made in Abyss (VF)","post_title":"Made in Abyss (VF)","content":"\u00c0 la surface de cette plan\u00e8te, un seul endroit demeure encore myst\u00e9rieux et inexplor\u00e9 : un trou ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e107ff998880.jpg","date":"2021-12-25 11:14:34","post_date":"2021-12-25 11:14:34","post_modified":"2021-12-25 11:17:54","menu_order":0,"relevance":1102132,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/made-in-abyss-vf\/"}]}___ASPEND_DATA___

@@ -37,6 +37,7 @@ const PATHS = {
   right: '<path d="M9 5l7 7-7 7"/>',
   refresh: '<path d="M20 11a8 8 0 0 0-14-4M4 4v4h4M4 13a8 8 0 0 0 14 4M20 20v-4h-4"/>',
   plus: '<path d="M12 5v14M5 12h14"/>',
+  search: '<circle cx="11" cy="11" r="6"/><path d="M20 20l-4.2-4.2"/>',
 };
 const icon = (name) => raw(`<svg class="icon" viewBox="0 0 24 24" aria-hidden="true">${PATHS[name] || ""}</svg>`);
 
@@ -93,7 +94,7 @@ async function api(path, opts = {}) {
   const ctl = new AbortController();
   const timer = setTimeout(() => ctl.abort(), 12000);
   try {
-    const res = await fetch(path, { ...opts, signal: ctl.signal, headers: { Accept: "application/json" } });
+    const res = await fetch(path, { ...opts, signal: ctl.signal, headers: { Accept: "application/json", ...(opts.headers || {}) } });
     let body = null;
     try { body = await res.json(); } catch (_) { /* empty body */ }
     if (!res.ok) throw new Error((body && (body.detail || body.message)) || `Erreur ${res.status}`);
@@ -306,26 +307,164 @@ function cyclesPanel(c) {
       : empty("Aucun cycle terminé pour l’instant", "Le premier cycle démarre dès que le worker tourne.")}`;
 }
 
+// ── Anime page: find (search or address) → choose season and version → pick episodes → publish to the channel ───────
+const finder = { view: "idle", q: "", results: null, open: null, bench: null, busy: false, err: "" };
+const VER = { VF: { flag: "VF", name: "Version française" }, VOSTFR: { flag: "VOSTFR", name: "Version originale sous-titrée" } };
+const looksLikeUrl = (s) => /^https?:\/\//i.test(s.trim());
+const plural = (n, one, many) => `${n}${NB}${n > 1 ? many : one}`;
+const BUSY_STATES = ["queued", "processing", "downloading", "retry_wait", "downloaded", "validating", "validated", "publishing_thumbnail", "thumbnail_published", "publishing_video"];
+
 function animePage(d, animes, cycles) {
   return html`<div class="stack">
-    <section class="panel"><header><h2>Ajouter un anime</h2></header>
-      <div class="body muted" style="padding-bottom:10px">Les épisodes sortis aujourd’hui seront publiés ; les plus anciens restent « connus » et ne sont jamais publiés.</div>
-      <form id="add-form" class="addrow" novalidate><input class="field" id="add-url" type="url" inputmode="url" autocomplete="off" placeholder="https://voir-anime.to/anime/nom-de-l-anime/" aria-label="Adresse de la page de l’anime">
-        <button class="btn primary" type="submit">${icon("plus")}Surveiller</button></form>
-      <div class="formerr" id="add-err" role="alert" hidden></div></section>
+    <section class="panel finder" aria-labelledby="finder-h"><header><h2 id="finder-h">Télécharger un anime</h2></header>
+      <form id="find-form" class="addrow" novalidate role="search"><input class="field" id="find-q" type="search" autocomplete="off" spellcheck="false" placeholder="Nom de l’anime, ou adresse de sa page" aria-label="Nom de l’anime ou adresse de sa page" value="${finder.q}">
+        <button class="btn primary" type="submit" ${finder.busy ? raw("disabled") : ""}>${icon("search")}Chercher</button></form>
+      <div class="formerr" id="find-err" role="alert" ${finder.err ? "" : raw("hidden")}>${finder.err}</div>
+      <div id="finder-body" aria-live="polite">${finderBody()}</div></section>
     <div class="anime-split"><section class="panel" id="anime-list"><header><h2>Anime surveillés<span class="n">${animes.length || ""}</span></h2></header>${animeTable(animes)}</section>
     <section class="panel" id="cycles">${cyclesPanel(cycles)}</section></div></div>`;
 }
+
+function finderBody() {
+  if (finder.busy) return html`<div class="sk" style="height:96px;margin:0 16px 16px"></div>`;
+  if (finder.view === "bench") return benchView(finder.bench);
+  if (finder.view === "results") return resultsView(finder.results);
+  return html`<div class="hint">Le site a deux catalogues, VF et VOSTFR : la recherche interroge les deux et montre ce qui existe vraiment. Vous pouvez aussi coller l’adresse d’une page.</div>`;
+}
+
+function resultsView(r) {
+  if (!r.items.length) return empty(`Aucun résultat pour « ${r.query} »`, "Le site ne tolère pas les fautes de frappe : essayez le titre japonais ou anglais, ou collez l’adresse de la page.");
+  const main = r.items.filter((s) => s.is_main), other = r.items.filter((s) => !s.is_main);
+  const note = r.truncated ? html`<div class="hint warn">Le site limite ses réponses : précisez le titre pour affiner.</div>` : "";
+  return html`${note}<ul class="series" role="list">${[...main, ...other].map((s) => seriesRow(s, r.items.indexOf(s)))}</ul>`;
+}
+
+function seriesRow(s, i) {
+  const open = finder.open === i, seasons = s.seasons.length;
+  return html`<li class="srow" data-open="${open ? 1 : 0}"><button class="shead" type="button" data-act="f-open" data-i="${i}" aria-expanded="${String(open)}">
+      <span class="sname">${s.name}${s.alt ? html` <span class="muted">· autre titre</span>` : ""}${!s.is_main ? html` <span class="muted">· ${s.kind === "MOVIE" ? "film" : "spécial"}</span>` : ""}</span>
+      <span class="svers">${s.versions.map((v) => html`<span class="vtag" data-v="${v}">${VER[v].flag}</span>`)}</span>
+      <span class="muted scount">${seasons > 1 ? `${seasons}${NB}saisons` : ""}</span>${icon(open ? "left" : "right")}</button>
+    ${open ? html`<ul class="seasons" role="list">${s.seasons.map((o, j) => html`<li><span class="sl">${o.label}</span>
+      <span class="vbtns">${Object.keys(o.versions).map((v) => html`<button class="btn sm" type="button" data-act="f-bench" data-i="${i}" data-j="${j}" data-v="${v}" aria-label="${o.label}, ${VER[v].name}">${VER[v].flag}</button>`)}</span></li>`)}</ul>` : ""}</li>`;
+}
+
+function benchView(b) {
+  const numbered = b.items.filter((e) => e.number != null);
+  const free = numbered.filter((e) => !(e.known && (e.known.published || BUSY_STATES.includes(e.known.status))));
+  const meta = [b.version ? html`<span class="vtag" data-v="${b.version}">${VER[b.version].flag}</span>` : "", b.type ? cap(String(b.type).toLowerCase()) : "",
+    b.declared ? `${plural(b.declared, "épisode", "épisodes")} annoncés` : `${plural(numbered.length, "épisode", "épisodes")} listés`, b.status || ""].filter(Boolean);
+  return html`<div class="bench"><div class="bhead"><button class="btn sm ghost" type="button" data-act="f-back">${icon("left")}${finder.results ? "Résultats" : "Retour"}</button>
+      <div class="btitle"><strong>${b.title}</strong><div class="muted bmeta">${meta.map((m, i) => html`${i ? html`<span aria-hidden="true"> · </span>` : ""}${m}`)}</div></div></div>
+    ${numbered.length ? html`<div class="bbar">
+      <button class="btn primary" type="button" data-act="dl-sel" ${b.sel.size ? "" : raw("disabled")}>${icon("play")}<span>Télécharger la sélection${b.sel.size ? ` (${b.sel.size})` : ""}</span></button>
+      <button class="btn" type="button" data-act="dl-season" ${free.length ? "" : raw("disabled")}>Toute la saison (${free.length})</button>
+      <span class="lastn"><label for="last-n">Les</label><input class="field" id="last-n" type="number" min="1" max="${numbered.length}" value="${b.n}" inputmode="numeric"><label for="last-n">derniers</label><button class="btn" type="button" data-act="dl-last">Télécharger</button></span>
+      <span class="grow"></span>
+      <button class="btn sm ghost" type="button" data-act="sel-free">Cocher ce qui manque</button><button class="btn sm ghost" type="button" data-act="sel-none">Tout décocher</button></div>
+      <div class="eps" role="group" aria-label="Épisodes">${numbered.map((e) => epChip(e, b))}</div>
+      <div class="bfoot"><label class="check"><input type="checkbox" id="bench-watch" ${b.watch ? raw("checked") : ""}>Surveiller aussi cet anime : ses prochains épisodes seront publiés automatiquement</label>
+        <span class="muted">Publication dans le canal, dans l’ordre des épisodes.</span></div>`
+      : empty("Aucun épisode listé", "Le site n’a encore publié aucun épisode de cette page.")}
+    ${b.msg ? html`<div class="bmsg" data-tone="${b.msg.tone}" role="status">${b.msg.text}</div>` : ""}</div>`;
+}
+
+function epChip(e, b) {
+  const k = e.known, done = !!(k && k.published), busy = !!(k && !done && BUSY_STATES.includes(k.status));
+  const label = done ? "publié" : busy ? "en file" : k ? "connu" : "";
+  return html`<button class="ep" type="button" data-act="ep-toggle" data-n="${e.number}" aria-pressed="${String(b.sel.has(e.number))}" ${done || busy ? raw('aria-disabled="true"') : ""} data-s="${done ? "done" : busy ? "busy" : k ? "known" : "free"}" title="${epLabel(e.number)}${label ? ` : ${label}` : ""}"><b>${e.number}</b>${label ? html`<small>${label}</small>` : ""}</button>`;
+}
+
+function paintFinder() {
+  const el = $("#finder-body"); if (el) el.innerHTML = finderBody().s;
+  const btn = $("#find-form button[type=submit]"); if (btn) btn.disabled = finder.busy;
+  const er = $("#find-err"); if (er) { er.textContent = finder.err; er.hidden = !finder.err; }
+}
+const jpost = (path, body) => api(path, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(body) });
+
+async function openBench(url, title, version) {
+  finder.busy = true; finder.err = ""; paintFinder();
+  try {
+    const r = await api(`/api/anime-episodes?url=${encodeURIComponent(url)}`);
+    finder.bench = { url, title, version: version || r.version || null, items: r.items, type: r.type, status: r.status, declared: r.declared, sel: new Set(), n: 3, watch: false, msg: null };
+    finder.view = "bench";
+  } catch (e) { finder.err = e.message; }
+  finally { finder.busy = false; paintFinder(); }
+}
+
+async function finderSubmit(q) {
+  q = q.trim(); finder.q = q; finder.err = "";
+  if (!q) { finder.err = "Écrivez le nom d’un anime ou collez l’adresse de sa page."; return paintFinder(); }
+  if (looksLikeUrl(q)) { finder.results = null; return openBench(q, q.replace(/\/+$/, "").split("/").pop().replace(/-/g, " "), null); }
+  finder.busy = true; paintFinder();
+  try { finder.results = await api(`/api/search?q=${encodeURIComponent(q)}`); finder.view = "results"; finder.open = finder.results.items.length === 1 ? 0 : null; }
+  catch (e) { finder.err = e.message; }
+  finally { finder.busy = false; paintFinder(); }
+}
+
+async function download(mode, extra) {
+  const b = finder.bench;
+  b.watch = !!($("#bench-watch") && $("#bench-watch").checked);
+  try {
+    const r = await jpost("/api/downloads", { source_url: b.url, title: b.title, version: b.version || "VOSTFR", mode, watch: b.watch, ...extra });
+    b.msg = { tone: r.created.length ? "ok" : "info", text: r.message };
+    b.sel.clear();
+    b.items = (await api(`/api/anime-episodes?url=${encodeURIComponent(b.url)}`)).items;
+    toast(r.message);
+    await loadDash();
+  } catch (e) { b.msg = { tone: "bad", text: e.message }; }
+  paintFinder();
+  const list = $("#anime-list");
+  if (list && state.dash) list.innerHTML = html`<header><h2>Anime surveillés<span class="n">${state.dash.animes.length || ""}</span></h2></header>${animeTable(state.dash.animes)}`.s;
+}
+
+const FINDER_ACTS = new Set(["f-open", "f-bench", "f-back", "ep-toggle", "sel-free", "sel-none", "dl-sel", "dl-season", "dl-last", "a-download"]);
+function bigConfirm(el, n) {                       // more than 5 episodes at once: confirm on the button itself, no dialog
+  if (n <= 5 || el.dataset.ok) { delete el.dataset.ok; return false; }
+  el.dataset.ok = "1"; el.dataset.label = el.innerHTML; el.textContent = `Confirmer : ${n} épisodes ?`; el.classList.add("armed");
+  setTimeout(() => { if (el.isConnected && el.dataset.ok) { delete el.dataset.ok; el.innerHTML = el.dataset.label; el.classList.remove("armed"); } }, 4000);
+  return true;
+}
+async function finderAct(act, el) {
+  const b = finder.bench;
+  if (act === "f-open") { const i = Number(el.dataset.i); finder.open = finder.open === i ? null : i; return paintFinder(); }
+  if (act === "f-back") { finder.view = finder.results ? "results" : "idle"; return paintFinder(); }
+  if (act === "f-bench") {
+    const s = finder.results.items[Number(el.dataset.i)], o = s.seasons[Number(el.dataset.j)], v = el.dataset.v;
+    return openBench(o.versions[v].url, `${s.name}${s.seasons.length > 1 ? ` · ${o.label}` : ""}`, v);
+  }
+  if (act === "a-download") {
+    const r = state.dash.animes.find((a) => a.anime_key === el.dataset.key);
+    finder.results = null; finder.q = r.title || r.anime_key; const q = $("#find-q"); if (q) q.value = finder.q;
+    const lang = String(r.language || "").toUpperCase();
+    $("#finder-h").scrollIntoView({ block: "start" });
+    return openBench(r.source_url, r.title || r.anime_key, lang === "VF" ? "VF" : lang ? "VOSTFR" : null);
+  }
+  if (!b) return;
+  if (act === "ep-toggle") {
+    if (el.getAttribute("aria-disabled") === "true") return;
+    const n = Number(el.dataset.n); b.sel.has(n) ? b.sel.delete(n) : b.sel.add(n);
+    el.setAttribute("aria-pressed", String(b.sel.has(n)));
+    const btn = $("[data-act=dl-sel]"); if (btn) { btn.disabled = !b.sel.size; $("span", btn).textContent = `Télécharger la sélection${b.sel.size ? ` (${b.sel.size})` : ""}`; }
+    return;
+  }
+  if (act === "sel-free") { b.sel = new Set(b.items.filter((e) => e.number != null && !e.known).map((e) => e.number)); return paintFinder(); }
+  if (act === "sel-none") { b.sel.clear(); return paintFinder(); }
+  if (act === "dl-sel") { if (bigConfirm(el, b.sel.size)) return; return download("selection", { numbers: [...b.sel].sort((x, y) => x - y) }); }
+  if (act === "dl-season") { const n = b.items.filter((e) => e.number != null).length; if (bigConfirm(el, n)) return; return download("season", {}); }
+  if (act === "dl-last") { const n = Math.max(1, Number($("#last-n").value) || 1); b.n = n; if (bigConfirm(el, n)) return; return download("last_n", { n }); }
+}
+
 function animeTable(animes) {
-  if (!animes.length) return empty("Aucun anime surveillé", "Collez l’adresse d’une page d’anime ci-dessus pour commencer.");
-  return html`<div class="tablewrap"><table class="tbl"><thead><tr><th>Anime</th><th>Statut</th><th class="num">Publiés</th><th class="num">Aujourd’hui</th><th class="num">En file</th><th>Dernier contrôle</th><th></th></tr></thead><tbody>
-    ${animes.map((a) => html`<tr><td class="name" data-label="Anime">${a.title || a.anime_key}${a.auto_added ? html` <span class="badge" data-tone="info"><span class="dot"></span>ajouté depuis le site</span>` : ""}</td>
-      <td data-label="Statut" class="keep">${a.enabled ? badge("ok", "Surveillé") : badge("muted", "En pause")}</td>
-      <td class="num" data-label="Publiés">${a.published}</td><td class="num" data-label="Aujourd’hui">${a.today || 0}</td><td class="num" data-label="En file">${a.queued}</td>
-      <td data-label="Dernier contrôle">${a.last_check_error ? badge("bad", "Échec") : a.last_successful_check_at ? ago(a.last_successful_check_at) : "Jamais"}${a.force_check ? html` <span class="muted">· demandé</span>` : ""}</td>
-      <td class="keep"><div style="display:flex;gap:6px;justify-content:flex-end;flex-wrap:wrap">
-        <button class="btn sm" type="button" data-act="check" data-key="${a.anime_key}" ${a.source_url ? "" : raw("disabled")}>Contrôler maintenant</button>
-        <button class="btn sm ghost" type="button" data-act="toggle-anime" data-key="${a.anime_key}" data-enabled="${a.enabled ? 1 : 0}">${a.enabled ? "Mettre en pause" : "Reprendre"}</button></div></td></tr>`)}</tbody></table></div>`;
+  if (!animes.length) return empty("Aucun anime surveillé", "Cherchez un anime ci-dessus et cochez « Surveiller aussi » : ses nouveaux épisodes seront publiés automatiquement.");
+  return html`<ul class="alist" role="list">${animes.map((a) => html`<li class="arow">
+    <div class="ainfo"><div class="aname" title="${a.title || a.anime_key}">${a.title || a.anime_key}${a.auto_added ? html` <span class="badge" data-tone="info"><span class="dot"></span>ajouté depuis le site</span>` : ""}</div>
+      <div class="muted ameta">${a.enabled ? badge("ok", "Surveillé") : badge("muted", "En pause")}
+        <span>${plural(a.published, "publié", "publiés")}</span>${a.today ? html`<span>Aujourd’hui : ${a.today}</span>` : ""}${a.queued ? html`<span>${a.queued}${NB}en file</span>` : ""}
+        <span>${a.last_check_error ? badge("bad", "Contrôle en échec") : a.last_successful_check_at ? `contrôlé ${ago(a.last_successful_check_at)}` : "jamais contrôlé"}${a.force_check ? " · demandé" : ""}</span></div></div>
+    <div class="aact"><button class="btn sm" type="button" data-act="a-download" data-key="${a.anime_key}" ${a.source_url ? "" : raw("disabled")}>${icon("play")}Télécharger…</button>
+      <button class="btn sm" type="button" data-act="check" data-key="${a.anime_key}" ${a.source_url ? "" : raw("disabled")}>Contrôler</button>
+      <button class="btn sm ghost" type="button" data-act="toggle-anime" data-key="${a.anime_key}" data-enabled="${a.enabled ? 1 : 0}">${a.enabled ? "Pause" : "Reprendre"}</button></div></li>`)}</ul>`;
 }
 
 function errorsPage(d) {
@@ -451,7 +590,7 @@ async function showPage(fresh) {
     else if (page === "anime") {
       if (!state.dash) await loadDash();
       const cyc = await api("/api/cycles").catch(() => null);
-      if (fresh || !$("#add-form")) out = animePage(state.dash, state.dash ? state.dash.animes : [], cyc);
+      if (fresh || !$("#find-form")) out = animePage(state.dash, state.dash ? state.dash.animes : [], cyc);
       else {
         $("#anime-list").innerHTML = html`<header><h2>Anime surveillés<span class="n">${state.dash.animes.length || ""}</span></h2></header>${animeTable(state.dash.animes)}`.s;
         $("#cycles").innerHTML = cyclesPanel(cyc).s;
@@ -513,6 +652,7 @@ document.addEventListener("click", async (ev) => {
     setTimeout(() => { if (el.isConnected) { delete el.dataset.armed; el.textContent = el.dataset.label; el.classList.remove("armed"); } }, 4000);
     return;
   }
+  if (FINDER_ACTS.has(act)) return finderAct(act, el);
   if (el.tagName === "BUTTON") el.disabled = true;
   try {
     if (act === "open-ep") { el.disabled = false; return openEpisode(el.dataset.id); }
@@ -557,19 +697,10 @@ document.addEventListener("input", (ev) => {
 document.addEventListener("change", (ev) => {
   if (ev.target.id === "ep-anime") { state.ep.anime = ev.target.value; state.ep.offset = 0; episodesLoad(); }
 });
-document.addEventListener("submit", async (ev) => {
-  if (ev.target.id !== "add-form") return;
+document.addEventListener("submit", (ev) => {
+  if (ev.target.id !== "find-form") return;
   ev.preventDefault();
-  const input = $("#add-url"), err = $("#add-err"), url = input.value.trim();
-  err.hidden = true;
-  if (!/^https?:\/\//i.test(url)) { err.textContent = "Collez l’adresse complète de la page de l’anime (elle commence par https://)."; err.hidden = false; input.focus(); return; }
-  const btn = $("button[type=submit]", ev.target); btn.disabled = true;
-  try {
-    const r = await post(`/api/animes?source_url=${encodeURIComponent(url)}`);
-    input.value = ""; toast(`${r.title || r.anime_key} est surveillé — les épisodes déjà en ligne ne seront pas publiés`);
-    await loadDash(); await showPage(true);
-  } catch (e) { err.textContent = e.message; err.hidden = false; input.focus(); }
-  finally { btn.disabled = false; }
+  finderSubmit($("#find-q").value);
 });
 
 window.addEventListener("hashchange", onRoute);

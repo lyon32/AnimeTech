@@ -1,0 +1,52 @@
+___ASPSTART_HTML___<div id="asp-res-4043" class='item asp_r_pagepost asp_r_pagepost_4043 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e51b6b9e5f.jpg">
+	                <img loading="lazy" alt="Fairy Tail (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e51b6b9e5f.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-vf/'>
+                Fairy Tail (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Lucy est une jeune magicienne de 16 ans à la recherche d'une guilde. Fan de magie depuis sa plus ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-104624" class='item asp_r_pagepost asp_r_pagepost_104624 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-100-years-quest-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/06/thumb_6671a451c3548.jpg">
+	                <img loading="lazy" alt="Fairy Tail: 100 Years Quest (VF)" src="https://voir-anime.to/wp-content/uploads/2024/06/thumb_6671a451c3548.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-100-years-quest-vf/'>
+                Fairy Tail: 100 Years Quest (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Basé sur le manga Fairy Tail - 100 Years Quest de Ueda Atsuo et Mashima Hiro. Il s'agit de la suite ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79454" class='item asp_r_pagepost asp_r_pagepost_79454 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-movie-houou-no-miko-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dca11a288.png">
+	                <img loading="lazy" alt="Fairy Tail Movie: Houou no Miko (VF)" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dca11a288.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-movie-houou-no-miko-vf/'>
+                Fairy Tail Movie: Houou no Miko (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Éclair est une jeune femme amnésique qui a perdu l'ensemble de ses souvenirs. Elle ne souvient plus ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":3,"full_results_count":3,"results":[{"id":4043,"blogid":1,"title":"Fairy Tail (VF)","post_title":"Fairy Tail (VF)","content":"Lucy est une jeune magicienne de 16 ans \u00e0 la recherche d'une guilde. Fan de magie depuis sa plus ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e51b6b9e5f.jpg","date":"2020-01-17 15:01:31","post_date":"2020-01-17 15:01:31","post_modified":"2021-10-01 15:05:28","menu_order":0,"relevance":1110760,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-vf\/"},{"id":104624,"blogid":1,"title":"Fairy Tail: 100 Years Quest (VF)","post_title":"Fairy Tail: 100 Years Quest (VF)","content":"Bas\u00e9 sur le manga Fairy Tail - 100 Years Quest de Ueda Atsuo et Mashima Hiro. Il s'agit de la suite ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/06\/thumb_6671a451c3548.jpg","date":"2025-01-21 16:14:29","post_date":"2025-01-21 16:14:29","post_modified":"2025-01-21 16:14:29","menu_order":0,"relevance":1110376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-100-years-quest-vf\/"},{"id":79454,"blogid":1,"title":"Fairy Tail Movie: Houou no Miko (VF)","post_title":"Fairy Tail Movie: Houou no Miko (VF)","content":"\u00c9clair est une jeune femme amn\u00e9sique qui a perdu l'ensemble de ses souvenirs. Elle ne souvient plus ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dca11a288.png","date":"2021-03-08 12:23:36","post_date":"2021-03-08 12:23:36","post_modified":"2021-03-08 12:23:36","menu_order":0,"relevance":1102376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-movie-houou-no-miko-vf\/"}]}___ASPEND_DATA___

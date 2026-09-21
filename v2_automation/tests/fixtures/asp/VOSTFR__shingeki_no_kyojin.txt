@@ -1,0 +1,205 @@
+___ASPSTART_HTML___<div id="asp-res-1638" class='item asp_r_pagepost asp_r_pagepost_1638 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c72eae2c7.jpg">
+	                <img loading="lazy" alt="Shingeki no Kyojin" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c72eae2c7.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin/'>
+                Shingeki no Kyojin                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Dans un monde ravagé par des titans mangeurs d’homme depuis plus d’un siècle, les rares survivants ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3047" class='item asp_r_pagepost asp_r_pagepost_3047 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-kakusei-no-houkou/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365a64dca7.png">
+	                <img loading="lazy" alt="Shingeki no Kyojin: Kakusei no Houkou" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365a64dca7.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-kakusei-no-houkou/'>
+                Shingeki no Kyojin: Kakusei no Houkou                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film reprend les événements de la seconde saison.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3045" class='item asp_r_pagepost asp_r_pagepost_3045 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-zenpen-guren-no-yumiya/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365a481ffd.jpg">
+	                <img loading="lazy" alt="Shingeki no Kyojin Zenpen: Guren no Yumiya" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365a481ffd.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-zenpen-guren-no-yumiya/'>
+                Shingeki no Kyojin Zenpen: Guren no Yumiya                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film compilera, en version remastérisée, les épisodes 1 à 13 de l'anime Shingeki no Kyojin ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3043" class='item asp_r_pagepost asp_r_pagepost_3043 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-kouhen-jiyuu-no-tsubasa/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365a289a5b.jpg">
+	                <img loading="lazy" alt="Shingeki no Kyojin Kouhen: Jiyuu no Tsubasa" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365a289a5b.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-kouhen-jiyuu-no-tsubasa/'>
+                Shingeki no Kyojin Kouhen: Jiyuu no Tsubasa                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film compilera, en version remastérisée, les épisodes 14 à 25 de l'anime Shingeki no Kyojin ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1642" class='item asp_r_pagepost asp_r_pagepost_1642 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-3/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c732c6bcb.jpg">
+	                <img loading="lazy" alt="Shingeki no Kyojin 3" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c732c6bcb.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-3/'>
+                Shingeki no Kyojin 3                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de Shingeki no Kyojin Le bataillon a réussi à récupérer Eren, mais le titan colossal et le ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-67212" class='item asp_r_pagepost asp_r_pagepost_67212 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-the-final-season/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/06/thumb_5eee57f3231d0.jpg">
+	                <img loading="lazy" alt="Shingeki no Kyojin 4 : The Final Season" src="https://voir-anime.to/wp-content/uploads/2020/06/thumb_5eee57f3231d0.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-the-final-season/'>
+                Shingeki no Kyojin 4 : The Final Season                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 4 de Shingeki no Kyojin Toutes les parties de la saison finale seront regroupé ici        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-51904" class='item asp_r_pagepost asp_r_pagepost_51904 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-ova/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/06/thumb_5ee0a3d26a45b.png">
+	                <img loading="lazy" alt="Shingeki no Kyojin OVA" src="https://voir-anime.to/wp-content/uploads/2020/06/thumb_5ee0a3d26a45b.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-ova/'>
+                Shingeki no Kyojin OVA                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            -OAV 1: Ilse no Techou L'histoire se centre sur un étrange journal trouvé par Erwin et Levi. Ce ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-51908" class='item asp_r_pagepost asp_r_pagepost_51908 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-gaiden-kuinaki-sentaku/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/06/thumb_5ee0a3d5260bf.png">
+	                <img loading="lazy" alt="Shingeki no Kyojin Gaiden: Kuinaki Sentaku" src="https://voir-anime.to/wp-content/uploads/2020/06/thumb_5ee0a3d5260bf.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-gaiden-kuinaki-sentaku/'>
+                Shingeki no Kyojin Gaiden: Kuinaki Sentaku                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Shingeki no Kyojin : Kuinaki Sentaku est composé de 2 OAV sortis avec les tomes 15 et 16 du manga ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-67100" class='item asp_r_pagepost asp_r_pagepost_67100 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-chronicle/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/11/thumb_5fc51609275da.jpg">
+	                <img loading="lazy" alt="Shingeki no Kyojin: Chronicle" src="https://voir-anime.to/wp-content/uploads/2020/11/thumb_5fc51609275da.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-chronicle/'>
+                Shingeki no Kyojin: Chronicle                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Film recap des Saison 1,2,3 de Shingeki no Kyojin        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-51906" class='item asp_r_pagepost asp_r_pagepost_51906 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-lost-girls/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/06/thumb_5ee0a3d385a8e.png">
+	                <img loading="lazy" alt="Shingeki no Kyojin: Lost Girls" src="https://voir-anime.to/wp-content/uploads/2020/06/thumb_5ee0a3d385a8e.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-lost-girls/'>
+                Shingeki no Kyojin: Lost Girls                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Cette série de 3 OAD (vendus avec les tomes 24, 25 et 26 du manga L'Attaque des Titans) adapte ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1640" class='item asp_r_pagepost asp_r_pagepost_1640 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-no-kyojin-2/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c730ae5a7.jpg">
+	                <img loading="lazy" alt="Shingeki no Kyojin 2" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c730ae5a7.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-no-kyojin-2/'>
+                Shingeki no Kyojin 2                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de Shingeki no Kyojin Suite aux événements impliquant Annie et Eren, tous les membres de ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1644" class='item asp_r_pagepost asp_r_pagepost_1644 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/shingeki-kyojin-chuugakkou/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c7349273e.jpg">
+	                <img loading="lazy" alt="Shingeki! Kyojin Chuugakkou" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c7349273e.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/shingeki-kyojin-chuugakkou/'>
+                Shingeki! Kyojin Chuugakkou                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Shingeki! Kyojin Chuugakkou est une parodie de Shingeki no Kyojin (l'Attaque des Titans) et reprend ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":12,"full_results_count":12,"results":[{"id":1638,"blogid":1,"title":"Shingeki no Kyojin","post_title":"Shingeki no Kyojin","content":"Dans un monde ravag\u00e9 par des titans mangeurs d\u2019homme depuis plus d\u2019un si\u00e8cle, les rares survivants ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c72eae2c7.jpg","date":"2020-01-05 12:07:51","post_date":"2020-01-05 12:07:51","post_modified":"2020-01-05 12:07:51","menu_order":0,"relevance":1302052,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin\/"},{"id":3047,"blogid":1,"title":"Shingeki no Kyojin: Kakusei no Houkou","post_title":"Shingeki no Kyojin: Kakusei no Houkou","content":"Ce film reprend les \u00e9v\u00e9nements de la seconde saison.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1365a64dca7.png","date":"2020-01-08 21:46:48","post_date":"2020-01-08 21:46:48","post_modified":"2020-01-08 21:46:49","menu_order":0,"relevance":1102376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-kakusei-no-houkou\/"},{"id":3045,"blogid":1,"title":"Shingeki no Kyojin Zenpen: Guren no Yumiya","post_title":"Shingeki no Kyojin Zenpen: Guren no Yumiya","content":"Ce film compilera, en version remast\u00e9ris\u00e9e, les \u00e9pisodes 1 \u00e0 13 de l'anime Shingeki no Kyojin ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1365a481ffd.jpg","date":"2020-01-08 21:45:38","post_date":"2020-01-08 21:45:38","post_modified":"2020-11-10 08:03:28","menu_order":0,"relevance":1102376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-zenpen-guren-no-yumiya\/"},{"id":3043,"blogid":1,"title":"Shingeki no Kyojin Kouhen: Jiyuu no Tsubasa","post_title":"Shingeki no Kyojin Kouhen: Jiyuu no Tsubasa","content":"Ce film compilera, en version remast\u00e9ris\u00e9e, les \u00e9pisodes 14 \u00e0 25 de l'anime Shingeki no Kyojin ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1365a289a5b.jpg","date":"2020-01-08 21:44:36","post_date":"2020-01-08 21:44:36","post_modified":"2020-11-10 08:03:18","menu_order":0,"relevance":1102376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-kouhen-jiyuu-no-tsubasa\/"},{"id":1642,"blogid":1,"title":"Shingeki no Kyojin 3","post_title":"Shingeki no Kyojin 3","content":"Saison 3 de Shingeki no Kyojin Le bataillon a r\u00e9ussi \u00e0 r\u00e9cup\u00e9rer Eren, mais le titan colossal et le ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c732c6bcb.jpg","date":"2020-01-05 12:10:32","post_date":"2020-01-05 12:10:32","post_modified":"2020-04-13 01:43:45","menu_order":0,"relevance":1102284,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-3\/"},{"id":67212,"blogid":1,"title":"Shingeki no Kyojin 4 : The Final Season","post_title":"Shingeki no Kyojin 4 : The Final Season","content":"Saison 4 de Shingeki no Kyojin Toutes les parties de la saison finale seront regroup\u00e9 ici","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/06\/thumb_5eee57f3231d0.jpg","date":"2020-12-06 23:16:44","post_date":"2020-12-06 23:16:44","post_modified":"2023-03-05 17:33:19","menu_order":0,"relevance":1102204,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-the-final-season\/"},{"id":51904,"blogid":1,"title":"Shingeki no Kyojin OVA","post_title":"Shingeki no Kyojin OVA","content":"-OAV 1: Ilse no Techou L'histoire se centre sur un \u00e9trange journal trouv\u00e9 par Erwin et Levi. Ce ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/06\/thumb_5ee0a3d26a45b.png","date":"2020-06-10 10:01:03","post_date":"2020-06-10 10:01:03","post_modified":"2020-11-10 08:03:47","menu_order":0,"relevance":1102140,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":6,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-ova\/"},{"id":51908,"blogid":1,"title":"Shingeki no Kyojin Gaiden: Kuinaki Sentaku","post_title":"Shingeki no Kyojin Gaiden: Kuinaki Sentaku","content":"Shingeki no Kyojin : Kuinaki Sentaku est compos\u00e9 de 2 OAV sortis avec les tomes 15 et 16 du manga ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/06\/thumb_5ee0a3d5260bf.png","date":"2020-06-10 09:54:45","post_date":"2020-06-10 09:54:45","post_modified":"2020-11-10 08:03:35","menu_order":0,"relevance":1102076,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":7,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-gaiden-kuinaki-sentaku\/"},{"id":67100,"blogid":1,"title":"Shingeki no Kyojin: Chronicle","post_title":"Shingeki no Kyojin: Chronicle","content":"Film recap des Saison 1,2,3 de Shingeki no Kyojin","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/11\/thumb_5fc51609275da.jpg","date":"2020-11-30 18:45:05","post_date":"2020-11-30 18:45:05","post_modified":"2020-12-05 13:12:35","menu_order":0,"relevance":1102052,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":8,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-chronicle\/"},{"id":51906,"blogid":1,"title":"Shingeki no Kyojin: Lost Girls","post_title":"Shingeki no Kyojin: Lost Girls","content":"Cette s\u00e9rie de 3 OAD (vendus avec les tomes 24, 25 et 26 du manga L'Attaque des Titans) adapte ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/06\/thumb_5ee0a3d385a8e.png","date":"2020-06-10 10:03:42","post_date":"2020-06-10 10:03:42","post_modified":"2020-11-10 08:03:58","menu_order":0,"relevance":1102052,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":9,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-lost-girls\/"},{"id":1640,"blogid":1,"title":"Shingeki no Kyojin 2","post_title":"Shingeki no Kyojin 2","content":"Saison 2 de Shingeki no Kyojin Suite aux \u00e9v\u00e9nements impliquant Annie et Eren, tous les membres de ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c730ae5a7.jpg","date":"2020-01-05 12:08:39","post_date":"2020-01-05 12:08:39","post_modified":"2020-01-05 12:10:21","menu_order":0,"relevance":1102052,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":10,"link":"https:\/\/voir-anime.to\/anime\/shingeki-no-kyojin-2\/"},{"id":1644,"blogid":1,"title":"Shingeki! Kyojin Chuugakkou","post_title":"Shingeki! Kyojin Chuugakkou","content":"Shingeki! Kyojin Chuugakkou est une parodie de Shingeki no Kyojin (l'Attaque des Titans) et reprend ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c7349273e.jpg","date":"2020-01-05 12:11:02","post_date":"2020-01-05 12:11:02","post_modified":"2020-12-12 19:56:13","menu_order":0,"relevance":1010120,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":11,"link":"https:\/\/voir-anime.to\/anime\/shingeki-kyojin-chuugakkou\/"}]}___ASPEND_DATA___

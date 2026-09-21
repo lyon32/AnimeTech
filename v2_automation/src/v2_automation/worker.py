@@ -128,12 +128,15 @@ def _lease_expired(expires_at: str, now: str) -> bool:
 
 # ── worker loop ──────────────────────────────────────────────────────────────────
 
-def system_snapshot() -> dict[str, float | None]:
+def system_snapshot(path=None) -> dict[str, float | None]:
     """Live host signals for the dynamic scheduler (CPU, RAM, free disk); None when unreadable."""
     try:
         import psutil
         from . import app_config
-        p = app_config.DATA_DIR if app_config.DATA_DIR.exists() else app_config.DATA_DIR.parent
+        from pathlib import Path
+        p = Path(path) if path else app_config.DATA_DIR
+        while not p.exists() and p != p.parent:
+            p = p.parent
         return {"cpu_percent": psutil.cpu_percent(interval=None),
                 "ram_percent": psutil.virtual_memory().percent,
                 "free_disk_bytes": float(psutil.disk_usage(str(p)).free)}
@@ -148,7 +151,7 @@ def run_worker(cfg, conn: sqlite3.Connection | None = None, *,
                cleanup_every_s: float = DEFAULT_CLEANUP_EVERY_S,
                reconcile_every_s: float = DEFAULT_RECONCILE_EVERY_S,
                capacity_fn=None, discovery=None, scheduler=None,
-               system_fn: Callable[[], dict] | None = None) -> dict[str, Any]:
+               system_fn: Callable[[], dict] | None = None, user_side=None) -> dict[str, Any]:
     """Blocking worker loop.  `process_episode`, `discovery`, `scheduler` and `system_fn` are
     injectable for tests; by default a real DownloadManager, a DiscoveryScheduler (30-minute polling)
     and the DynamicScheduler (CPU / RAM / disk / throughput aware) are bound to `cfg`."""
@@ -190,7 +193,8 @@ def run_worker(cfg, conn: sqlite3.Connection | None = None, *,
     qm = queues.QueueManager(conn)
     sched = scheduler or DynamicScheduler({**(cfg.queues or {}),
                                            "min_free_disk_bytes": (cfg.downloads or {}).get("min_free_disk_bytes", 0)})
-    system_fn = system_fn or system_snapshot
+    dl_dir = (cfg.downloads or {}).get("dir")
+    system_fn = system_fn or (lambda: system_snapshot(dl_dir))   # l'espace libre surveillé est celui du disque des vidéos
     last_cleanup = time.monotonic()
     last_reconcile = time.monotonic()
     last_persist_check = 0.0
@@ -211,6 +215,12 @@ def run_worker(cfg, conn: sqlite3.Connection | None = None, *,
         from .discovery import DiscoveryScheduler
         discovery = DiscoveryScheduler(conn, cfg, alert=alerter)
     disk_alerted = False
+    if user_side is None and getattr(cfg, "user_bot_token", ""):
+        from .user_side import UserSide          # user requests share this worker, this database and this download engine
+        user_side = UserSide(cfg, conn)
+    if user_side is not None:
+        user_side.recover()
+        user_side.start_bot(stop)
     try:
         while not stop.is_set():
             heartbeat(conn)
@@ -242,6 +252,13 @@ def run_worker(cfg, conn: sqlite3.Connection | None = None, *,
                         alerter(alerts.KIND_SCHEDULER_PROBLEM, "discovery", "surveillance en erreur", str(exc)[:400])
                     except Exception:
                         pass
+
+            # 1b) user requests: advance, deliver privately, notify, extra channels (never blocks the watcher)
+            if user_side is not None:
+                try:
+                    user_side.tick()
+                except Exception as exc:
+                    logger.warning("[USERSIDE] tick impossible: %s", exc)
 
             # 2) dynamic capacity: parallel downloads across animes, bounded by the host
             snap = system_fn()
@@ -321,6 +338,8 @@ def run_worker(cfg, conn: sqlite3.Connection | None = None, *,
                 discovery.shutdown(wait=True)
             except Exception:
                 pass
+        if user_side is not None:
+            user_side.close()
         release_lease(conn)
         service.clear_worker_stop(conn)
         if dispatch is not None and not stats.get("requested"):      # a stop you asked for is not a problem
@@ -354,7 +373,10 @@ def _guarded(fn: Callable, eid: int, stats: dict, active: set | None = None,
             fn(eid)
         stats["processed"] += 1
     except Exception as exc:
-        logger.exception("épisode %d: erreur non rattrapée", eid)
+        if type(exc).__name__ == "EpisodeBusy":
+            logger.info("épisode %d: déjà pris en charge par un autre worker", eid)
+        else:
+            logger.exception("épisode %d: erreur non rattrapée", eid)
     finally:
         if active is not None and lock is not None:
             with lock:

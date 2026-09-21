@@ -1,0 +1,103 @@
+___ASPSTART_HTML___<div id="asp-res-2246" class='item asp_r_pagepost asp_r_pagepost_2246 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/sword-art-online-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c7a700a77.jpg">
+	                <img loading="lazy" alt="Sword Art Online (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c7a700a77.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/sword-art-online-vf/'>
+                Sword Art Online (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Cette série raconte les aventures de Kirito qui se retrouve piégé dans un jeu massivement ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-60699" class='item asp_r_pagepost asp_r_pagepost_60699 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/sword-art-online-alternative-gun-gale-online-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c6d56bff9.jpg">
+	                <img loading="lazy" alt="Sword Art Online Alternative: Gun Gale Online (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c6d56bff9.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/sword-art-online-alternative-gun-gale-online-vf/'>
+                Sword Art Online Alternative: Gun Gale Online (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            LLENN et Pitohui sont deux amies qui se sont rencontrées grâce à Gun Gale Online et qui, depuis, ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-68721" class='item asp_r_pagepost asp_r_pagepost_68721 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/sword-art-online-alicization-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c7a8f0abf.jpg">
+	                <img loading="lazy" alt="Sword Art Online: Alicization (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c7a8f0abf.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/sword-art-online-alicization-vf/'>
+                Sword Art Online: Alicization (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            L'histoire se déroule dans un tout nouveau monde virtuel : l'Underworld. A la demande de Seijirô ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-91610" class='item asp_r_pagepost asp_r_pagepost_91610 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/sword-art-online-progressive-hoshinaki-yoru-no-aria-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/11/thumb_5fb87de6ca924.png">
+	                <img loading="lazy" alt="Sword Art Online: Progressive &#8211; Hoshinaki Yoru no Aria (VF)" src="https://voir-anime.to/wp-content/uploads/2020/11/thumb_5fb87de6ca924.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/sword-art-online-progressive-hoshinaki-yoru-no-aria-vf/'>
+                Sword Art Online: Progressive &#8211; Hoshinaki Yoru no Aria (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce nouvel opus de la saga Sword Art Online est un reboot de la conquête de Aincrad. Il suit plus ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-86738" class='item asp_r_pagepost asp_r_pagepost_86738 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/sword-art-online-alicization-war-of-underworld-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dba34a9ba.jpg">
+	                <img loading="lazy" alt="Sword Art Online: Alicization &#8211; War of Underworld (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dba34a9ba.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/sword-art-online-alicization-war-of-underworld-vf/'>
+                Sword Art Online: Alicization &#8211; War of Underworld (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Cette saison adapte la suite de l'arc Alicization. Après un âpre combat qui les a considérablement ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2247" class='item asp_r_pagepost asp_r_pagepost_2247 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/sword-art-online-ii-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c7ace1220.jpg">
+	                <img loading="lazy" alt="Sword Art Online II (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c7ace1220.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/sword-art-online-ii-vf/'>
+                Sword Art Online II (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Sword Art Online II est la seconde saison de l'anime Sword Art Online. L'histoire de cette nouvelle ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":6,"full_results_count":6,"results":[{"id":2246,"blogid":1,"title":"Sword Art Online (VF)","post_title":"Sword Art Online (VF)","content":"Cette s\u00e9rie raconte les aventures de Kirito qui se retrouve pi\u00e9g\u00e9 dans un jeu massivement ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c7a700a77.jpg","date":"2020-01-06 11:19:36","post_date":"2020-01-06 11:19:36","post_modified":"2020-01-06 11:19:36","menu_order":0,"relevance":1102364,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/sword-art-online-vf\/"},{"id":60699,"blogid":1,"title":"Sword Art Online Alternative: Gun Gale Online (VF)","post_title":"Sword Art Online Alternative: Gun Gale Online (VF)","content":"LLENN et Pitohui sont deux amies qui se sont rencontr\u00e9es gr\u00e2ce \u00e0 Gun Gale Online et qui, depuis, ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c6d56bff9.jpg","date":"2020-10-14 14:31:52","post_date":"2020-10-14 14:31:52","post_modified":"2024-10-19 16:09:58","menu_order":0,"relevance":1102328,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/sword-art-online-alternative-gun-gale-online-vf\/"},{"id":68721,"blogid":1,"title":"Sword Art Online: Alicization (VF)","post_title":"Sword Art Online: Alicization (VF)","content":"L'histoire se d\u00e9roule dans un tout nouveau monde virtuel : l'Underworld. A la demande de Seijir\u00f4 ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c7a8f0abf.jpg","date":"2021-01-05 18:16:02","post_date":"2021-01-05 18:16:02","post_modified":"2021-01-05 18:16:02","menu_order":0,"relevance":1102284,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/sword-art-online-alicization-vf\/"},{"id":91610,"blogid":1,"title":"Sword Art Online: Progressive &#8211; Hoshinaki Yoru no Aria (VF)","post_title":"Sword Art Online: Progressive - Hoshinaki Yoru no Aria (VF)","content":"Ce nouvel opus de la saga Sword Art Online est un reboot de la conqu\u00eate de Aincrad. Il suit plus ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/11\/thumb_5fb87de6ca924.png","date":"2022-11-28 18:03:04","post_date":"2022-11-28 18:03:04","post_modified":"2022-11-28 18:03:05","menu_order":0,"relevance":1102204,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/sword-art-online-progressive-hoshinaki-yoru-no-aria-vf\/"},{"id":86738,"blogid":1,"title":"Sword Art Online: Alicization &#8211; War of Underworld (VF)","post_title":"Sword Art Online: Alicization - War of Underworld (VF)","content":"Cette saison adapte la suite de l'arc Alicization. Apr\u00e8s un \u00e2pre combat qui les a consid\u00e9rablement ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11dba34a9ba.jpg","date":"2021-12-27 09:30:32","post_date":"2021-12-27 09:30:32","post_modified":"2021-12-27 09:30:34","menu_order":0,"relevance":1102204,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/sword-art-online-alicization-war-of-underworld-vf\/"},{"id":2247,"blogid":1,"title":"Sword Art Online II (VF)","post_title":"Sword Art Online II (VF)","content":"Sword Art Online II est la seconde saison de l'anime Sword Art Online. L'histoire de cette nouvelle ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c7ace1220.jpg","date":"2020-01-06 11:19:43","post_date":"2020-01-06 11:19:43","post_modified":"2020-01-06 11:19:43","menu_order":0,"relevance":1102204,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/sword-art-online-ii-vf\/"}]}___ASPEND_DATA___

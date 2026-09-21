@@ -1,0 +1,18 @@
+___ASPSTART_HTML___<div id="asp-res-114600" class='item asp_r_pagepost asp_r_pagepost_114600 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/black-torch-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2026/06/thumb_6a2d8d584e329.jpg">
+	                <img loading="lazy" alt="Black Torch (VF)" src="https://voir-anime.to/wp-content/uploads/2026/06/thumb_6a2d8d584e329.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/black-torch-vf/'>
+                Black Torch (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Jiro n'aspire qu'à vivre tranquille, et pourtant c'est un véritable aimant à problèmes : non ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":1,"full_results_count":1,"results":[{"id":114600,"blogid":1,"title":"Black Torch (VF)","post_title":"Black Torch (VF)","content":"Jiro n'aspire qu'\u00e0 vivre tranquille, et pourtant c'est un v\u00e9ritable aimant \u00e0 probl\u00e8mes : non ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2026\/06\/thumb_6a2d8d584e329.jpg","date":"2026-07-04 17:22:05","post_date":"2026-07-04 17:22:05","post_modified":"2026-07-04 17:22:05","menu_order":0,"relevance":1110672,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/black-torch-vf\/"}]}___ASPEND_DATA___

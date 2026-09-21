@@ -48,6 +48,9 @@ def conn(tmp_path: Path):
     c.execute("PRAGMA foreign_keys=ON")
     db.migrate(c)
     yield c
+    sched = getattr(_cycle, "sched", None)              # a discovery thread may still be writing after the cycle is recorded:
+    if sched is not None and sched.conn is c:           # wait for it, closing the connection under it crashes the interpreter
+        sched.shutdown(wait=True)
     c.close()
 
 

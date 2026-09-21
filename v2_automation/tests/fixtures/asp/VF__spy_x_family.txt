@@ -1,0 +1,69 @@
+___ASPSTART_HTML___<div id="asp-res-88154" class='item asp_r_pagepost asp_r_pagepost_88154 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/spyxfamily-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/01/thumb_61da093424e9b.png">
+	                <img loading="lazy" alt="SPY×FAMILY (VF)" src="https://voir-anime.to/wp-content/uploads/2022/01/thumb_61da093424e9b.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/spyxfamily-vf/'>
+                SPY×FAMILY (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Twilight, le plus grand espion du monde, doit pour sa nouvelle mission créer une famille de toutes ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-109773" class='item asp_r_pagepost asp_r_pagepost_109773 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/spyxfamily-3-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2025/09/thumb_68c8212452ec7.jpg">
+	                <img loading="lazy" alt="SPY×FAMILY 3 (VF)" src="https://voir-anime.to/wp-content/uploads/2025/09/thumb_68c8212452ec7.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/spyxfamily-3-vf/'>
+                SPY×FAMILY 3 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de "SPY×FAMILY"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-101851" class='item asp_r_pagepost asp_r_pagepost_101851 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/spyxfamily-code-white-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/09/thumb_66db1b7ba4d00.jpg">
+	                <img loading="lazy" alt="SPY×FAMILY CODE: White (VF)" src="https://voir-anime.to/wp-content/uploads/2024/09/thumb_66db1b7ba4d00.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/spyxfamily-code-white-vf/'>
+                SPY×FAMILY CODE: White (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Loid est un espion, Yor est une tueuse à gage. Ensemble, ils mènent une double vie tout en ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-97267" class='item asp_r_pagepost asp_r_pagepost_97267 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/spyxfamily-2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/09/thumb_650d6d4f064c5.jpg">
+	                <img loading="lazy" alt="SPY×FAMILY 2 (VF)" src="https://voir-anime.to/wp-content/uploads/2023/09/thumb_650d6d4f064c5.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/spyxfamily-2-vf/'>
+                SPY×FAMILY 2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de "SPY×FAMILY"        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":4,"full_results_count":4,"results":[{"id":88154,"blogid":1,"title":"SPY\u00d7FAMILY (VF)","post_title":"SPY\u00d7FAMILY (VF)","content":"Twilight, le plus grand espion du monde, doit pour sa nouvelle mission cr\u00e9er une famille de toutes ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/01\/thumb_61da093424e9b.png","date":"2022-04-24 17:05:09","post_date":"2022-04-24 17:05:09","post_modified":"2022-04-24 17:05:10","menu_order":0,"relevance":1003192,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/spyxfamily-vf\/"},{"id":109773,"blogid":1,"title":"SPY\u00d7FAMILY 3 (VF)","post_title":"SPY\u00d7FAMILY 3 (VF)","content":"Saison 3 de \"SPY\u00d7FAMILY\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2025\/09\/thumb_68c8212452ec7.jpg","date":"2025-10-26 09:33:48","post_date":"2025-10-26 09:33:48","post_modified":"2025-10-26 09:33:48","menu_order":0,"relevance":1002608,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/spyxfamily-3-vf\/"},{"id":101851,"blogid":1,"title":"SPY\u00d7FAMILY CODE: White (VF)","post_title":"SPY\u00d7FAMILY CODE: White (VF)","content":"Loid est un espion, Yor est une tueuse \u00e0 gage. Ensemble, ils m\u00e8nent une double vie tout en ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/09\/thumb_66db1b7ba4d00.jpg","date":"2024-09-06 15:15:00","post_date":"2024-09-06 15:15:00","post_modified":"2024-09-06 15:15:00","menu_order":0,"relevance":1002608,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/spyxfamily-code-white-vf\/"},{"id":97267,"blogid":1,"title":"SPY\u00d7FAMILY 2 (VF)","post_title":"SPY\u00d7FAMILY 2 (VF)","content":"Saison 2 de \"SPY\u00d7FAMILY\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/09\/thumb_650d6d4f064c5.jpg","date":"2023-10-29 08:56:00","post_date":"2023-10-29 08:56:00","post_modified":"2023-10-29 08:56:00","menu_order":0,"relevance":1002608,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/spyxfamily-2-vf\/"}]}___ASPEND_DATA___

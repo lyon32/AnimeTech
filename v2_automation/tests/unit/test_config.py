@@ -27,7 +27,8 @@ def test_no_real_secrets_in_repo_examples():
                 continue
             key, _, val = line.partition("=")
             val = val.strip().strip('"').strip("'")
-            looks_placeholder = ("x" in val.lower()        # AAxx... tokens placeholders
+            looks_placeholder = (("<" in val and ">" in val)  # <COLLER_LE_TOKEN...> : explicit placeholder (commit 957b6f8)
+                                 or "x" in val.lower()        # AAxx... tokens placeholders
                                  or val.endswith("0000")   # -1000000000000 / 0000 hash
                                  or val == "12345678"
                                  or val.isdigit()          # admin ids / api ids placeholders

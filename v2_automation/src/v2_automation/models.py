@@ -44,6 +44,12 @@ class Episode:
     first_attempt_at: str | None = None
     last_attempt_at: str | None = None
     next_retry_at: str | None = None
+    media_key: str | None = None          # deterministic media identity (media.py); shared by watcher and users
+    media_ref: str | None = None          # its readable form: source|anime_id|season|episode|version
+    claimed_by: str | None = None         # who is processing it right now (see repo.claim_media)
+    claimed_at: str | None = None
+    origin: str = "watcher"               # who first asked for it: watcher | user
+    publish_channel: int = 1              # 1 = published to the channel(s); 0 = private delivery only
     created_at: str = field(default_factory=_now)
     updated_at: str = field(default_factory=_now)
 

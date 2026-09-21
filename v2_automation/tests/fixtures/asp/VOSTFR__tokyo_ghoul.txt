@@ -1,0 +1,103 @@
+___ASPSTART_HTML___<div id="asp-res-1835" class='item asp_r_pagepost asp_r_pagepost_1835 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoul/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd5fde801.jpg">
+	                <img loading="lazy" alt="Tokyo Ghoul" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd5fde801.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoul/'>
+                Tokyo Ghoul                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Tokyo est devenue une ville cruelle et impitoyable, un endroit où des créatures vicieuses appelées ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1837" class='item asp_r_pagepost asp_r_pagepost_1837 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoul-%e2%88%9aa-x/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd61d4cec.jpg">
+	                <img loading="lazy" alt="Tokyo Ghoul √A" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd61d4cec.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoul-%e2%88%9aa-x/'>
+                Tokyo Ghoul √A                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de l'anime Tokyo Ghoul. Kaneki Ken accepte enfin son côté goule et décide d'affronter ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3975" class='item asp_r_pagepost asp_r_pagepost_3975 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoulre-2/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1f4fd49e0ea.png">
+	                <img loading="lazy" alt="Tokyo Ghoul:re 2" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1f4fd49e0ea.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoulre-2/'>
+                Tokyo Ghoul:re 2                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Il s'agit de la seconde saison de la série animée Tokyo Ghoul:re.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1839" class='item asp_r_pagepost asp_r_pagepost_1839 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoulre/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd63e2a89.jpg">
+	                <img loading="lazy" alt="Tokyo Ghoul:re" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11dd63e2a89.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoulre/'>
+                Tokyo Ghoul:re                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de Tokyo Ghoul Deux ans après les événements qui ont impliqué les goules du 20ème et le ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79166" class='item asp_r_pagepost asp_r_pagepost_79166 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoul-jack/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc61a5624.png">
+	                <img loading="lazy" alt="Tokyo Ghoul: JACK" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc61a5624.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoul-jack/'>
+                Tokyo Ghoul: JACK                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Spin-off qui fait office de prequel du manga Tokyo Ghoul où l'on suit Kishô Arima et Taishi Fura ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79164" class='item asp_r_pagepost asp_r_pagepost_79164 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tokyo-ghoul-pinto/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc6111d16.jpg">
+	                <img loading="lazy" alt="Tokyo Ghoul: PINTO" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc6111d16.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tokyo-ghoul-pinto/'>
+                Tokyo Ghoul: PINTO                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            D'abord raconté dans le premier light novel de Tokyo Ghoul intitulé Hibi, l'histoire se centre sur ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":6,"full_results_count":6,"results":[{"id":1835,"blogid":1,"title":"Tokyo Ghoul","post_title":"Tokyo Ghoul","content":"Tokyo est devenue une ville cruelle et impitoyable, un endroit o\u00f9 des cr\u00e9atures vicieuses appel\u00e9es ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11dd5fde801.jpg","date":"2020-01-05 14:09:27","post_date":"2020-01-05 14:09:27","post_modified":"2020-01-05 14:09:27","menu_order":0,"relevance":1302392,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoul\/"},{"id":1837,"blogid":1,"title":"Tokyo Ghoul \u221aA","post_title":"Tokyo Ghoul \u221aA","content":"Saison 2 de l'anime Tokyo Ghoul. Kaneki Ken accepte enfin son c\u00f4t\u00e9 goule et d\u00e9cide d'affronter ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11dd61d4cec.jpg","date":"2020-01-05 14:09:40","post_date":"2020-01-05 14:09:40","post_modified":"2021-06-12 10:30:32","menu_order":0,"relevance":1102632,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoul-%e2%88%9aa-x\/"},{"id":3975,"blogid":1,"title":"Tokyo Ghoul:re 2","post_title":"Tokyo Ghoul:re 2","content":"Il s'agit de la seconde saison de la s\u00e9rie anim\u00e9e Tokyo Ghoul:re.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1f4fd49e0ea.png","date":"2020-01-15 17:46:24","post_date":"2020-01-15 17:46:24","post_modified":"2020-01-15 17:46:24","menu_order":0,"relevance":1102536,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoulre-2\/"},{"id":1839,"blogid":1,"title":"Tokyo Ghoul:re","post_title":"Tokyo Ghoul:re","content":"Saison 3 de Tokyo Ghoul Deux ans apr\u00e8s les \u00e9v\u00e9nements qui ont impliqu\u00e9 les goules du 20\u00e8me et le ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11dd63e2a89.jpg","date":"2020-01-05 14:10:43","post_date":"2020-01-05 14:10:43","post_modified":"2020-01-05 14:10:43","menu_order":0,"relevance":1102536,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoulre\/"},{"id":79166,"blogid":1,"title":"Tokyo Ghoul: JACK","post_title":"Tokyo Ghoul: JACK","content":"Spin-off qui fait office de prequel du manga Tokyo Ghoul o\u00f9 l'on suit Kish\u00f4 Arima et Taishi Fura ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dc61a5624.png","date":"2021-03-05 09:21:06","post_date":"2021-03-05 09:21:06","post_modified":"2021-03-05 09:21:06","menu_order":0,"relevance":1102392,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoul-jack\/"},{"id":79164,"blogid":1,"title":"Tokyo Ghoul: PINTO","post_title":"Tokyo Ghoul: PINTO","content":"D'abord racont\u00e9 dans le premier light novel de Tokyo Ghoul intitul\u00e9 Hibi, l'histoire se centre sur ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dc6111d16.jpg","date":"2021-03-05 09:22:31","post_date":"2021-03-05 09:22:31","post_modified":"2021-03-05 09:22:31","menu_order":0,"relevance":1102112,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/tokyo-ghoul-pinto\/"}]}___ASPEND_DATA___

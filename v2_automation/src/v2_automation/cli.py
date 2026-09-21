@@ -35,6 +35,9 @@ def cmd_serve(args):
     mon = cfg.monitoring
     host = args.host or mon.get("web_host", "127.0.0.1")
     port = args.port or int(mon.get("web_port", 8085))
+    from . import web_auth
+    if web_auth.WebAuth.from_env() is None:      # authentication is optional: enabled as soon as ADMIN_WEB_PASSWORD(_HASH) is set
+        print("panneau web sans authentification (127.0.0.1 uniquement) : définissez ADMIN_WEB_PASSWORD pour l'activer.")
     import uvicorn
     uvicorn.run("v2_automation.web:app", host=host, port=port, log_level="warning")
 

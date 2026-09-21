@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>Demandes utilisateurs</title>
+<link rel="stylesheet" href="/ui/app.css">
+<style>
+  body{margin:0;padding:16px 20px;background:var(--bg,#14171c);color:var(--fg,#e6e8eb);font:14px/1.45 system-ui,sans-serif}
+  nav.v2{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 14px}
+  nav.v2 a,nav.v2 button,.act{background:#1c2128;color:inherit;border:1px solid #333b46;border-radius:8px;padding:6px 12px;cursor:pointer;text-decoration:none;font:inherit}
+  nav.v2 a[aria-current=page]{background:#33d6a0;color:#06251c;border-color:#33d6a0;font-weight:600}
+  table{width:100%;border-collapse:collapse}th,td{text-align:left;padding:6px 8px;border-bottom:1px solid #262d36;vertical-align:top}
+  th{color:#9aa4b0;font-weight:500;font-size:12px;text-transform:uppercase;letter-spacing:.04em}
+  .st{padding:1px 8px;border-radius:99px;background:#262d36;font-size:12px}.st.COMPLETED,.st.sent{background:#12382c;color:#5be3b5}
+  .st.FAILED,.st.failed,.st.uncertain,.st.EXPIRED{background:#3d1f1f;color:#ff9c9c}.st.WAITING_FOR_MEDIA{background:#3a3117;color:#ffd166}
+  .muted{color:#9aa4b0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:10px}.card{background:#1c2128;border:1px solid #262d36;border-radius:10px;padding:12px}
+  .card b{display:block;font-size:22px}#msg{position:fixed;right:16px;bottom:16px;background:#1c2128;border:1px solid #33d6a0;border-radius:8px;padding:10px 14px;display:none}
+  @media(max-width:700px){table{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<h1 style="margin:0 0 10px;font-size:20px">Demandes utilisateurs <a class="muted" href="/" style="font-size:13px;margin-left:12px">← panneau principal</a></h1>
+<nav class="v2" id="tabs" aria-label="Sections"></nav>
+<main id="view" tabindex="-1"></main>
+<div id="msg" role="status" aria-live="polite"></div>
+<script>
+const TABS={activity:'Activité du bot',requests:'Demandes',users:'Utilisateurs',deliveries:'Livraisons',telegram:'Telegram',stats:'Statistiques',audit:"Journal d'audit"};
+const $=s=>document.querySelector(s), esc=t=>String(t??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function api(path,opt){const r=await fetch(path,opt);if(r.status===401){location.href='/';return null}
+  const j=await r.json().catch(()=>({}));if(!r.ok)throw new Error(j.detail||r.status);return j}
+function toast(t){const m=$('#msg');m.textContent=t;m.style.display='block';setTimeout(()=>m.style.display='none',3500)}
+async function post(path,body,confirmText){if(confirmText&&!confirm(confirmText))return;
+  try{const r=await api(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({...body,confirm:!!confirmText})});
+    toast(r?.message||'OK');show(current)}catch(e){toast('Refusé : '+e.message)}}
+const st=s=>`<span class="st ${esc(s)}">${esc(s)}</span>`;
+const table=(head,rows)=>`<table><thead><tr>${head.map(h=>`<th>${h}</th>`).join('')}</tr></thead><tbody>${rows.join('')||`<tr><td colspan="${head.length}" class="muted">Aucune donnée.</td></tr>`}</tbody></table>`;
+const V={
+ async activity(){const d=await api('/api/bot-activity');const step={idle:'au repos',choose_series:'choisit la série',choose_season:'choisit la saison',choose_version:'choisit la version',choose_episode:"choisit l'épisode",await_number:'saisit un numéro'};
+  const note=d.requests_total===0?`<p class="muted">Aucune demande créée pour l'instant${d.conversations_in_progress?` — ${d.conversations_in_progress} conversation(s) en cours de choix (elles deviennent une demande dès que l'épisode est choisi)`:''}.</p>`:'';
+  return note+table(['Utilisateur','Pseudo','Étape','Dernière recherche','Anime choisi','Version','Demandes (actives)','Dernière activité'],
+  d.items.map(u=>`<tr><td>${u.telegram_id}</td><td>${esc(u.username||'—')}</td><td>${esc(step[u.step]||u.step||'—')}</td><td>${esc(u.last_search||'')}</td><td>${esc(u.chosen||'')}</td><td>${esc(u.version||'')}</td><td>${u.requests_total} (${u.requests_active})</td><td>${esc(u.updated_at||u.last_seen_at)}</td></tr>`))},
+ async requests(){const d=await api('/api/requests?limit=100');return table(['#','Utilisateur','Anime','Saison','Épisode','Version','État','Progression','Créée','Expire','Erreur',''],
+  d.items.map(r=>`<tr><td>${r.id}</td><td>${r.user_id}${r.username?` <span class=muted>@${esc(r.username)}</span>`:''}</td><td>${esc(r.title||r.anime_key)}</td><td>${r.season??'—'}</td><td>${r.kind==='season'?'saison':(r.episode_number??'dernier')}</td><td>${esc(r.version)}</td><td>${st(r.state)}</td><td>${r.progress.done}/${r.progress.total}</td><td>${esc(r.created_at)}</td><td>${esc(r.expires_at||'')}</td><td>${esc(r.error_code||'')} <span class=muted>${esc(r.last_error||'')}</span></td>
+  <td>${['COMPLETED','CANCELLED','EXPIRED','FAILED'].includes(r.state)?'':`<button class="act" onclick="post('/api/requests/${r.id}/cancel',{},'Annuler la demande #${r.id} ?')">Annuler</button>`}</td></tr>`))},
+ async users(){const d=await api('/api/users');return table(['Telegram ID','Pseudo','Accès','Vérifié','Demandes','Actives','Envois','Vu'],
+  d.items.map(u=>`<tr><td>${u.telegram_id}</td><td>${esc(u.username||'—')}</td><td>${st(u.access_status)}</td><td>${esc(u.access_checked_at||'')}</td><td>${u.requests_total}</td><td>${u.requests_active}</td><td>${u.deliveries_sent}</td><td>${esc(u.last_seen_at)}</td></tr>`))},
+ async deliveries(){const d=await api('/api/deliveries');return table(['#','Demande','Utilisateur','Média','Statut','Méthode','Essais','Erreur',''],
+  d.items.map(x=>`<tr><td>${x.id}</td><td>${x.request_id??'admin'}</td><td>${x.user_id}</td><td>${esc(x.anime_key)} E${x.episode_number??'?'} ${esc(x.language)}</td><td>${st(x.status)}</td><td>${esc(x.method||'')}</td><td>${x.attempt_count}</td><td>${esc(x.last_error||'')}</td>
+  <td>${['failed','uncertain'].includes(x.status)?`<button class="act" onclick="post('/api/deliveries/${x.id}/retry',{},'Relancer l\\'envoi #${x.id} ? ${x.status==='uncertain'?'Il est peut-être déjà arrivé (doublon possible).':''}')">Relancer</button>`:''}</td></tr>`))},
+ async telegram(){const t=await api('/api/telegram');const b=t.bot_api;return `<div class="grid">
+  <div class="card">Bot API<b>${b.mode==='local'?'Local Bot API':'Standard'}</b><span class="muted">upload par chemin : ${b.upload_by_file_path?'oui':'non'} · serveur ${esc(t.capacity.server_version||'?')} · getMe ${t.capacity.getme_ok?'✓':'✗'}</span></div>
+  <div class="card">Bots configurés<b>${[b.channel_bot_configured&&'canal',b.user_bot_configured&&'utilisateurs',b.admin_bot_configured&&'admin'].filter(Boolean).join(' · ')||'aucun'}</b></div>
+  <div class="card">Livraisons privées<b>${Object.entries(t.deliveries).map(([k,v])=>`${k}: ${v}`).join(' · ')||'—'}</b></div>
+  <div class="card">Copies multi-canaux<b>${Object.entries(t.copies).map(([k,v])=>`${k}: ${v}`).join(' · ')||'—'}</b></div></div>
+  <h3>Canaux de publication</h3>${table(['Canal','Principal'],t.channels.map(c=>`<tr><td>${esc(c.channel)}</td><td>${c.primary?'oui':''}</td></tr>`))}
+  <h3>Canaux requis pour utiliser le bot</h3>${table(['Canal'],t.required_channels.map(c=>`<tr><td>${esc(c)}</td></tr>`))}
+  <h3>Publications par discussion</h3>${table(['Chat','Messages'],Object.entries(t.publications_by_chat).map(([k,v])=>`<tr><td>${esc(k)}</td><td>${v}</td></tr>`))}`},
+ async stats(){const s=await api('/api/stats');const c=(l,v)=>`<div class="card">${l}<b>${v}</b></div>`;return `<div class="grid">${c('Utilisateurs',s.users)}${c('Demandes aujourd\'hui',s.requests_today)}${c('Livraisons aujourd\'hui',s.deliveries_today)}${c('Publiés aujourd\'hui',s.published_today)}${c('Médias partagés',s.shared_media)}${c('Actions admin',s.audit_actions)}</div>
+  <h3>Demandes par état</h3>${table(['État','Nombre'],Object.entries(s.requests).map(([k,v])=>`<tr><td>${st(k)}</td><td>${v}</td></tr>`))}`},
+ async audit(){const d=await api('/api/audit?limit=200');return table(['Date','Admin','Surface','Action','Cible','Résultat','Détail'],
+  d.items.map(a=>`<tr><td>${esc(a.ts)}</td><td>${esc(a.admin_user_id)}</td><td>${esc(a.surface)}</td><td>${esc(a.action)}</td><td>${esc(a.target||'')}</td><td>${st(a.result==='success'?'sent':'failed')} ${esc(a.result)}</td><td class=muted>${esc(a.metadata||'')}</td></tr>`))}
+};
+let current=(location.hash||'#activity').slice(1);if(!V[current])current='activity';
+function tabs(){$('#tabs').innerHTML=Object.entries(TABS).map(([k,l])=>`<a href="#${k}" ${k===current?'aria-current="page"':''}>${l}</a>`).join('')+`<button onclick="show(current)">Actualiser</button>`}
+async function show(k){current=k;tabs();try{$('#view').innerHTML=await V[k]()}catch(e){$('#view').innerHTML=`<p class="muted">Erreur : ${esc(e.message)}</p>`}}
+addEventListener('hashchange',()=>show((location.hash||'#activity').slice(1)));show(current);setInterval(()=>{if(!document.hidden)show(current)},15000);
+</script>
+</body>
+</html>

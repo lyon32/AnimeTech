@@ -1,0 +1,69 @@
+___ASPSTART_HTML___<div id="asp-res-105452" class='item asp_r_pagepost asp_r_pagepost_105452 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/code-geass-roze-of-the-recapture-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/06/thumb_6678294d89673.png">
+	                <img loading="lazy" alt="Code Geass: Rozé of the Recapture (VF)" src="https://voir-anime.to/wp-content/uploads/2024/06/thumb_6678294d89673.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/code-geass-roze-of-the-recapture-vf/'>
+                Code Geass: Rozé of the Recapture (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Il s'agit d'un nouveau projet affilié à la franchise Code Geass. L'histoire suit deux frères, Rozé ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2070" class='item asp_r_pagepost asp_r_pagepost_2070 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/code-geass-hangyaku-no-lelouch-r2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e31ddb251f.jpg">
+	                <img loading="lazy" alt="Code Geass: Hangyaku no Lelouch R2 (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e31ddb251f.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/code-geass-hangyaku-no-lelouch-r2-vf/'>
+                Code Geass: Hangyaku no Lelouch R2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            L'histoire se passe un an après l'échec de la Black Rebellion organisée par Zero. Ce dernier est ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-86994" class='item asp_r_pagepost asp_r_pagepost_86994 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/code-geass-fukkatsu-no-lelouch-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/01/thumb_61e708514c710.jpg">
+	                <img loading="lazy" alt="Code Geass: Fukkatsu no Lelouch (VF)" src="https://voir-anime.to/wp-content/uploads/2022/01/thumb_61e708514c710.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/code-geass-fukkatsu-no-lelouch-vf/'>
+                Code Geass: Fukkatsu no Lelouch (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            L'histoire suit la trame des films récapitulatifs et ignore donc certains aspects de la série qui ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2069" class='item asp_r_pagepost asp_r_pagepost_2069 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/code-geass-hangyaku-no-lelouch-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e31dc8d8aa.jpg">
+	                <img loading="lazy" alt="Code Geass: Hangyaku no Lelouch (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e31dc8d8aa.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/code-geass-hangyaku-no-lelouch-vf/'>
+                Code Geass: Hangyaku no Lelouch (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Le 10 juin 2010 du calendrier impérial, le Nouvel Empire de Britannia a écrasé les forces ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":4,"full_results_count":4,"results":[{"id":105452,"blogid":1,"title":"Code Geass: Roz\u00e9 of the Recapture (VF)","post_title":"Code Geass: Roz\u00e9 of the Recapture (VF)","content":"Il s'agit d'un nouveau projet affili\u00e9 \u00e0 la franchise Code Geass. L'histoire suit deux fr\u00e8res, Roz\u00e9 ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/06\/thumb_6678294d89673.png","date":"2025-03-06 12:54:29","post_date":"2025-03-06 12:54:29","post_modified":"2025-03-06 12:54:29","menu_order":0,"relevance":1110376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/code-geass-roze-of-the-recapture-vf\/"},{"id":2070,"blogid":1,"title":"Code Geass: Hangyaku no Lelouch R2 (VF)","post_title":"Code Geass: Hangyaku no Lelouch R2 (VF)","content":"L'histoire se passe un an apr\u00e8s l'\u00e9chec de la Black Rebellion organis\u00e9e par Zero. Ce dernier est ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e31ddb251f.jpg","date":"2020-01-05 22:56:57","post_date":"2020-01-05 22:56:57","post_modified":"2020-01-05 22:56:57","menu_order":0,"relevance":1110376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/code-geass-hangyaku-no-lelouch-r2-vf\/"},{"id":86994,"blogid":1,"title":"Code Geass: Fukkatsu no Lelouch (VF)","post_title":"Code Geass: Fukkatsu no Lelouch (VF)","content":"L'histoire suit la trame des films r\u00e9capitulatifs et ignore donc certains aspects de la s\u00e9rie qui ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/01\/thumb_61e708514c710.jpg","date":"2022-01-18 18:36:12","post_date":"2022-01-18 18:36:12","post_modified":"2022-01-18 18:36:13","menu_order":0,"relevance":1102088,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/code-geass-fukkatsu-no-lelouch-vf\/"},{"id":2069,"blogid":1,"title":"Code Geass: Hangyaku no Lelouch (VF)","post_title":"Code Geass: Hangyaku no Lelouch (VF)","content":"Le 10 juin 2010 du calendrier imp\u00e9rial, le Nouvel Empire de Britannia a \u00e9cras\u00e9 les forces ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e31dc8d8aa.jpg","date":"2020-01-05 22:57:04","post_date":"2020-01-05 22:57:04","post_modified":"2020-01-05 22:57:04","menu_order":0,"relevance":1102088,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/code-geass-hangyaku-no-lelouch-vf\/"}]}___ASPEND_DATA___

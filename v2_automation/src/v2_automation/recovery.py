@@ -42,7 +42,7 @@ def run_recovery(conn: sqlite3.Connection, cfg: app_config.AppConfig,
     decides the re-publication — never silently requeued."""
     from .alerts import KIND_RECOVERY_AFTER_CRASH, raise_alert
     now = now or now_utc()
-    report: dict[str, Any] = {"reset_to_queued": [], "publishing_to_failed": [],
+    report: dict[str, Any] = {"claims_cleared": repo.clear_claims(conn), "reset_to_queued": [], "publishing_to_failed": [],
                               "expired_to_failed": [], "dangling_queue_repaired": 0,
                               "evidence_path": None}
 
@@ -66,6 +66,23 @@ def run_recovery(conn: sqlite3.Connection, cfg: app_config.AppConfig,
         "SELECT id, status FROM episodes WHERE status IN (%s)"
         % ",".join("?" * len(RISKY_MIDFLIGHT)), RISKY_MIDFLIGHT).fetchall()
     for r in rows:
+        done = conn.execute("SELECT message_id, chat_id FROM publications WHERE episode_id=? AND "
+                            "publication_type='first_publication' AND status='sent' AND message_id IS NOT NULL",
+                            (r["id"],)).fetchone()
+        if done is not None:
+            # the video message is recorded: Telegram accepted it and only the episode row lagged behind the crash.
+            # Finish the episode from that record — nothing is sent again.
+            thumb = conn.execute("SELECT message_id FROM publications WHERE episode_id=? AND publication_type='thumbnail' "
+                                 "AND status='sent'", (r["id"],)).fetchone()
+            cdays = float((cfg.publication or {}).get("cleanup_after_days", 14))
+            conn.execute("UPDATE episodes SET status='cleanup_pending', video_message_id=?, "
+                         "thumbnail_message_id=COALESCE(?, thumbnail_message_id), last_error=NULL, "
+                         "published_at=COALESCE(published_at, ?), cleanup_at=COALESCE(cleanup_at, ?), updated_at=? WHERE id=?",
+                         (done["message_id"], thumb["message_id"] if thumb else None, now,
+                          add_seconds(now, cdays * 86400), now, r["id"]))
+            conn.execute("DELETE FROM queue_items WHERE episode_id=?", (r["id"],))
+            report.setdefault("publishing_completed_from_record", []).append({"episode_id": r["id"], "was": r["status"]})
+            continue
         repo.transition(conn, r["id"], "failed")
         repo.mark_failed(conn, r["id"],
                          "arrêt pendant publication (vignette/vidéo): risque de double "
@@ -78,6 +95,23 @@ def run_recovery(conn: sqlite3.Connection, cfg: app_config.AppConfig,
                         "requise (risque de doublon)", dispatch=dispatch)
         except Exception:
             pass  # an alert problem must never break the recovery sweep
+
+    # 1c) private-only media waiting on disk (READY): the file must still be there and intact, else produce it again
+    for r in conn.execute("SELECT id, file_path, file_size FROM episodes WHERE status='ready'").fetchall():
+        p = Path(r["file_path"]) if r["file_path"] else None
+        if p is None or not p.exists() or (r["file_size"] and p.stat().st_size != r["file_size"]):
+            ep = repo.get(conn, r["id"])
+            repo.transition(conn, ep.id, "queued")
+            repo.set_retry_until(conn, ep.id, None, 0)
+            repo.enqueue(conn, ep.anime_key, ep.id)
+            conn.execute("UPDATE queue_items SET status='queued' WHERE episode_id=?", (ep.id,))
+            report.setdefault("ready_requeued", []).append({"episode_id": ep.id})
+
+    # 1d) private deliveries interrupted mid-send: outcome unknown -> `uncertain`, never re-sent automatically
+    from .delivery import recover_deliveries
+    rd = recover_deliveries(conn, now=now)
+    if rd["uncertain"]:
+        report["deliveries_uncertain"] = rd["uncertain"]
 
     # 2) expired retry windows -> failed
     expired = conn.execute(
@@ -123,7 +157,7 @@ def run_recovery(conn: sqlite3.Connection, cfg: app_config.AppConfig,
     conn.commit()
     report["reconciled"] = reconcile_uncertain(conn, cfg)
 
-    repaired = len(report["reset_to_queued"]) + len(report["publishing_to_failed"]) \
+    repaired = report["claims_cleared"] + len(report.get("publishing_completed_from_record", [])) + len(report.get("ready_requeued", []))         + len(report.get("deliveries_uncertain", [])) + len(report["reset_to_queued"]) + len(report["publishing_to_failed"]) \
         + len(report["expired_to_failed"]) \
         + report["dangling_queue_repaired"] + report["orphan_claims_released"] \
         + report["finished_items_dropped"] \

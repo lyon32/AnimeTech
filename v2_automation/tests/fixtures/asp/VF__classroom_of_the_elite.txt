@@ -1,0 +1,69 @@
+___ASPSTART_HTML___<div id="asp-res-113465" class='item asp_r_pagepost asp_r_pagepost_113465 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/classroom-of-the-elite-4-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2026/03/thumb_69b92c3e6d272.png">
+	                <img loading="lazy" alt="Classroom of the Elite 4 (VF)" src="https://voir-anime.to/wp-content/uploads/2026/03/thumb_69b92c3e6d272.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/classroom-of-the-elite-4-vf/'>
+                Classroom of the Elite 4 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 4 de "Classroom of the Elite"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-89844" class='item asp_r_pagepost asp_r_pagepost_89844 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/classroom-of-the-elite-2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/06/thumb_62a7783048f66.png">
+	                <img loading="lazy" alt="Classroom of the Elite 2 (VF)" src="https://voir-anime.to/wp-content/uploads/2022/06/thumb_62a7783048f66.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/classroom-of-the-elite-2-vf/'>
+                Classroom of the Elite 2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de Classroom of the Elite        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-98394" class='item asp_r_pagepost asp_r_pagepost_98394 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/classroom-of-the-elite-3-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/12/thumb_6581664ea118f.jpg">
+	                <img loading="lazy" alt="Classroom of the Elite 3 (VF)" src="https://voir-anime.to/wp-content/uploads/2023/12/thumb_6581664ea118f.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/classroom-of-the-elite-3-vf/'>
+                Classroom of the Elite 3 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de "Classroom of the Elite"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-89392" class='item asp_r_pagepost asp_r_pagepost_89392 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/classroom-of-the-elite-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e31d90e43c.png">
+	                <img loading="lazy" alt="Classroom of the Elite (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e31d90e43c.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/classroom-of-the-elite-vf/'>
+                Classroom of the Elite (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Kiyotaka Ayanokôji intègre le prestigieux lycée de haut niveau de Tokyo où, une fois le diplôme en ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":4,"full_results_count":4,"results":[{"id":113465,"blogid":1,"title":"Classroom of the Elite 4 (VF)","post_title":"Classroom of the Elite 4 (VF)","content":"Saison 4 de \"Classroom of the Elite\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2026\/03\/thumb_69b92c3e6d272.png","date":"2026-05-06 20:22:16","post_date":"2026-05-06 20:22:16","post_modified":"2026-05-06 20:22:16","menu_order":0,"relevance":1102640,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/classroom-of-the-elite-4-vf\/"},{"id":89844,"blogid":1,"title":"Classroom of the Elite 2 (VF)","post_title":"Classroom of the Elite 2 (VF)","content":"Saison 2 de Classroom of the Elite","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/06\/thumb_62a7783048f66.png","date":"2022-08-28 09:00:43","post_date":"2022-08-28 09:00:43","post_modified":"2022-08-28 09:00:44","menu_order":0,"relevance":1102320,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/classroom-of-the-elite-2-vf\/"},{"id":98394,"blogid":1,"title":"Classroom of the Elite 3 (VF)","post_title":"Classroom of the Elite 3 (VF)","content":"Saison 3 de \"Classroom of the Elite\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/12\/thumb_6581664ea118f.jpg","date":"2024-01-25 10:49:06","post_date":"2024-01-25 10:49:06","post_modified":"2024-01-25 10:49:07","menu_order":0,"relevance":1102160,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/classroom-of-the-elite-3-vf\/"},{"id":89392,"blogid":1,"title":"Classroom of the Elite (VF)","post_title":"Classroom of the Elite (VF)","content":"Kiyotaka Ayanok\u00f4ji int\u00e8gre le prestigieux lyc\u00e9e de haut niveau de Tokyo o\u00f9, une fois le dipl\u00f4me en ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e31d90e43c.png","date":"2022-07-21 23:01:46","post_date":"2022-07-21 23:01:46","post_modified":"2022-07-21 23:01:47","menu_order":0,"relevance":1102160,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/classroom-of-the-elite-vf\/"}]}___ASPEND_DATA___

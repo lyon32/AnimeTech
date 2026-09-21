@@ -1,0 +1,86 @@
+___ASPSTART_HTML___<div id="asp-res-1134" class='item asp_r_pagepost asp_r_pagepost_1134 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/made-in-abyss/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e107ff998880.jpg">
+	                <img loading="lazy" alt="Made in Abyss" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e107ff998880.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/made-in-abyss/'>
+                Made in Abyss                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            À la surface de cette planète, un seul endroit demeure encore mystérieux et inexploré : un trou ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-61948" class='item asp_r_pagepost asp_r_pagepost_61948 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/made-in-abyss-dawn-of-the-deep-soul/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/11/thumb_5fa8861cdf1cc.jpg">
+	                <img loading="lazy" alt="Made in Abyss: Dawn of the Deep Soul" src="https://voir-anime.to/wp-content/uploads/2020/11/thumb_5fa8861cdf1cc.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/made-in-abyss-dawn-of-the-deep-soul/'>
+                Made in Abyss: Dawn of the Deep Soul                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film adaptera la suite des aventures de Riko, Reg et Nanachi. Suite à la guérison de Riko, le ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-88890" class='item asp_r_pagepost asp_r_pagepost_88890 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/made-in-abyss-retsujitsu-no-ougonkyou/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/06/thumb_62a7783a0ecd0.jpg">
+	                <img loading="lazy" alt="Made in Abyss 2: Retsujitsu no Ougonkyou" src="https://voir-anime.to/wp-content/uploads/2022/06/thumb_62a7783a0ecd0.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/made-in-abyss-retsujitsu-no-ougonkyou/'>
+                Made in Abyss 2: Retsujitsu no Ougonkyou                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Suite directe du film "Made in Abyss: Dawn of the Deep Soul" Après avoir affronté Bondrewd, le ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-68487" class='item asp_r_pagepost asp_r_pagepost_68487 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/made-in-abyss-tabidachi-no-yoake/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/01/thumb_5ff0450667a57.png">
+	                <img loading="lazy" alt="Made in Abyss: Tabidachi no Yoake" src="https://voir-anime.to/wp-content/uploads/2021/01/thumb_5ff0450667a57.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/made-in-abyss-tabidachi-no-yoake/'>
+                Made in Abyss: Tabidachi no Yoake                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film est une compilation reprenant le début du voyage de Riko et Reg à travers l'Abyss.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-68489" class='item asp_r_pagepost asp_r_pagepost_68489 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/made-in-abyss-hourou-suru-tasogare/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/01/thumb_5ff045082cd82.png">
+	                <img loading="lazy" alt="Made in Abyss: Hourou Suru Tasogare" src="https://voir-anime.to/wp-content/uploads/2021/01/thumb_5ff045082cd82.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/made-in-abyss-hourou-suru-tasogare/'>
+                Made in Abyss: Hourou Suru Tasogare                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film est une compilation reprenant la seconde partie de l'anime, après la rencontre de Riko et ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":5,"full_results_count":5,"results":[{"id":1134,"blogid":1,"title":"Made in Abyss","post_title":"Made in Abyss","content":"\u00c0 la surface de cette plan\u00e8te, un seul endroit demeure encore myst\u00e9rieux et inexplor\u00e9 : un trou ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e107ff998880.jpg","date":"2020-01-04 13:08:20","post_date":"2020-01-04 13:08:20","post_modified":"2020-01-04 13:08:20","menu_order":0,"relevance":1302052,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/made-in-abyss\/"},{"id":61948,"blogid":1,"title":"Made in Abyss: Dawn of the Deep Soul","post_title":"Made in Abyss: Dawn of the Deep Soul","content":"Ce film adaptera la suite des aventures de Riko, Reg et Nanachi. Suite \u00e0 la gu\u00e9rison de Riko, le ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/11\/thumb_5fa8861cdf1cc.jpg","date":"2020-11-08 23:59:00","post_date":"2020-11-08 23:59:00","post_modified":"2020-11-08 23:59:00","menu_order":0,"relevance":1110596,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/made-in-abyss-dawn-of-the-deep-soul\/"},{"id":88890,"blogid":1,"title":"Made in Abyss 2: Retsujitsu no Ougonkyou","post_title":"Made in Abyss 2: Retsujitsu no Ougonkyou","content":"Suite directe du film \"Made in Abyss: Dawn of the Deep Soul\" Apr\u00e8s avoir affront\u00e9 Bondrewd, le ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/06\/thumb_62a7783a0ecd0.jpg","date":"2022-06-13 18:19:55","post_date":"2022-06-13 18:19:55","post_modified":"2022-07-06 16:37:08","menu_order":0,"relevance":1110356,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/made-in-abyss-retsujitsu-no-ougonkyou\/"},{"id":68487,"blogid":1,"title":"Made in Abyss: Tabidachi no Yoake","post_title":"Made in Abyss: Tabidachi no Yoake","content":"Ce film est une compilation reprenant le d\u00e9but du voyage de Riko et Reg \u00e0 travers l'Abyss.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/01\/thumb_5ff0450667a57.png","date":"2021-01-03 09:33:08","post_date":"2021-01-03 09:33:08","post_modified":"2021-01-03 09:33:08","menu_order":0,"relevance":1102204,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/made-in-abyss-tabidachi-no-yoake\/"},{"id":68489,"blogid":1,"title":"Made in Abyss: Hourou Suru Tasogare","post_title":"Made in Abyss: Hourou Suru Tasogare","content":"Ce film est une compilation reprenant la seconde partie de l'anime, apr\u00e8s la rencontre de Riko et ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/01\/thumb_5ff045082cd82.png","date":"2021-01-03 09:31:52","post_date":"2021-01-03 09:31:52","post_modified":"2021-01-03 09:31:52","menu_order":0,"relevance":1102204,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/made-in-abyss-hourou-suru-tasogare\/"}]}___ASPEND_DATA___

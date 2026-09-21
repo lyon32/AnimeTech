@@ -39,7 +39,9 @@ def run_cleanup(conn: sqlite3.Connection, cfg: app_config.AppConfig,
         else float(cfg.publication.get("cleanup_after_days", 14))
     window_s = days * 86400
     rows = conn.execute(
-        "SELECT id, anime_key, file_path, file_size, video_message_id, published_at, updated_at, status "
+        "SELECT id, anime_key, file_path, file_size, video_message_id, published_at, updated_at, status, "
+        "(SELECT COUNT(*) FROM deliveries d WHERE d.media_id = episodes.id AND d.status = 'sent' "
+        " AND d.telegram_file_id IS NOT NULL) AS ref_count "
         "FROM episodes "
         "WHERE status IN ('published', 'cleanup_pending', 'cleanup_blocked') AND file_path IS NOT NULL "
         "ORDER BY id").fetchall()
@@ -48,8 +50,9 @@ def run_cleanup(conn: sqlite3.Connection, cfg: app_config.AppConfig,
     blocked: list[dict[str, Any]] = []
     skipped, errors = 0, 0
     for r in rows:
-        # only touch episodes whose video is provably published (message id set)
-        if not r["video_message_id"]:
+        # only touch episodes whose media provably lives on Telegram: a channel message id, or (private-only media) a
+        # delivered copy whose file_id we hold — the file can then be served again without the local copy
+        if not r["video_message_id"] and not r["ref_count"]:
             skipped += 1
             continue
         # NO fallback anchor: without published_at the age cannot be proven.

@@ -14,7 +14,7 @@ _EPISODE_COLS = ("anime_key", "episode_key", "source", "canonical_episode_url", 
                  "last_error_at", "media_hash", "file_size", "file_path", "thumbnail_path",
                  "thumbnail_sha256", "thumbnail_size", "thumbnail_message_id", "video_sha256",
                  "video_message_id", "published_at", "cleanup_at", "attempt_count",
-                 "first_attempt_at", "last_attempt_at", "next_retry_at",
+                 "first_attempt_at", "last_attempt_at", "next_retry_at", "media_key", "media_ref", "claimed_by", "claimed_at", "origin", "publish_channel",
                  "created_at", "updated_at")
 
 
@@ -53,6 +53,9 @@ def upsert_episode(conn: sqlite3.Connection, ep: Episode) -> tuple[int, bool]:
              ep.last_attempt_at or existing.last_attempt_at,
              ep.next_retry_at or existing.next_retry_at, now, existing.id))
         return existing.id, False
+    from . import media          # the media identity is computed in ONE place, for the watcher and the users
+    media_key, media_ref = (ep.media_key, ep.media_ref) if ep.media_key and ep.media_ref else media.identity_for(
+        conn, ep.anime_key, ep.episode_number, ep.language, ep.episode_key, season=ep.season, source=ep.source)
     cur = conn.execute(f"""
         INSERT INTO episodes ({", ".join(_EPISODE_COLS)})
         VALUES ({", ".join("?" * len(_EPISODE_COLS))})""",
@@ -62,7 +65,7 @@ def upsert_episode(conn: sqlite3.Connection, ep: Episode) -> tuple[int, bool]:
          ep.last_error_at, ep.media_hash, ep.file_size, ep.file_path, ep.thumbnail_path,
          ep.thumbnail_sha256, ep.thumbnail_size, ep.thumbnail_message_id, ep.video_sha256,
          ep.video_message_id, ep.published_at, ep.cleanup_at, ep.attempt_count,
-         ep.first_attempt_at, ep.last_attempt_at, ep.next_retry_at,
+         ep.first_attempt_at, ep.last_attempt_at, ep.next_retry_at, media_key, media_ref, ep.claimed_by, ep.claimed_at, ep.origin, ep.publish_channel,
          ep.created_at, ep.updated_at))
     return cur.lastrowid, True
 
@@ -194,6 +197,35 @@ def next_heads(conn: sqlite3.Connection, limit: int, *, now: str | None = None) 
     return [r["episode_id"] for r in rows]
 
 
+# ── the atomic claim: one owner processes a media at a time ─────────────────────────────────────────────────────
+
+CLAIM_TTL_S = 12 * 3600          # a claim older than this belongs to a dead owner (a live one is finished long before)
+
+
+def claim_media(conn: sqlite3.Connection, episode_id: int, owner: str, *, ttl_s: float = CLAIM_TTL_S) -> bool:
+    """Compare-and-set: True only for the caller that now owns the media.  "Is it free?" and "take it" are ONE statement, so
+    two workers (threads or processes) can never both start the same download."""
+    from .timeutil import add_seconds
+    now = _now_utc()
+    cur = conn.execute("UPDATE episodes SET claimed_by=?, claimed_at=? WHERE id=? AND "
+                       "(claimed_by IS NULL OR claimed_by=? OR claimed_at <= ?)",
+                       (owner, now, episode_id, owner, add_seconds(now, -ttl_s)))
+    conn.commit()
+    return cur.rowcount == 1
+
+
+def release_media(conn: sqlite3.Connection, episode_id: int, owner: str) -> None:
+    conn.execute("UPDATE episodes SET claimed_by=NULL, claimed_at=NULL WHERE id=? AND claimed_by=?", (episode_id, owner))
+    conn.commit()
+
+
+def clear_claims(conn: sqlite3.Connection) -> int:
+    """Boot: every claim belongs to a process that no longer exists."""
+    cur = conn.execute("UPDATE episodes SET claimed_by=NULL, claimed_at=NULL WHERE claimed_by IS NOT NULL")
+    conn.commit()
+    return cur.rowcount
+
+
 def release_queue_item(conn: sqlite3.Connection, episode_id: int) -> None:
     """Remove an episode's queue item once the episode reached an end state, so the next episode of
     the same anime becomes the head."""
@@ -231,7 +263,7 @@ def errors_recent(conn: sqlite3.Connection, limit: int = 50) -> list[dict[str, A
 def history(conn: sqlite3.Connection, limit: int = 100) -> list[dict[str, Any]]:
     rows = conn.execute("""
         SELECT id, anime_key, episode_number, language, status, video_message_id,
-               thumbnail_message_id, published_at, updated_at
+               thumbnail_message_id, published_at, updated_at, media_ref, origin
         FROM episodes ORDER BY updated_at DESC LIMIT ?""", (limit,)).fetchall()
     return [dict(r) for r in rows]
 

@@ -1,0 +1,86 @@
+___ASPSTART_HTML___<div id="asp-res-1448" class='item asp_r_pagepost asp_r_pagepost_1448 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/quan-zhi-gao-shou/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e10b6e1ae2dc.jpg">
+	                <img loading="lazy" alt="Quanzhi Gaoshou" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e10b6e1ae2dc.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/quan-zhi-gao-shou/'>
+                Quanzhi Gaoshou                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ye Xiu est un joueur professionnel sur le jeu en ligne Glory sur lequel il a 10 ans d'expérience. ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79190" class='item asp_r_pagepost asp_r_pagepost_79190 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/quanzhi-gaoshou-specials/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc6d046c9.png">
+	                <img loading="lazy" alt="Quanzhi Gaoshou Specials" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc6d046c9.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/quanzhi-gaoshou-specials/'>
+                Quanzhi Gaoshou Specials                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Chen Guo invite Ye Xiu et Tang Rou au All-Stars Tournament. Ce spectacle met en scène des duels de ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-100726" class='item asp_r_pagepost asp_r_pagepost_100726 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/quanzhi-gaoshou-3/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/06/thumb_66786f15d564a.png">
+	                <img loading="lazy" alt="Quanzhi Gaoshou 3" src="https://voir-anime.to/wp-content/uploads/2024/06/thumb_66786f15d564a.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/quanzhi-gaoshou-3/'>
+                Quanzhi Gaoshou 3                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de "Quanzhi Gaoshou"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79188" class='item asp_r_pagepost asp_r_pagepost_79188 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/quanzhi-gaoshou-dianfeng-rongyao/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc6c6c337.jpg">
+	                <img loading="lazy" alt="Quanzhi Gaoshou: Dianfeng Rongyao" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dc6c6c337.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/quanzhi-gaoshou-dianfeng-rongyao/'>
+                Quanzhi Gaoshou: Dianfeng Rongyao                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Le film se déroule avant les évènements de la série-web. Nous suivons Ye Xiu, âgé alors de 18 ans, ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-60349" class='item asp_r_pagepost asp_r_pagepost_60349 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/quanzhi-gaoshou-2/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/10/thumb_5f830b07655da.png">
+	                <img loading="lazy" alt="Quanzhi Gaoshou 2" src="https://voir-anime.to/wp-content/uploads/2020/10/thumb_5f830b07655da.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/quanzhi-gaoshou-2/'>
+                Quanzhi Gaoshou 2                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de Quanzhi Gaoshou        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":5,"full_results_count":5,"results":[{"id":1448,"blogid":1,"title":"Quanzhi Gaoshou","post_title":"Quanzhi Gaoshou","content":"Ye Xiu est un joueur professionnel sur le jeu en ligne Glory sur lequel il a 10 ans d'exp\u00e9rience. ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e10b6e1ae2dc.jpg","date":"2020-01-04 17:03:04","post_date":"2020-01-04 17:03:04","post_modified":"2020-10-11 13:41:26","menu_order":0,"relevance":1000280,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/quan-zhi-gao-shou\/"},{"id":79190,"blogid":1,"title":"Quanzhi Gaoshou Specials","post_title":"Quanzhi Gaoshou Specials","content":"Chen Guo invite Ye Xiu et Tang Rou au All-Stars Tournament. Ce spectacle met en sc\u00e8ne des duels de ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dc6d046c9.png","date":"2021-03-04 23:12:46","post_date":"2021-03-04 23:12:46","post_modified":"2021-03-04 23:12:46","menu_order":0,"relevance":1000240,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/quanzhi-gaoshou-specials\/"},{"id":100726,"blogid":1,"title":"Quanzhi Gaoshou 3","post_title":"Quanzhi Gaoshou 3","content":"Saison 3 de \"Quanzhi Gaoshou\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/06\/thumb_66786f15d564a.png","date":"2024-06-23 18:53:24","post_date":"2024-06-23 18:53:24","post_modified":"2024-06-23 18:53:24","menu_order":0,"relevance":1000120,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/quanzhi-gaoshou-3\/"},{"id":79188,"blogid":1,"title":"Quanzhi Gaoshou: Dianfeng Rongyao","post_title":"Quanzhi Gaoshou: Dianfeng Rongyao","content":"Le film se d\u00e9roule avant les \u00e9v\u00e8nements de la s\u00e9rie-web. Nous suivons Ye Xiu, \u00e2g\u00e9 alors de 18 ans, ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dc6c6c337.jpg","date":"2021-03-04 23:13:11","post_date":"2021-03-04 23:13:11","post_modified":"2021-03-04 23:13:11","menu_order":0,"relevance":1000120,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/quanzhi-gaoshou-dianfeng-rongyao\/"},{"id":60349,"blogid":1,"title":"Quanzhi Gaoshou 2","post_title":"Quanzhi Gaoshou 2","content":"Saison 2 de Quanzhi Gaoshou","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/10\/thumb_5f830b07655da.png","date":"2020-10-11 13:41:37","post_date":"2020-10-11 13:41:37","post_modified":"2021-01-04 02:24:48","menu_order":0,"relevance":1000120,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/quanzhi-gaoshou-2\/"}]}___ASPEND_DATA___

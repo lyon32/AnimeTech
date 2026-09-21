@@ -1,0 +1,35 @@
+___ASPSTART_HTML___<div id="asp-res-4206" class='item asp_r_pagepost asp_r_pagepost_4206 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/boruto-naruto-next-generations-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0cd5d9cf00a.jpg">
+	                <img loading="lazy" alt="Boruto: Naruto Next Generations (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0cd5d9cf00a.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/boruto-naruto-next-generations-vf/'>
+                Boruto: Naruto Next Generations (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Depuis que son père occupe la plus haute fonction du village de Konoha, Boruto Uzumaki, le fils de ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3363" class='item asp_r_pagepost asp_r_pagepost_3363 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/boruto-naruto-the-movie-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1363b364315.jpg">
+	                <img loading="lazy" alt="Boruto: Naruto The Movie (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1363b364315.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/boruto-naruto-the-movie-vf/'>
+                Boruto: Naruto The Movie (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Après un conflit qui a déchiré toute la région, Konoha connait enfin la prospérité et le progrès. ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":2,"full_results_count":2,"results":[{"id":4206,"blogid":1,"title":"Boruto: Naruto Next Generations (VF)","post_title":"Boruto: Naruto Next Generations (VF)","content":"Depuis que son p\u00e8re occupe la plus haute fonction du village de Konoha, Boruto Uzumaki, le fils de ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0cd5d9cf00a.jpg","date":"2020-02-24 12:40:26","post_date":"2020-02-24 12:40:26","post_modified":"2021-11-14 17:08:20","menu_order":0,"relevance":1110020,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/boruto-naruto-next-generations-vf\/"},{"id":3363,"blogid":1,"title":"Boruto: Naruto The Movie (VF)","post_title":"Boruto: Naruto The Movie (VF)","content":"Apr\u00e8s un conflit qui a d\u00e9chir\u00e9 toute la r\u00e9gion, Konoha connait enfin la prosp\u00e9rit\u00e9 et le progr\u00e8s. ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1363b364315.jpg","date":"2020-01-09 14:10:52","post_date":"2020-01-09 14:10:52","post_modified":"2020-01-09 14:10:52","menu_order":0,"relevance":1109780,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/boruto-naruto-the-movie-vf\/"}]}___ASPEND_DATA___

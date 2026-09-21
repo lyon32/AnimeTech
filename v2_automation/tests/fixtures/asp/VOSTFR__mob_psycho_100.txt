@@ -1,0 +1,52 @@
+___ASPSTART_HTML___<div id="asp-res-1204" class='item asp_r_pagepost asp_r_pagepost_1204 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/mob-psycho-100/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e10803f57141.jpg">
+	                <img loading="lazy" alt="Mob Psycho 100" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e10803f57141.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/mob-psycho-100/'>
+                Mob Psycho 100                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            L'histoire suit Kageyama Shigeo un élève de quatrième, possédant des pouvoirs psychiques. Il peut ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-1206" class='item asp_r_pagepost asp_r_pagepost_1206 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/mob-psycho-100-ii/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1080414b71f.jpg">
+	                <img loading="lazy" alt="Mob Psycho 100 II" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1080414b71f.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/mob-psycho-100-ii/'>
+                Mob Psycho 100 II                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Il s'agit de la seconde saison de l'anime Mob Psycho 100. Un jour, Ichi Mezato convainc Kageyama ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-90216" class='item asp_r_pagepost asp_r_pagepost_90216 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/mob-psycho-100-iii/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/09/thumb_6322f32bece93.jpg">
+	                <img loading="lazy" alt="Mob Psycho 100 III" src="https://voir-anime.to/wp-content/uploads/2022/09/thumb_6322f32bece93.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/mob-psycho-100-iii/'>
+                Mob Psycho 100 III                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de "Mob Psycho 100"        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":3,"full_results_count":3,"results":[{"id":1204,"blogid":1,"title":"Mob Psycho 100","post_title":"Mob Psycho 100","content":"L'histoire suit Kageyama Shigeo un \u00e9l\u00e8ve de quatri\u00e8me, poss\u00e9dant des pouvoirs psychiques. Il peut ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e10803f57141.jpg","date":"2020-01-04 13:27:01","post_date":"2020-01-04 13:27:01","post_modified":"2020-01-04 13:27:01","menu_order":0,"relevance":1302364,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/mob-psycho-100\/"},{"id":1206,"blogid":1,"title":"Mob Psycho 100 II","post_title":"Mob Psycho 100 II","content":"Il s'agit de la seconde saison de l'anime Mob Psycho 100. Un jour, Ichi Mezato convainc Kageyama ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1080414b71f.jpg","date":"2020-01-04 13:27:30","post_date":"2020-01-04 13:27:30","post_modified":"2020-01-04 13:27:30","menu_order":0,"relevance":1110900,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/mob-psycho-100-ii\/"},{"id":90216,"blogid":1,"title":"Mob Psycho 100 III","post_title":"Mob Psycho 100 III","content":"Saison 3 de \"Mob Psycho 100\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/09\/thumb_6322f32bece93.jpg","date":"2022-09-15 10:11:04","post_date":"2022-09-15 10:11:04","post_modified":"2023-03-07 14:19:22","menu_order":0,"relevance":1110588,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/mob-psycho-100-iii\/"}]}___ASPEND_DATA___

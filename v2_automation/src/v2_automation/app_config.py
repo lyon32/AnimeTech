@@ -117,6 +117,14 @@ class AppConfig:
     # second bot, used ONLY for the admin panel / alerts / notifications (private chats).  The first bot
     # (bot_token) only publishes to the channel.  Empty = single-bot mode (bot_token does both).
     admin_bot_token: str = ""
+    # user side (V2 requests).  Channels are configuration, never code: `telegram.channels` / TELEGRAM_CHANNELS
+    # (publication targets; the first one is the primary, published by the download engine) and
+    # `user_bot.required_channels` / REQUIRED_CHANNELS (membership needed to use the bot).
+    channels: list[str] = field(default_factory=list)
+    required_channels: list[str] = field(default_factory=list)
+    user_bot_token: str = ""
+    requests: dict = field(default_factory=dict)
+    user_bot: dict = field(default_factory=dict)
 
     def notify_token(self) -> str:
         """Token of the bot that talks to the administrators."""
@@ -132,6 +140,10 @@ def _load_admin_ids(raw: str | None) -> list[int]:
     return [int(p) for p in parts]
 
 
+def _split_list(raw: str | None) -> list[str]:
+    return [p.strip() for p in (raw or "").split(",") if p.strip()]
+
+
 def load_config() -> AppConfig:
     load_dotenv(ROOT / ".env", override=False)
     load_dotenv(ROOT.parent / "v1_poc" / ".env", override=False)          # v1 secrets as fallback
@@ -140,7 +152,7 @@ def load_config() -> AppConfig:
     channel = os.getenv("TELEGRAM_CHANNEL_ID", "").strip()
     admin_raw = os.getenv("ADMIN_TELEGRAM_IDS", "").strip()
     api_base = cfg.get("telegram", {}).get("api_base_url", "").strip()
-    env_base = os.getenv("TELEGRAM_API_BASE_URL", "").strip()
+    env_base = (os.getenv("TELEGRAM_API_BASE_URL", "") or os.getenv("TELEGRAM_LOCAL_BOT_API_URL", "")).strip()
     if env_base:                                   # .env overrides config.yaml
         api_base = env_base
         cfg.setdefault("telegram", {})["api_base_url"] = env_base
@@ -159,6 +171,21 @@ def load_config() -> AppConfig:
         status_code=probe.get("status_code"),
         error=probe.get("error"),
     )
+    tg = cfg.setdefault("telegram", {})
+    channels = _split_list(os.getenv("TELEGRAM_CHANNELS")) or list(tg.get("channels") or []) or ([channel] if channel else [])
+    ub = dict(cfg.get("user_bot") or {})
+    required = _split_list(os.getenv("REQUIRED_CHANNELS")) or list(ub.get("required_channels") or [])
+    req = dict(cfg.get("requests") or {})
+    env_over = {                                              # .env / environment overrides (documented in .env.example)
+        ("source", "poll_interval_seconds"): os.getenv("WATCH_INTERVAL"),
+        ("publication", "cleanup_after_days"): os.getenv("CLEANUP_AFTER_DAYS"),
+        ("queues", "max_concurrent_downloads"): os.getenv("MAX_CONCURRENT_DOWNLOADS"),
+    }
+    for (section, key), val in env_over.items():
+        if val and val.strip():
+            cfg.setdefault(section, {})[key] = float(val) if key != "max_concurrent_downloads" else int(val)
+    if os.getenv("REQUEST_WAIT_TIMEOUT", "").strip():
+        req["wait_timeout_seconds"] = float(os.environ["REQUEST_WAIT_TIMEOUT"])
     return AppConfig(
         source=cfg.get("source", {}),
         queues=cfg.get("queues", {}),
@@ -174,4 +201,6 @@ def load_config() -> AppConfig:
         admin_telegram_ids=_load_admin_ids(admin_raw),
         bot_capacity=caps,
         authorization=cfg.get("authorization", {}),
+        channels=channels, required_channels=required, user_bot=ub, requests=req,
+        user_bot_token=os.getenv("USER_BOT_TOKEN", "").strip() or (token if ub.get("use_channel_bot") else ""),
     )

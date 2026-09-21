@@ -1,0 +1,86 @@
+___ASPSTART_HTML___<div id="asp-res-61255" class='item asp_r_pagepost asp_r_pagepost_61255 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/dr-stone-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e3a1649cf2.jpg">
+	                <img loading="lazy" alt="Dr. STONE (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e3a1649cf2.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/dr-stone-vf/'>
+                Dr. STONE (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Un jour, une lumière brillante apparaît subitement dans le ciel pétrifiant en une fraction de ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-78710" class='item asp_r_pagepost asp_r_pagepost_78710 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/dr-stone-2-stone-wars-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/12/thumb_5fcface906585.jpg">
+	                <img loading="lazy" alt="Dr. STONE 2 : STONE WARS (VF)" src="https://voir-anime.to/wp-content/uploads/2020/12/thumb_5fcface906585.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/dr-stone-2-stone-wars-vf/'>
+                Dr. STONE 2 : STONE WARS (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            2ème saison de Dr. STONE Senkû et les villageois ont réussi à terminer la construction du premier ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-104359" class='item asp_r_pagepost asp_r_pagepost_104359 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/dr-stone-4-science-future-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/12/thumb_6762e71eb19e9.jpg">
+	                <img loading="lazy" alt="Dr. STONE 4 : SCIENCE FUTURE (VF)" src="https://voir-anime.to/wp-content/uploads/2024/12/thumb_6762e71eb19e9.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/dr-stone-4-science-future-vf/'>
+                Dr. STONE 4 : SCIENCE FUTURE (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 4 de "Dr Stone"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-89912" class='item asp_r_pagepost asp_r_pagepost_89912 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/dr-stone-ryuusui-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/07/thumb_62cb0a8119334.jpg">
+	                <img loading="lazy" alt="Dr. STONE: Ryuusui (VF)" src="https://voir-anime.to/wp-content/uploads/2022/07/thumb_62cb0a8119334.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/dr-stone-ryuusui-vf/'>
+                Dr. STONE: Ryuusui (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Un episode special qui se déroule après la deuxième saison et se concentre sur Ryuusui Nanami.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-94913" class='item asp_r_pagepost asp_r_pagepost_94913 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/dr-stone-3-new-world-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/03/thumb_64130a5344477.jpg">
+	                <img loading="lazy" alt="Dr. STONE 3: NEW WORLD (VF)" src="https://voir-anime.to/wp-content/uploads/2023/03/thumb_64130a5344477.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/dr-stone-3-new-world-vf/'>
+                Dr. STONE 3: NEW WORLD (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de Dr Stone        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":5,"full_results_count":5,"results":[{"id":61255,"blogid":1,"title":"Dr. STONE (VF)","post_title":"Dr. STONE (VF)","content":"Un jour, une lumi\u00e8re brillante appara\u00eet subitement dans le ciel p\u00e9trifiant en une fraction de ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e3a1649cf2.jpg","date":"2020-10-26 12:40:03","post_date":"2020-10-26 12:40:03","post_modified":"2021-02-02 14:21:43","menu_order":0,"relevance":1026344,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/dr-stone-vf\/"},{"id":78710,"blogid":1,"title":"Dr. STONE 2 : STONE WARS (VF)","post_title":"Dr. STONE 2 : STONE WARS (VF)","content":"2\u00e8me saison de Dr. STONE Senk\u00fb et les villageois ont r\u00e9ussi \u00e0 terminer la construction du premier ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/12\/thumb_5fcface906585.jpg","date":"2021-02-26 02:18:47","post_date":"2021-02-26 02:18:47","post_modified":"2021-10-01 15:27:00","menu_order":0,"relevance":1002876,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/dr-stone-2-stone-wars-vf\/"},{"id":104359,"blogid":1,"title":"Dr. STONE 4 : SCIENCE FUTURE (VF)","post_title":"Dr. STONE 4 : SCIENCE FUTURE (VF)","content":"Saison 4 de \"Dr Stone\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/12\/thumb_6762e71eb19e9.jpg","date":"2025-01-09 15:23:56","post_date":"2025-01-09 15:23:56","post_modified":"2025-01-09 15:23:56","menu_order":0,"relevance":1002712,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/dr-stone-4-science-future-vf\/"},{"id":89912,"blogid":1,"title":"Dr. STONE: Ryuusui (VF)","post_title":"Dr. STONE: Ryuusui (VF)","content":"Un episode special qui se d\u00e9roule apr\u00e8s la deuxi\u00e8me saison et se concentre sur Ryuusui Nanami.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/07\/thumb_62cb0a8119334.jpg","date":"2022-09-01 21:26:01","post_date":"2022-09-01 21:26:01","post_modified":"2022-09-01 21:26:01","menu_order":0,"relevance":1002568,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/dr-stone-ryuusui-vf\/"},{"id":94913,"blogid":1,"title":"Dr. STONE 3: NEW WORLD (VF)","post_title":"Dr. STONE 3: NEW WORLD (VF)","content":"Saison 3 de Dr Stone","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/03\/thumb_64130a5344477.jpg","date":"2023-05-11 20:26:10","post_date":"2023-05-11 20:26:10","post_modified":"2023-05-11 20:26:10","menu_order":0,"relevance":1002528,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/dr-stone-3-new-world-vf\/"}]}___ASPEND_DATA___

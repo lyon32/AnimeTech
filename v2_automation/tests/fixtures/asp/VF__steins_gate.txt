@@ -1,0 +1,35 @@
+___ASPSTART_HTML___<div id="asp-res-2243" class='item asp_r_pagepost asp_r_pagepost_2243 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c78fcba5a.jpg">
+	                <img loading="lazy" alt="Steins;Gate (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e11c78fcba5a.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate-vf/'>
+                Steins;Gate (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Dans un quartier d'Otaku à Akihabara, un groupe d'amis modifient leurs micro-ondes de manière à en ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-3219" class='item asp_r_pagepost asp_r_pagepost_3219 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/steinsgate-fuka-ryouiki-no-deja-vu-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365bb5f988.png">
+	                <img loading="lazy" alt="Steins;Gate: Fuka Ryouiki no Déjà vu (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1365bb5f988.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/steinsgate-fuka-ryouiki-no-deja-vu-vf/'>
+                Steins;Gate: Fuka Ryouiki no Déjà vu (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Après un an passé en Amérique, Kurisu est de retour à Akihabara. Elle et Okabe se retrouvent enfin. ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":2,"full_results_count":2,"results":[{"id":2243,"blogid":1,"title":"Steins;Gate (VF)","post_title":"Steins;Gate (VF)","content":"Dans un quartier d'Otaku \u00e0 Akihabara, un groupe d'amis modifient leurs micro-ondes de mani\u00e8re \u00e0 en ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e11c78fcba5a.jpg","date":"2020-01-06 11:19:20","post_date":"2020-01-06 11:19:20","post_modified":"2020-01-06 11:19:20","menu_order":0,"relevance":1002344,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/steinsgate-vf\/"},{"id":3219,"blogid":1,"title":"Steins;Gate: Fuka Ryouiki no D\u00e9j\u00e0 vu (VF)","post_title":"Steins;Gate: Fuka Ryouiki no D\u00e9j\u00e0 vu (VF)","content":"Apr\u00e8s un an pass\u00e9 en Am\u00e9rique, Kurisu est de retour \u00e0 Akihabara. Elle et Okabe se retrouvent enfin. ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1365bb5f988.png","date":"2020-01-09 16:19:12","post_date":"2020-01-09 16:19:12","post_modified":"2020-01-09 16:19:12","menu_order":0,"relevance":1002088,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/steinsgate-fuka-ryouiki-no-deja-vu-vf\/"}]}___ASPEND_DATA___

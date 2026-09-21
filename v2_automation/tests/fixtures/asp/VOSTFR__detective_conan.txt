@@ -1,0 +1,341 @@
+___ASPSTART_HTML___<div id="asp-res-4203" class='item asp_r_pagepost asp_r_pagepost_4203 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/02/thumb_5e53bbbc81c8f.jpg">
+	                <img loading="lazy" alt="Détective Conan" src="https://voir-anime.to/wp-content/uploads/2020/02/thumb_5e53bbbc81c8f.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan/'>
+                Détective Conan                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Shinichi Kudo est élève en première au lycée Tivedétec (Teitan). Pour avoir résolu plusieurs ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-90755" class='item asp_r_pagepost asp_r_pagepost_90755 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/detective-conan-the-culprit-hanzawa/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/10/thumb_6347e36cbfcdc.jpg">
+	                <img loading="lazy" alt="Detective Conan: The Culprit Hanzawa" src="https://voir-anime.to/wp-content/uploads/2022/10/thumb_6347e36cbfcdc.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/detective-conan-the-culprit-hanzawa/'>
+                Detective Conan: The Culprit Hanzawa                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Il s'agit d'un spin-off du célèbre manga Détective Conan. C'est bien connu, Conan Edogawa résout ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-88046" class='item asp_r_pagepost asp_r_pagepost_88046 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/detective-conan-zeros-tea-time/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2022/04/thumb_6256e241c0c07.jpg">
+	                <img loading="lazy" alt="Detective Conan: Zero&#8217;s Tea Time" src="https://voir-anime.to/wp-content/uploads/2022/04/thumb_6256e241c0c07.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/detective-conan-zeros-tea-time/'>
+                Detective Conan: Zero&#8217;s Tea Time                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Spin-off de la série Détective Conan. Celui-ci est centré sur le personnage de Toru Amuro.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-95489" class='item asp_r_pagepost asp_r_pagepost_95489 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/detective-conan-ai-habaras-story-jet-black-mystery-train/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/06/thumb_64907613c3978.png">
+	                <img loading="lazy" alt="Detective Conan Ai Habara&#8217;s Story ~Jet-Black Mystery Train~" src="https://voir-anime.to/wp-content/uploads/2023/06/thumb_64907613c3978.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/detective-conan-ai-habaras-story-jet-black-mystery-train/'>
+                Detective Conan Ai Habara&#8217;s Story ~Jet-Black Mystery Train~                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film compile les événements de l'arc Mystery Train (épisodes 701 à 704) et inclut des ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2815" class='item asp_r_pagepost asp_r_pagepost_2815 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-17-sekkai-no-private-eye/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364b2e11a9.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 17: Sekkai no Private Eye" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364b2e11a9.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-17-sekkai-no-private-eye/'>
+                Meitantei Conan Movie 17: Sekkai no Private Eye                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Le film se déroule à bord d'un vaisseau Aegis ultra sophistiqué, avec la coopération du Ministre ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2803" class='item asp_r_pagepost asp_r_pagepost_2803 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-11-konpeki-no-hitsugi-jolly-roger/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364a76699d.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 11: Konpeki no Hitsugi (Jolly Roger)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364a76699d.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-11-konpeki-no-hitsugi-jolly-roger/'>
+                Meitantei Conan Movie 11: Konpeki no Hitsugi (Jolly Roger)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Nous retrouvons tous nos héros en vacances à Okinawa, sur une île du Pacifique. Le guide qui ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2783" class='item asp_r_pagepost asp_r_pagepost_2783 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-01-tokei-jikake-no-matenrou/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649553f45.png">
+	                <img loading="lazy" alt="Meitantei Conan Movie 01: Tokei Jikake no Matenrou" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649553f45.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-01-tokei-jikake-no-matenrou/'>
+                Meitantei Conan Movie 01: Tokei Jikake no Matenrou                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Sous l'identité de Shinichi, Conan téléphone à Ran, et tous deux organisent un rendez-vous. Ce ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2809" class='item asp_r_pagepost asp_r_pagepost_2809 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-14-tenkuu-no-lost-ship/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364ad1c209.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 14: Tenkuu no Lost Ship" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364ad1c209.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-14-tenkuu-no-lost-ship/'>
+                Meitantei Conan Movie 14: Tenkuu no Lost Ship                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            L'oncle de Sonoko Suzuki, Jirokichi, a invité Conan et ses amis dans le plus grand dirigeable au ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2799" class='item asp_r_pagepost asp_r_pagepost_2799 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-09-suihei-senjou-no-sutoratejii/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364a3d5742.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 09: Suihei Senjou no Sutoratejii" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364a3d5742.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-09-suihei-senjou-no-sutoratejii/'>
+                Meitantei Conan Movie 09: Suihei Senjou no Sutoratejii                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            À bord d'un luxueux bateau, Conan et toute sa petite troupe au grand complet voguent au grès de ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2787" class='item asp_r_pagepost asp_r_pagepost_2787 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-03-seikimatsu-no-majutsushi/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364992baaa.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 03: Seikimatsu no Majutsushi" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364992baaa.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-03-seikimatsu-no-majutsushi/'>
+                Meitantei Conan Movie 03: Seikimatsu no Majutsushi                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Kid l'insaisissable continue ses agissements et veut cette fois s'emparer d'un œuf de Pâques de ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2823" class='item asp_r_pagepost asp_r_pagepost_2823 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-21-kara-kurenai-love-letter/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364bb225eb.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 21: Kara Kurenai Love Letter" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364bb225eb.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-21-kara-kurenai-love-letter/'>
+                Meitantei Conan Movie 21: Kara Kurenai Love Letter                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Un attentat à la bombe frappe en automne le siège de Nichiuri TV où a lieu la coupe Satsuki, un ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2817" class='item asp_r_pagepost asp_r_pagepost_2817 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-18-ijigen-no-sniper/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364b4b0598.png">
+	                <img loading="lazy" alt="Meitantei Conan Movie 18: Ijigen no Sniper" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364b4b0598.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-18-ijigen-no-sniper/'>
+                Meitantei Conan Movie 18: Ijigen no Sniper                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Lors d'une visite d'inauguration de la Bell Tree Tower du groupe Suzuki, Conan assiste impuissant ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2789" class='item asp_r_pagepost asp_r_pagepost_2789 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-04-hitomi-no-naka-no-ansatsusha/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649ae5294.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 04: Hitomi no Naka no Ansatsusha" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649ae5294.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-04-hitomi-no-naka-no-ansatsusha/'>
+                Meitantei Conan Movie 04: Hitomi no Naka no Ansatsusha                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Des meurtres en série dont les victimes sont des policiers provoquent un gros tremblement de terre ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2819" class='item asp_r_pagepost asp_r_pagepost_2819 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-19-gouka-no-himawari/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364b7370a3.png">
+	                <img loading="lazy" alt="Meitantei Conan Movie 19: Gouka no Himawari" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364b7370a3.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-19-gouka-no-himawari/'>
+                Meitantei Conan Movie 19: Gouka no Himawari                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Pendant un discours du père de Sonoko, le Kid fait son apparition, pour, cette fois, voler le ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2797" class='item asp_r_pagepost asp_r_pagepost_2797 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-08-ginyoku-no-magician/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364a228b11.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 08: Ginyoku no Magician" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364a228b11.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-08-ginyoku-no-magician/'>
+                Meitantei Conan Movie 08: Ginyoku no Magician                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Une actrice de pièces de théâtre reçoit une lettre de Kaitô Kid, menaçant de voler un joyau ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2813" class='item asp_r_pagepost asp_r_pagepost_2813 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-16-11-nin-me-no-striker/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364b115e55.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 16: 11 Nin-me no Striker" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364b115e55.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-16-11-nin-me-no-striker/'>
+                Meitantei Conan Movie 16: 11 Nin-me no Striker                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Un jour, Kogorô reçoit à l'agence un coup de téléphone. Au bout du fil, une personne qui lance un ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2785" class='item asp_r_pagepost asp_r_pagepost_2785 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-02-juuyonbanme-no-target/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649766ba3.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 02: Juuyonbanme no Target" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13649766ba3.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-02-juuyonbanme-no-target/'>
+                Meitantei Conan Movie 02: Juuyonbanme no Target                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            L'entourage de Kogoro Mouri est en danger ! Un ancien détenu, que notre détective a mis sous les ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2493" class='item asp_r_pagepost asp_r_pagepost_2493 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/lupin-iii-vs-detective-conan-the-movie/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e136376819a7.jpg">
+	                <img loading="lazy" alt="Lupin III vs. Detective Conan: The Movie" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e136376819a7.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/lupin-iii-vs-detective-conan-the-movie/'>
+                Lupin III vs. Detective Conan: The Movie                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            La tentative de Conan d'empêcher Kid de voler un autre bijou l'a amené face à face avec Lupin et ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-106556" class='item asp_r_pagepost asp_r_pagepost_106556 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-100-man-dol-no-michishirube/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2025/04/thumb_680a70be1be90.jpg">
+	                <img loading="lazy" alt="Meitantei Conan: 100-man Dol no Michishirube" src="https://voir-anime.to/wp-content/uploads/2025/04/thumb_680a70be1be90.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-100-man-dol-no-michishirube/'>
+                Meitantei Conan: 100-man Dol no Michishirube                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Une carte signée "Kaito Kid", le célèbre voleur fantôme, est arrivée dans l'entrepôt d'une ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2801" class='item asp_r_pagepost asp_r_pagepost_2801 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/meitantei-conan-movie-10-tantei-tachi-no-requiem/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364a5a794c.jpg">
+	                <img loading="lazy" alt="Meitantei Conan Movie 10: Tantei-tachi no Requiem" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1364a5a794c.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/meitantei-conan-movie-10-tantei-tachi-no-requiem/'>
+                Meitantei Conan Movie 10: Tantei-tachi no Requiem                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ran, Conan, Kogoro et les Détectives juniors sont invités à se rendre dans un tout nouveau parc ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":20,"full_results_count":27,"results":[{"id":4203,"blogid":1,"title":"D\u00e9tective Conan","post_title":"D\u00e9tective Conan","content":"Shinichi Kudo est \u00e9l\u00e8ve en premi\u00e8re au lyc\u00e9e Tived\u00e9tec (Teitan). Pour avoir r\u00e9solu plusieurs ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/02\/thumb_5e53bbbc81c8f.jpg","date":"2020-02-24 12:04:59","post_date":"2020-02-24 12:04:59","post_modified":"2023-11-06 15:24:08","menu_order":0,"relevance":1310080,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan\/"},{"id":90755,"blogid":1,"title":"Detective Conan: The Culprit Hanzawa","post_title":"Detective Conan: The Culprit Hanzawa","content":"Il s'agit d'un spin-off du c\u00e9l\u00e8bre manga D\u00e9tective Conan. C'est bien connu, Conan Edogawa r\u00e9sout ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/10\/thumb_6347e36cbfcdc.jpg","date":"2022-10-13 10:08:34","post_date":"2022-10-13 10:08:34","post_modified":"2022-10-13 10:08:48","menu_order":0,"relevance":1110112,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/detective-conan-the-culprit-hanzawa\/"},{"id":88046,"blogid":1,"title":"Detective Conan: Zero&#8217;s Tea Time","post_title":"Detective Conan: Zero's Tea Time","content":"Spin-off de la s\u00e9rie D\u00e9tective Conan. Celui-ci est centr\u00e9 sur le personnage de Toru Amuro.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2022\/04\/thumb_6256e241c0c07.jpg","date":"2022-04-13 14:47:25","post_date":"2022-04-13 14:47:25","post_modified":"2022-04-13 14:47:25","menu_order":0,"relevance":1102160,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/detective-conan-zeros-tea-time\/"},{"id":95489,"blogid":1,"title":"Detective Conan Ai Habara&#8217;s Story ~Jet-Black Mystery Train~","post_title":"Detective Conan Ai Habara's Story ~Jet-Black Mystery Train~","content":"Ce film compile les \u00e9v\u00e9nements de l'arc Mystery Train (\u00e9pisodes 701 \u00e0 704) et inclut des ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/06\/thumb_64907613c3978.png","date":"2023-06-19 15:38:29","post_date":"2023-06-19 15:38:29","post_modified":"2023-06-19 15:38:30","menu_order":0,"relevance":1101968,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/detective-conan-ai-habaras-story-jet-black-mystery-train\/"},{"id":2815,"blogid":1,"title":"Meitantei Conan Movie 17: Sekkai no Private Eye","post_title":"Meitantei Conan Movie 17: Sekkai no Private Eye","content":"Le film se d\u00e9roule \u00e0 bord d'un vaisseau Aegis ultra sophistiqu\u00e9, avec la coop\u00e9ration du Ministre ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364b2e11a9.jpg","date":"2020-01-07 18:45:40","post_date":"2020-01-07 18:45:40","post_modified":"2020-01-07 18:45:40","menu_order":0,"relevance":1008660,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-17-sekkai-no-private-eye\/"},{"id":2803,"blogid":1,"title":"Meitantei Conan Movie 11: Konpeki no Hitsugi (Jolly Roger)","post_title":"Meitantei Conan Movie 11: Konpeki no Hitsugi (Jolly Roger)","content":"Nous retrouvons tous nos h\u00e9ros en vacances \u00e0 Okinawa, sur une \u00eele du Pacifique. Le guide qui ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364a76699d.jpg","date":"2020-01-07 18:42:35","post_date":"2020-01-07 18:42:35","post_modified":"2020-01-07 18:42:35","menu_order":0,"relevance":1008540,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-11-konpeki-no-hitsugi-jolly-roger\/"},{"id":2783,"blogid":1,"title":"Meitantei Conan Movie 01: Tokei Jikake no Matenrou","post_title":"Meitantei Conan Movie 01: Tokei Jikake no Matenrou","content":"Sous l'identit\u00e9 de Shinichi, Conan t\u00e9l\u00e9phone \u00e0 Ran, et tous deux organisent un rendez-vous. Ce ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e13649553f45.png","date":"2020-01-07 18:50:05","post_date":"2020-01-07 18:50:05","post_modified":"2020-01-07 18:50:05","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":6,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-01-tokei-jikake-no-matenrou\/"},{"id":2809,"blogid":1,"title":"Meitantei Conan Movie 14: Tenkuu no Lost Ship","post_title":"Meitantei Conan Movie 14: Tenkuu no Lost Ship","content":"L'oncle de Sonoko Suzuki, Jirokichi, a invit\u00e9 Conan et ses amis dans le plus grand dirigeable au ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364ad1c209.jpg","date":"2020-01-07 18:49:32","post_date":"2020-01-07 18:49:32","post_modified":"2020-01-07 18:49:32","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":7,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-14-tenkuu-no-lost-ship\/"},{"id":2799,"blogid":1,"title":"Meitantei Conan Movie 09: Suihei Senjou no Sutoratejii","post_title":"Meitantei Conan Movie 09: Suihei Senjou no Sutoratejii","content":"\u00c0 bord d'un luxueux bateau, Conan et toute sa petite troupe au grand complet voguent au gr\u00e8s de ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364a3d5742.jpg","date":"2020-01-07 18:47:42","post_date":"2020-01-07 18:47:42","post_modified":"2020-01-07 18:47:42","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":8,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-09-suihei-senjou-no-sutoratejii\/"},{"id":2787,"blogid":1,"title":"Meitantei Conan Movie 03: Seikimatsu no Majutsushi","post_title":"Meitantei Conan Movie 03: Seikimatsu no Majutsushi","content":"Kid l'insaisissable continue ses agissements et veut cette fois s'emparer d'un \u0153uf de P\u00e2ques de ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364992baaa.jpg","date":"2020-01-07 18:45:05","post_date":"2020-01-07 18:45:05","post_modified":"2020-01-07 18:45:05","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":9,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-03-seikimatsu-no-majutsushi\/"},{"id":2823,"blogid":1,"title":"Meitantei Conan Movie 21: Kara Kurenai Love Letter","post_title":"Meitantei Conan Movie 21: Kara Kurenai Love Letter","content":"Un attentat \u00e0 la bombe frappe en automne le si\u00e8ge de Nichiuri TV o\u00f9 a lieu la coupe Satsuki, un ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364bb225eb.jpg","date":"2020-01-07 18:41:56","post_date":"2020-01-07 18:41:56","post_modified":"2020-01-07 18:41:56","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":10,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-21-kara-kurenai-love-letter\/"},{"id":2817,"blogid":1,"title":"Meitantei Conan Movie 18: Ijigen no Sniper","post_title":"Meitantei Conan Movie 18: Ijigen no Sniper","content":"Lors d'une visite d'inauguration de la Bell Tree Tower du groupe Suzuki, Conan assiste impuissant ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364b4b0598.png","date":"2020-01-07 18:39:04","post_date":"2020-01-07 18:39:04","post_modified":"2020-01-07 18:39:04","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":11,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-18-ijigen-no-sniper\/"},{"id":2789,"blogid":1,"title":"Meitantei Conan Movie 04: Hitomi no Naka no Ansatsusha","post_title":"Meitantei Conan Movie 04: Hitomi no Naka no Ansatsusha","content":"Des meurtres en s\u00e9rie dont les victimes sont des policiers provoquent un gros tremblement de terre ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e13649ae5294.jpg","date":"2020-01-07 18:38:22","post_date":"2020-01-07 18:38:22","post_modified":"2020-01-07 18:38:23","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":12,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-04-hitomi-no-naka-no-ansatsusha\/"},{"id":2819,"blogid":1,"title":"Meitantei Conan Movie 19: Gouka no Himawari","post_title":"Meitantei Conan Movie 19: Gouka no Himawari","content":"Pendant un discours du p\u00e8re de Sonoko, le Kid fait son apparition, pour, cette fois, voler le ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364b7370a3.png","date":"2020-01-07 18:36:21","post_date":"2020-01-07 18:36:21","post_modified":"2020-01-07 18:36:21","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":13,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-19-gouka-no-himawari\/"},{"id":2797,"blogid":1,"title":"Meitantei Conan Movie 08: Ginyoku no Magician","post_title":"Meitantei Conan Movie 08: Ginyoku no Magician","content":"Une actrice de pi\u00e8ces de th\u00e9\u00e2tre re\u00e7oit une lettre de Kait\u00f4 Kid, mena\u00e7ant de voler un joyau ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364a228b11.jpg","date":"2020-01-07 18:34:58","post_date":"2020-01-07 18:34:58","post_modified":"2020-01-07 18:34:58","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":14,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-08-ginyoku-no-magician\/"},{"id":2813,"blogid":1,"title":"Meitantei Conan Movie 16: 11 Nin-me no Striker","post_title":"Meitantei Conan Movie 16: 11 Nin-me no Striker","content":"Un jour, Kogor\u00f4 re\u00e7oit \u00e0 l'agence un coup de t\u00e9l\u00e9phone. Au bout du fil, une personne qui lance un ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364b115e55.jpg","date":"2020-01-07 18:29:53","post_date":"2020-01-07 18:29:53","post_modified":"2020-01-07 18:29:53","menu_order":0,"relevance":1008516,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":15,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-16-11-nin-me-no-striker\/"},{"id":2785,"blogid":1,"title":"Meitantei Conan Movie 02: Juuyonbanme no Target","post_title":"Meitantei Conan Movie 02: Juuyonbanme no Target","content":"L'entourage de Kogoro Mouri est en danger ! Un ancien d\u00e9tenu, que notre d\u00e9tective a mis sous les ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e13649766ba3.jpg","date":"2020-01-07 18:41:17","post_date":"2020-01-07 18:41:17","post_modified":"2020-01-07 18:41:17","menu_order":0,"relevance":1008492,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":16,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-02-juuyonbanme-no-target\/"},{"id":2493,"blogid":1,"title":"Lupin III vs. Detective Conan: The Movie","post_title":"Lupin III vs. Detective Conan: The Movie","content":"La tentative de Conan d'emp\u00eacher Kid de voler un autre bijou l'a amen\u00e9 face \u00e0 face avec Lupin et ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e136376819a7.jpg","date":"2020-01-07 18:10:40","post_date":"2020-01-07 18:10:40","post_modified":"2020-01-07 18:10:40","menu_order":0,"relevance":1001992,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":17,"link":"https:\/\/voir-anime.to\/anime\/lupin-iii-vs-detective-conan-the-movie\/"},{"id":106556,"blogid":1,"title":"Meitantei Conan: 100-man Dol no Michishirube","post_title":"Meitantei Conan: 100-man Dol no Michishirube","content":"Une carte sign\u00e9e \"Kaito Kid\", le c\u00e9l\u00e8bre voleur fant\u00f4me, est arriv\u00e9e dans l'entrep\u00f4t d'une ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2025\/04\/thumb_680a70be1be90.jpg","date":"2025-04-24 17:12:15","post_date":"2025-04-24 17:12:15","post_modified":"2025-04-24 17:12:15","menu_order":0,"relevance":1000852,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":18,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-100-man-dol-no-michishirube\/"},{"id":2801,"blogid":1,"title":"Meitantei Conan Movie 10: Tantei-tachi no Requiem","post_title":"Meitantei Conan Movie 10: Tantei-tachi no Requiem","content":"Ran, Conan, Kogoro et les D\u00e9tectives juniors sont invit\u00e9s \u00e0 se rendre dans un tout nouveau parc ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1364a5a794c.jpg","date":"2020-01-07 18:48:22","post_date":"2020-01-07 18:48:22","post_modified":"2020-01-07 18:48:22","menu_order":0,"relevance":1000572,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":19,"link":"https:\/\/voir-anime.to\/anime\/meitantei-conan-movie-10-tantei-tachi-no-requiem\/"}]}___ASPEND_DATA___

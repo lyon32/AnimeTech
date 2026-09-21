@@ -27,7 +27,7 @@ import time
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 
-from . import app_config, db, service
+from . import app_config, db, repo, service
 from .publisher import V2TelegramClient, local_bot_base_url
 
 logger = logging.getLogger(__name__)
@@ -101,7 +101,9 @@ class AdminBot:
         from telegram import BotCommand
         cmds = [("status", "Tableau de bord"), ("jobs", "Jobs en cours"), ("anime", "Anime surveillés"),
                 ("alerts", "Alertes"), ("system", "État du système"), ("check", "Contrôler un anime"),
-                ("pause", "Mettre la file en pause"), ("resume", "Reprendre la file"), ("help", "Aide")]
+                ("pause", "Mettre la file en pause"), ("resume", "Reprendre la file"),
+                ("requests", "Demandes utilisateurs"), ("history", "Historique"), ("stats", "Statistiques"),
+                ("errors", "Erreurs"), ("queue", "File d'attente"), ("help", "Aide")]
 
         async def _impl():
             return await self.client._bot().set_my_commands([BotCommand(c, d) for c, d in cmds])
@@ -133,10 +135,17 @@ class AdminRouter:
         self._pending_add: set[int] = set()                    # chats whose next message is an anime URL
 
     def handle_update(self, update: Update) -> None:
+        from . import audit
+        who = None
         if update.message is not None:
-            self._on_message(update)
+            who = getattr(getattr(update.message, "from_user", None), "id", None) or update.message.chat.id
         elif update.callback_query is not None:
-            self._on_callback(update)
+            who = getattr(getattr(update.callback_query, "from_user", None), "id", None)
+        with audit.acting_as("telegram", who if who is not None else "?"):       # every admin action is audited (service.py)
+            if update.message is not None:
+                self._on_message(update)
+            elif update.callback_query is not None:
+                self._on_callback(update)
 
     def _on_message(self, update: Update) -> None:
         msg = update.message
@@ -189,6 +198,12 @@ class AdminRouter:
                 self._send_view(chat, "system")
             elif cmd in ("/notif", "/notifications"):
                 self._send_view(chat, "notif")
+            elif cmd == "/requests":
+                self._send_requests(chat, args)
+            elif cmd == "/history":
+                self.bot.send(chat, self._history_text(args))
+            elif cmd == "/stats":
+                self.bot.send(chat, self._stats_text())
             elif cmd in ("/check", "/forcecheck"):
                 self.bot.send(chat, self._anime([args[0], "check"]) if args else "usage : /check <anime_key>")
             else:
@@ -276,6 +291,14 @@ class AdminRouter:
         if kind == "cancel" and arg.isdigit():
             self._cancel(chat_id, [arg])                         # asks for confirmation in a new message
             return "Confirmez l'annulation ci-dessous", None, None
+        if kind == "xreq" and arg.isdigit():
+            kb = InlineKeyboardMarkup([[InlineKeyboardButton("✅ Oui, annuler", callback_data=f"confirm:xreq:{arg}"),
+                                        InlineKeyboardButton("❌ Non", callback_data="confirm:no")]])
+            msg = self.bot.send_raw(chat_id, f"⚠️ Annuler la demande #{arg} ? Son téléchargement continue si un autre "
+                                             "utilisateur (ou le canal) attend le même média.", kb)
+            if msg is not None and getattr(msg, "message_id", None) is not None:
+                self._pending_cancel[msg.message_id] = ("xreq", int(arg))
+            return "Confirmez l'annulation ci-dessous", None, None
         if kind == "retry" and arg.isdigit():
             return service.requeue_episode(self.conn, int(arg)).get("message"), "jobs", None
         if kind == "retryall":
@@ -340,12 +363,52 @@ class AdminRouter:
             else:
                 self.bot.edit(cb.message.chat.id, mid, "Arrêt abandonné.", None)
             return
+        if pending[0] == "xreq":
+            if data == f"confirm:xreq:{eid}":
+                res = service.cancel_request(self.conn, eid, confirm=True)
+                self.bot.edit(cb.message.chat.id, mid, f"✅ {res.get('message', '?')} (#{eid})", None)
+            else:
+                self.bot.edit(cb.message.chat.id, mid, "Annulation abandonnée.", None)
+            return
         if data == f"confirm:cancel:{eid}":
             res = service.cancel_episode(self.conn, eid)
             self.bot.edit(cb.message.chat.id, mid,
                           f"✅ {res.get('message', '?')}\n\n{done_text()}", None)
         else:
             self.bot.edit(cb.message.chat.id, mid, "Annulation abandonnée.", None)
+
+    def _send_requests(self, chat_id: int, args: list[str]) -> None:
+        rows = service.requests_overview(self.conn, state=args[0] if args else None, limit=15)
+        if not rows:
+            self.bot.send(chat_id, "Aucune demande.")
+            return
+        lines = ["📥 Demandes utilisateurs"]
+        kb = []
+        for r in rows:
+            ep = f"E{r['episode_number']}" if r["episode_number"] is not None else ("saison" if r["kind"] == "season" else "dernier")
+            prog = f" {r['progress']['done']}/{r['progress']['total']}" if r["kind"] == "season" else ""
+            lines.append(f"#{r['id']} · {r['state']} · {r['title'] or r['anime_key']} {ep} {r['version']}{prog} · user {r['user_id']}"
+                         + (f" · {r['error_code']}" if r["error_code"] else ""))
+            if r["state"] not in ("COMPLETED", "CANCELLED", "EXPIRED", "FAILED"):
+                kb.append([(f"❌ Annuler #{r['id']}", f"act:xreq:{r['id']}")])
+        self.bot.send(chat_id, "\n".join(lines), self._markup(kb) if kb else None)
+
+    def _history_text(self, args: list[str]) -> str:
+        limit = int(args[0]) if args and args[0].isdigit() else 15
+        rows = repo.history(self.conn, min(limit, 50))
+        if not rows:
+            return "Historique vide."
+        return "🕘 Historique (épisodes)\n" + "\n".join(
+            f"#{r['id']} · {r['media_ref'] or r['anime_key']} · {r['origin']} · {r['status']} · {r['updated_at']}" for r in rows)
+
+    def _stats_text(self) -> str:
+        s = service.stats(self.conn)
+        return ("📊 Statistiques\n"
+                f"épisodes: {sum(s['episodes'].values())} · publiés aujourd'hui: {s['published_today']}\n"
+                f"utilisateurs: {s['users']} · demandes aujourd'hui: {s['requests_today']}\n"
+                f"demandes par état: {s['requests'] or '—'}\n"
+                f"livraisons: {s['deliveries'] or '—'} · aujourd'hui: {s['deliveries_today']}\n"
+                f"médias partagés entre demandes: {s['shared_media']}")
 
     def send_status(self, chat_id: int) -> None:
         self._send_view(chat_id, "home")            # always a NEW message: never an identical edit

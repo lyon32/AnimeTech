@@ -4,7 +4,7 @@ Per the master prompt, download+publication progress through a single linear
 chain, plus terminal/failure side states:
 
   DISCOVERED -> IDENTIFIED -> QUEUED -> DOWNLOADING -> DOWNLOADED
-    -> VALIDATING -> VALIDATED -> PUBLISHING_THUMBNAIL -> THUMBNAIL_PUBLISHED
+    -> VALIDATING -> VALIDATED [-> READY, private-only media] -> PUBLISHING_THUMBNAIL -> THUMBNAIL_PUBLISHED
     -> PUBLISHING_VIDEO -> PUBLISHED -> CLEANUP_PENDING -> CLEANED
 
 Side states (from any step): FAILED, RETRY_WAIT, STRUCTURE_CHANGED, SKIPPED_DUP.
@@ -22,6 +22,7 @@ class State(str, Enum):
     DOWNLOADED = "downloaded"
     VALIDATING = "validating"
     VALIDATED = "validated"
+    READY = "ready"                    # validated file kept for PRIVATE delivery only (no channel publication)
     PUBLISHING_THUMBNAIL = "publishing_thumbnail"
     THUMBNAIL_PUBLISHED = "thumbnail_published"
     PUBLISHING_VIDEO = "publishing_video"
@@ -50,7 +51,8 @@ _ALLOWED: dict[State, set[State]] = {
     State.DOWNLOADING: {State.DOWNLOADED, State.RETRY_WAIT, State.FAILED},
     State.DOWNLOADED: {State.VALIDATING, State.RETRY_WAIT, State.FAILED},
     State.VALIDATING: {State.VALIDATED, State.RETRY_WAIT, State.FAILED},
-    State.VALIDATED: {State.PUBLISHING_THUMBNAIL, State.PUBLISHED, State.FAILED},
+    State.VALIDATED: {State.PUBLISHING_THUMBNAIL, State.PUBLISHED, State.READY, State.FAILED},
+    State.READY: {State.PUBLISHING_THUMBNAIL, State.PUBLISHED, State.QUEUED, State.FAILED},
     State.PUBLISHING_THUMBNAIL: {State.THUMBNAIL_PUBLISHED, State.RETRY_WAIT, State.FAILED},
     State.THUMBNAIL_PUBLISHED: {State.PUBLISHING_VIDEO, State.PUBLISHED, State.RETRY_WAIT, State.FAILED},
     State.PUBLISHING_VIDEO: {State.PUBLISHED, State.RETRY_WAIT, State.FAILED},

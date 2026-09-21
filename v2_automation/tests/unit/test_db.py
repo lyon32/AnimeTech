@@ -41,8 +41,8 @@ def test_migrations_v1_to_v2_upgrade_path():
                   "'https://voir-anime.to/anime/legacy/e1','vostfr','https://voir-anime.to/anime/legacy/e1')")
         c.commit()
         eid = c.execute("SELECT id FROM episodes").fetchone()["id"]
-        applied = db.migrate(c)                    # v2 then v3 (automatic mode) on top of a v1 db
-        assert applied == [2, 3]
+        applied = db.migrate(c)                    # v2, v3 (automatic mode), v4 (core media engine), v5 (canonical identity) on a v1 db
+        assert applied == [2, 3, 4, 5]
         acols = {r["name"] for r in c.execute("PRAGMA table_info(animes)").fetchall()}
         assert {"source_url", "language", "last_checked_at", "last_successful_check_at",
                 "last_check_error", "force_check"} <= acols
@@ -54,6 +54,8 @@ def test_migrations_v1_to_v2_upgrade_path():
         assert {"animes", "control", "alerts", "leases"} <= tables
         ep = repo.get(c, eid)                      # legacy row readable after upgrade
         assert ep is not None and ep.attempt_count == 0 and ep.next_retry_at is None
+        assert ep.media_key and ep.media_key.startswith("m_") and ep.origin == "watcher"   # back-filled
+        assert ep.media_ref == "voir-anime.to|legacy|S00|E0|VOSTFR" or ep.media_ref.startswith("voir-anime.to|legacy|S00|")
     finally:
         c.close()
         import shutil

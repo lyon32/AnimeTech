@@ -29,6 +29,7 @@ queues:
   dynamic_scheduler: true
 
 downloads:
+  dir: "E:/Anime.Download"           # dossier des videos (disque externe) ; absent = output/evidence/media/downloads. Disque debranche = echec + reessai, jamais de repli sur C:
   min_free_disk_bytes: 5368709120    # 5 GiB garde-fou avant chaque download
   timeout_seconds: 600
   not_available_retry_minutes: 30   # episode pas encore publie par la source : on re-verifie toutes les 30 min
@@ -45,7 +46,7 @@ telegram:
   thumbnail_before_video: true         # message vignette PUIS message video (cible immediatete de publication)
 
 publication:
-  channel_tag: "[@Anime_vostfr_mangas]"          # ligne finale de la fiche (légende de la miniature)
+  channel_tag: "[@spy_family_2025]"          # ligne finale de la fiche (légende de la miniature)
   cleanup_after_days: 14               # fichiers video locaux supprimes 14 jours apres la publication (messages Telegram conserves : la video reste dans le canal)
 
 limits:
@@ -66,3 +67,14 @@ monitoring:
 logging:
   level: INFO
   dir: logs
+# --- V2 : demandes utilisateurs (bot prive) -------------------------------------------------------------
+requests:
+  wait_timeout_seconds: 1200      # episode absent : la demande reste WAITING_FOR_MEDIA 20 min puis EXPIRED (env REQUEST_WAIT_TIMEOUT)
+  recheck_seconds: 60             # frequence de re-verification de la source pour une demande en attente
+
+user_bot:
+  use_channel_bot: true         # pas de USER_BOT_TOKEN : le bot utilisateur est le bot du canal (BestAnime32_bot, deja admin du canal : copyMessage possible)
+  required_channels:              # membre d au moins UN de ces canaux pour utiliser le bot (env REQUIRED_CHANNELS, separes par des virgules)
+    - "@spy_family_2025"
+  delivery_copy_from_channel: true   # media deja publie : copyMessage depuis le canal (le bot utilisateur doit etre dans le canal)
+  max_delivery_attempts: 3

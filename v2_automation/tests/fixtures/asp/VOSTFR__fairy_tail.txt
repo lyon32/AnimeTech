@@ -1,0 +1,137 @@
+___ASPSTART_HTML___<div id="asp-res-508" class='item asp_r_pagepost asp_r_pagepost_508 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e51b6b9e5f.jpg">
+	                <img loading="lazy" alt="Fairy Tail" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e51b6b9e5f.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail/'>
+                Fairy Tail                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Lucy est une jeune magicienne de 16 ans à la recherche d'une guilde. Fan de magie depuis sa plus ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-100629" class='item asp_r_pagepost asp_r_pagepost_100629 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-100-years-quest/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/06/thumb_6671a451c3548.jpg">
+	                <img loading="lazy" alt="Fairy Tail: 100 Years Quest" src="https://voir-anime.to/wp-content/uploads/2024/06/thumb_6671a451c3548.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-100-years-quest/'>
+                Fairy Tail: 100 Years Quest                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Basé sur le manga Fairy Tail - 100 Years Quest de Ueda Atsuo et Mashima Hiro. Il s'agit de la suite ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2353" class='item asp_r_pagepost asp_r_pagepost_2353 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-dragon-cry/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1362e446401.jpg">
+	                <img loading="lazy" alt="Fairy Tail: Dragon Cry" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e1362e446401.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-dragon-cry/'>
+                Fairy Tail: Dragon Cry                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Prenant place après la fin de l'arc Avatar du manga, l'histoire de ce second long-métrage n'est pas ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-79306" class='item asp_r_pagepost asp_r_pagepost_79306 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-movie-houou-no-miko/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dca11a288.png">
+	                <img loading="lazy" alt="Fairy Tail Movie: Houou no Miko" src="https://voir-anime.to/wp-content/uploads/2021/03/thumb_6040dca11a288.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-movie-houou-no-miko/'>
+                Fairy Tail Movie: Houou no Miko                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Éclair est une jeune femme amnésique qui a perdu l'ensemble de ses souvenirs. Elle ne souvient plus ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-73331" class='item asp_r_pagepost asp_r_pagepost_73331 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-movie-houou-no-miko-hajimari-no-asa/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/02/thumb_6019ecc376e49.png">
+	                <img loading="lazy" alt="Fairy Tail Movie: Houou no Miko &#8211; Hajimari no Asa" src="https://voir-anime.to/wp-content/uploads/2021/02/thumb_6019ecc376e49.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-movie-houou-no-miko-hajimari-no-asa/'>
+                Fairy Tail Movie: Houou no Miko &#8211; Hajimari no Asa                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Cet épisode spécial montre une journée de la vie d'Eclair comme un prologue du film Houou no Miko.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-73771" class='item asp_r_pagepost asp_r_pagepost_73771 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-x-rave/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/02/thumb_6019ed6e44592.jpg">
+	                <img loading="lazy" alt="Fairy Tail x Rave" src="https://voir-anime.to/wp-content/uploads/2021/02/thumb_6019ed6e44592.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-x-rave/'>
+                Fairy Tail x Rave                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Suite à une requête, Natsu, Lucy et Happy partent en mission afin d'arrêter un dangereux mage qui ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-73333" class='item asp_r_pagepost asp_r_pagepost_73333 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/fairy-tail-ova/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/02/thumb_6019ecc517d41.jpg">
+	                <img loading="lazy" alt="Fairy Tail OVA" src="https://voir-anime.to/wp-content/uploads/2021/02/thumb_6019ecc517d41.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/fairy-tail-ova/'>
+                Fairy Tail OVA                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            OVAs regroupés avec des volumes d'éditions spéciales du manga. 1. Youkoso Fairy Hills! Lucy tombe ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-54842" class='item asp_r_pagepost asp_r_pagepost_54842 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/tenshi-no-shippo/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/07/thumb_5f01e72f68a8d.jpg">
+	                <img loading="lazy" alt="Tenshi no Shippo" src="https://voir-anime.to/wp-content/uploads/2020/07/thumb_5f01e72f68a8d.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/tenshi-no-shippo/'>
+                Tenshi no Shippo                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Gorō Mutsumi n'a pas de chance, ni avec le travail, ni avec ses études, et sûrement pas avec la ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":8,"full_results_count":8,"results":[{"id":508,"blogid":1,"title":"Fairy Tail","post_title":"Fairy Tail","content":"Lucy est une jeune magicienne de 16 ans \u00e0 la recherche d'une guilde. Fan de magie depuis sa plus ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e51b6b9e5f.jpg","date":"2020-01-02 20:41:50","post_date":"2020-01-02 20:41:50","post_modified":"2021-03-13 09:58:10","menu_order":0,"relevance":1310496,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail\/"},{"id":100629,"blogid":1,"title":"Fairy Tail: 100 Years Quest","post_title":"Fairy Tail: 100 Years Quest","content":"Bas\u00e9 sur le manga Fairy Tail - 100 Years Quest de Ueda Atsuo et Mashima Hiro. Il s'agit de la suite ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/06\/thumb_6671a451c3548.jpg","date":"2024-06-18 15:43:09","post_date":"2024-06-18 15:43:09","post_modified":"2024-07-07 09:40:11","menu_order":0,"relevance":1110376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-100-years-quest\/"},{"id":2353,"blogid":1,"title":"Fairy Tail: Dragon Cry","post_title":"Fairy Tail: Dragon Cry","content":"Prenant place apr\u00e8s la fin de l'arc Avatar du manga, l'histoire de ce second long-m\u00e9trage n'est pas ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e1362e446401.jpg","date":"2020-01-07 11:52:26","post_date":"2020-01-07 11:52:26","post_modified":"2020-01-07 11:52:26","menu_order":0,"relevance":1110328,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-dragon-cry\/"},{"id":79306,"blogid":1,"title":"Fairy Tail Movie: Houou no Miko","post_title":"Fairy Tail Movie: Houou no Miko","content":"\u00c9clair est une jeune femme amn\u00e9sique qui a perdu l'ensemble de ses souvenirs. Elle ne souvient plus ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/03\/thumb_6040dca11a288.png","date":"2021-03-04 15:18:50","post_date":"2021-03-04 15:18:50","post_modified":"2021-03-04 15:18:50","menu_order":0,"relevance":1102376,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-movie-houou-no-miko\/"},{"id":73331,"blogid":1,"title":"Fairy Tail Movie: Houou no Miko &#8211; Hajimari no Asa","post_title":"Fairy Tail Movie: Houou no Miko - Hajimari no Asa","content":"Cet \u00e9pisode sp\u00e9cial montre une journ\u00e9e de la vie d'Eclair comme un prologue du film Houou no Miko.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/02\/thumb_6019ecc376e49.png","date":"2021-02-04 15:11:52","post_date":"2021-02-04 15:11:52","post_modified":"2021-02-04 15:11:52","menu_order":0,"relevance":1102232,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-movie-houou-no-miko-hajimari-no-asa\/"},{"id":73771,"blogid":1,"title":"Fairy Tail x Rave","post_title":"Fairy Tail x Rave","content":"Suite \u00e0 une requ\u00eate, Natsu, Lucy et Happy partent en mission afin d'arr\u00eater un dangereux mage qui ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/02\/thumb_6019ed6e44592.jpg","date":"2021-02-04 15:16:36","post_date":"2021-02-04 15:16:36","post_modified":"2021-02-04 15:16:36","menu_order":0,"relevance":1101944,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-x-rave\/"},{"id":73333,"blogid":1,"title":"Fairy Tail OVA","post_title":"Fairy Tail OVA","content":"OVAs regroup\u00e9s avec des volumes d'\u00e9ditions sp\u00e9ciales du manga. 1. Youkoso Fairy Hills! Lucy tombe ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/02\/thumb_6019ecc517d41.jpg","date":"2021-02-04 15:13:03","post_date":"2021-02-04 15:13:03","post_modified":"2021-02-04 15:13:03","menu_order":0,"relevance":1101944,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":6,"link":"https:\/\/voir-anime.to\/anime\/fairy-tail-ova\/"},{"id":54842,"blogid":1,"title":"Tenshi no Shippo","post_title":"Tenshi no Shippo","content":"Gor\u014d Mutsumi n'a pas de chance, ni avec le travail, ni avec ses \u00e9tudes, et s\u00fbrement pas avec la ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/07\/thumb_5f01e72f68a8d.jpg","date":"2020-07-05 20:44:28","post_date":"2020-07-05 20:44:28","post_modified":"2020-07-05 20:44:28","menu_order":0,"relevance":1000184,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":7,"link":"https:\/\/voir-anime.to\/anime\/tenshi-no-shippo\/"}]}___ASPEND_DATA___

@@ -1,0 +1,35 @@
+___ASPSTART_HTML___<div id="asp-res-428" class='item asp_r_pagepost asp_r_pagepost_428 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/death-note/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e39f6d455c.jpg">
+	                <img loading="lazy" alt="Death Note" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e39f6d455c.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/death-note/'>
+                Death Note                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Light Yagami, un jeune étudiant surdoué, ramasse un jour le "Death Note", un carnet tenu auparavant ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-93694" class='item asp_r_pagepost asp_r_pagepost_93694 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/death-note-hd/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e39f6d455c.jpg">
+	                <img loading="lazy" alt="Death Note (HD)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e39f6d455c.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/death-note-hd/'>
+                Death Note (HD)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Light Yagami, un jeune étudiant surdoué, ramasse un jour le "Death Note", un carnet tenu auparavant ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":2,"full_results_count":2,"results":[{"id":428,"blogid":1,"title":"Death Note","post_title":"Death Note","content":"Light Yagami, un jeune \u00e9tudiant surdou\u00e9, ramasse un jour le \"Death Note\", un carnet tenu auparavant ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e39f6d455c.jpg","date":"2020-01-02 19:06:11","post_date":"2020-01-02 19:06:11","post_modified":"2020-01-02 19:06:11","menu_order":0,"relevance":1302112,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/death-note\/"},{"id":93694,"blogid":1,"title":"Death Note (HD)","post_title":"Death Note (HD)","content":"Light Yagami, un jeune \u00e9tudiant surdou\u00e9, ramasse un jour le \"Death Note\", un carnet tenu auparavant ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e39f6d455c.jpg","date":"2023-03-31 17:57:59","post_date":"2023-03-31 17:57:59","post_modified":"2023-03-31 17:58:00","menu_order":0,"relevance":1102288,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/death-note-hd\/"}]}___ASPEND_DATA___

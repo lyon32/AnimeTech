@@ -17,6 +17,8 @@ Everything outside the DB is injectable so unit tests never touch the network.
 from __future__ import annotations
 
 import logging
+import os
+import socket
 import statistics
 import threading
 from contextlib import contextmanager
@@ -73,7 +75,7 @@ class DownloadDeps:
 
 
 # end states: the episode leaves its anime queue so the next episode can start
-QUEUE_RELEASING = ("published", "cleanup_pending", "cleaned", "failed", "skipped_dup")
+QUEUE_RELEASING = ("published", "cleanup_pending", "cleaned", "failed", "skipped_dup", "ready")
 
 
 class RetryWindowExceeded(RuntimeError):
@@ -82,6 +84,53 @@ class RetryWindowExceeded(RuntimeError):
 
 class EpisodeAlreadyDone(RuntimeError):
     pass
+
+
+class EpisodeBusy(RuntimeError):
+    """Another worker (thread or process) owns this media right now: this one withdraws, it does not download."""
+
+
+class MediaFileLock:
+    """Exclusive lock file next to the media file (`<file>.lock`, created with O_EXCL): even outside the database claim, two
+    processes can never write the same file.  A lock left by a dead process (crash) is recovered; one held by a live process is
+    respected."""
+
+    def __init__(self, target: Path):
+        self.path = target.with_name(target.name + ".lock")
+        self._owned = False
+
+    def __enter__(self) -> "MediaFileLock":
+        self.path.parent.mkdir(parents=True, exist_ok=True)
+        for _ in range(2):
+            try:
+                fd = os.open(str(self.path), os.O_CREAT | os.O_EXCL | os.O_WRONLY)
+            except FileExistsError:
+                if self._holder_alive():
+                    raise EpisodeBusy(f"{self.path.name} is locked by a live process")
+                self.path.unlink(missing_ok=True)                     # stale lock of a crashed process: take it over
+                continue
+            with os.fdopen(fd, "w") as fh:
+                fh.write(f"{os.getpid()}\n")
+            self._owned = True
+            return self
+        raise EpisodeBusy(f"{self.path.name} could not be locked")
+
+    def _holder_alive(self) -> bool:
+        try:
+            pid = int(self.path.read_text().split()[0])
+        except (OSError, ValueError, IndexError):
+            return False
+        if pid == os.getpid():
+            return True                                               # this very process: another thread holds it
+        try:
+            import psutil
+            return psutil.pid_exists(pid)
+        except Exception:
+            return True                                               # cannot tell: safer to refuse
+
+    def __exit__(self, *exc) -> None:
+        if self._owned:
+            self.path.unlink(missing_ok=True)
 
 
 def make_telegram_client(cfg: app_config.AppConfig) -> V2TelegramClient | None:
@@ -235,6 +284,22 @@ class DownloadManager:
     # ── high-level entry ─────────────────────────────────────────────────────────
 
     def process_episode(self, episode_id: int, on_downloaded: Callable[[int], None] | None = None) -> str:
+        """Runs one episode through the machine — but only as its ONE owner: the claim is an atomic compare-and-set in the
+        database (`repo.claim_media`) and the media file carries an exclusive lock, so two workers can never both download it."""
+        ep = repo.get(self.conn, episode_id)
+        if ep is None:
+            raise KeyError(f"episode {episode_id} not found")
+        owner = f"{socket.gethostname()}:{os.getpid()}:{threading.get_ident()}"
+        if not repo.claim_media(self.conn, episode_id, owner):
+            logger.info("[CLAIM] media=%s job=%s already owned by %s: withdrawing", ep.media_key, episode_id, ep.claimed_by)
+            raise EpisodeBusy(f"episode {episode_id} is already being processed")
+        try:
+            with MediaFileLock(self._output_path(ep)):
+                return self._process_claimed(episode_id, on_downloaded)
+        finally:
+            repo.release_media(self.conn, episode_id, owner)
+
+    def _process_claimed(self, episode_id: int, on_downloaded: Callable[[int], None] | None = None) -> str:
         """Runs one episode through the machine. Returns its final status.  `on_downloaded(episode_id)` is called as soon
         as the download and validation are finished (the worker frees the download slot: the next anime starts while this
         one is still being sent / published)."""
@@ -340,8 +405,8 @@ class DownloadManager:
         if self.progress is not None:
             self.progress(n, label, detail)
         ep = getattr(self._ctx, "ep", None)        # per-thread: several episodes run in parallel
-        logger.info("[%s] job=%s anime=%s episode=%s %s", self._STEP_TAGS.get(n, label.upper()),
-                    getattr(ep, "id", "?"), getattr(ep, "anime_key", "?"),
+        logger.info("[%s] job=%s media=%s anime=%s episode=%s %s", self._STEP_TAGS.get(n, label.upper()),
+                    getattr(ep, "id", "?"), getattr(ep, "media_key", None) or "?", getattr(ep, "anime_key", "?"),
                     getattr(ep, "episode_number", "?"), detail)
 
     def _do_download_and_publish(self, ep) -> None:
@@ -445,7 +510,8 @@ class DownloadManager:
                         media_playlist, output_path, self.deps.ffmpeg(),
                         # one private segment folder per episode: parallel jobs used to share ".../segments" and
                         # overwrite / delete each other's seg_00123.ts (corrupt mux, FileNotFoundError)
-                        work_root=evidence.evidence_dir("download_work") / f"ep_{ep.id}",
+                        work_root=(self._media_dir() / "_work" if (self.cfg.downloads or {}).get("dir")
+                                   else evidence.evidence_dir("download_work")) / f"ep_{ep.id}",
                     )
                 except Exception as exc:
                     raise errors.wrap(errors.DOWNLOAD_FAILED, exc) from exc
@@ -480,6 +546,14 @@ class DownloadManager:
                     repo.get(self.conn, ep.id), file_size=result.size_bytes,
                     file_path=str(output_path), video_sha256=sha, media_hash=sha))
                 self.conn.commit()
+                if not ep.publish_channel:
+                    # PRIVATE-ONLY media (asked by a user for an anime outside the watched list): nothing goes to the
+                    # channel.  The validated file waits on disk (READY) for the delivery engine, which serves every
+                    # user waiting for it from this one download.
+                    repo.transition(self.conn, ep.id, State.READY.value)
+                    self.conn.commit()
+                    self._step(7, "Telegram", "média privé : pas de publication canal — READY pour la livraison")
+                    return
 
                 meta = build_metadata(
                     episode_url=ep.episode_url, page_title_raw=getattr(extraction, "page_title_raw", None),
@@ -688,8 +762,8 @@ class DownloadManager:
             repo.transition(self.conn, ep.id, State.CLEANUP_PENDING.value)
             repo.set_cleanup_at(self.conn, ep.id, self._cleanup_at())
             self.conn.commit()
-            logger.info("[PUBLISHED] job=%s anime=%s episode=%s thumbnail_message_id=%s video_message_id=%s",
-                        ep.id, ep.anime_key, ep.episode_number, tmsg_id, video_id)
+            logger.info("[PUBLISHED] job=%s media=%s anime=%s episode=%s thumbnail_message_id=%s video_message_id=%s",
+                        ep.id, ep.media_key, ep.anime_key, ep.episode_number, tmsg_id, video_id)
             # Phase 12 — publication proof (no secrets: token/channel excluded).
             evidence.record_publication({
                 "episode_id": ep.id, "anime_key": ep.anime_key,
@@ -773,7 +847,8 @@ class DownloadManager:
 
     def _free_disk(self) -> int:
         import psutil
-        p = app_config.DATA_DIR
+        raw = (self.cfg.downloads or {}).get("dir")
+        p = self._media_dir() if raw else app_config.DATA_DIR
         if not p.exists():
             p = p.parent
         return psutil.disk_usage(str(p)).free
@@ -848,7 +923,23 @@ class DownloadManager:
 
     def _output_path(self, ep) -> Path:
         key = ep.episode_key.replace("https://", "").replace("http://", "").replace("/", "_")
-        return evidence.evidence_dir("media", "downloads") / f"{key}.mp4"
+        legacy = self._media_dir() / f"{key}.mp4"
+        if not ep.media_key:
+            return legacy
+        named = self._media_dir() / f"{key}__{ep.media_key[2:10]}.mp4"      # the media key travels with the file
+        return legacy if (legacy.exists() and not named.exists()) else named
+
+    def _media_dir(self) -> Path:
+        """Dossier des MP4 : `downloads.dir` (ex. disque externe) sinon output/evidence/media/downloads.
+        Un disque configuré mais absent est une erreur (jamais de repli silencieux sur C:)."""
+        raw = (self.cfg.downloads or {}).get("dir")
+        if not raw:
+            return evidence.evidence_dir("media", "downloads")
+        p = Path(str(raw))
+        if not Path(p.anchor).exists():
+            raise RuntimeError(f"disque de téléchargement introuvable : {p.anchor} (branchez-le) — dossier {p}")
+        p.mkdir(parents=True, exist_ok=True)
+        return p
 
 
 def _upload_outcome_unknown(exc: BaseException) -> bool:

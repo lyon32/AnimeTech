@@ -1,0 +1,103 @@
+___ASPSTART_HTML___<div id="asp-res-78697" class='item asp_r_pagepost asp_r_pagepost_78697 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/kimetsu-no-yaiba-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e106728794b1.jpg">
+	                <img loading="lazy" alt="Kimetsu no Yaiba (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e106728794b1.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/kimetsu-no-yaiba-vf/'>
+                Kimetsu no Yaiba (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Depuis les temps anciens, il existe des rumeurs concernant des démons mangeurs d'hommes qui se ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-87458" class='item asp_r_pagepost asp_r_pagepost_87458 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/kimetsu-no-yaiba-2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/09/thumb_61435b70bf3cc.png">
+	                <img loading="lazy" alt="Kimetsu no Yaiba 2 (VF)" src="https://voir-anime.to/wp-content/uploads/2021/09/thumb_61435b70bf3cc.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/kimetsu-no-yaiba-2-vf/'>
+                Kimetsu no Yaiba 2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de Kimetsu no Yaiba        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-115102" class='item asp_r_pagepost asp_r_pagepost_115102 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/kimetsu-no-yaiba-mugenjou-hen-movie-1-akaza-sairai-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2025/12/thumb_6952a6b35d346.jpg">
+	                <img loading="lazy" alt="Kimetsu no Yaiba: Mugenjou-hen Movie 1 &#8211; Akaza Sairai (VF)" src="https://voir-anime.to/wp-content/uploads/2025/12/thumb_6952a6b35d346.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/kimetsu-no-yaiba-mugenjou-hen-movie-1-akaza-sairai-vf/'>
+                Kimetsu no Yaiba: Mugenjou-hen Movie 1 &#8211; Akaza Sairai (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Il s'agit de l'adaptation de l'arc Infinity Castle du manga. Les Piliers font désormais face à ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-94786" class='item asp_r_pagepost asp_r_pagepost_94786 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/kimetsu-no-yaiba-3-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/03/thumb_64130a662574a.jpg">
+	                <img loading="lazy" alt="Kimetsu no Yaiba 3 (VF)" src="https://voir-anime.to/wp-content/uploads/2023/03/thumb_64130a662574a.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/kimetsu-no-yaiba-3-vf/'>
+                Kimetsu no Yaiba 3 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 3 de "Kimetsu no Yaiba"        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-83937" class='item asp_r_pagepost asp_r_pagepost_83937 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/kimetsu-no-yaiba-mugen-ressha-hen-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2021/04/thumb_608831fd17735.png">
+	                <img loading="lazy" alt="Kimetsu no Yaiba: Mugen Ressha-hen (VF)" src="https://voir-anime.to/wp-content/uploads/2021/04/thumb_608831fd17735.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/kimetsu-no-yaiba-mugen-ressha-hen-vf/'>
+                Kimetsu no Yaiba: Mugen Ressha-hen (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Ce film adapte l'arc du Demon Train. Enmu, la première Lune Inférieure, a été chargé de tuer Kamado ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-100436" class='item asp_r_pagepost asp_r_pagepost_100436 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/kimetsu-no-yaiba-4-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2024/03/thumb_65f82149a5adb.png">
+	                <img loading="lazy" alt="Kimetsu no Yaiba 4 (VF)" src="https://voir-anime.to/wp-content/uploads/2024/03/thumb_65f82149a5adb.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/kimetsu-no-yaiba-4-vf/'>
+                Kimetsu no Yaiba 4 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 4 de "Kimetsu no Yaiba"        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":6,"full_results_count":6,"results":[{"id":78697,"blogid":1,"title":"Kimetsu no Yaiba (VF)","post_title":"Kimetsu no Yaiba (VF)","content":"Depuis les temps anciens, il existe des rumeurs concernant des d\u00e9mons mangeurs d'hommes qui se ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e106728794b1.jpg","date":"2021-02-25 17:43:22","post_date":"2021-02-25 17:43:22","post_modified":"2021-10-01 15:06:24","menu_order":0,"relevance":1110532,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/kimetsu-no-yaiba-vf\/"},{"id":87458,"blogid":1,"title":"Kimetsu no Yaiba 2 (VF)","post_title":"Kimetsu no Yaiba 2 (VF)","content":"Saison 2 de Kimetsu no Yaiba","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/09\/thumb_61435b70bf3cc.png","date":"2022-02-26 14:26:19","post_date":"2022-02-26 14:26:19","post_modified":"2022-05-01 19:51:50","menu_order":0,"relevance":1110508,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/kimetsu-no-yaiba-2-vf\/"},{"id":115102,"blogid":1,"title":"Kimetsu no Yaiba: Mugenjou-hen Movie 1 &#8211; Akaza Sairai (VF)","post_title":"Kimetsu no Yaiba: Mugenjou-hen Movie 1 - Akaza Sairai (VF)","content":"Il s'agit de l'adaptation de l'arc Infinity Castle du manga. Les Piliers font d\u00e9sormais face \u00e0 ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2025\/12\/thumb_6952a6b35d346.jpg","date":"2026-08-07 18:22:06","post_date":"2026-08-07 18:22:06","post_modified":"2026-08-07 18:22:06","menu_order":0,"relevance":1102508,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/kimetsu-no-yaiba-mugenjou-hen-movie-1-akaza-sairai-vf\/"},{"id":94786,"blogid":1,"title":"Kimetsu no Yaiba 3 (VF)","post_title":"Kimetsu no Yaiba 3 (VF)","content":"Saison 3 de \"Kimetsu no Yaiba\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/03\/thumb_64130a662574a.jpg","date":"2023-05-01 15:47:08","post_date":"2023-05-01 15:47:08","post_modified":"2023-05-01 15:47:08","menu_order":0,"relevance":1102228,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":3,"link":"https:\/\/voir-anime.to\/anime\/kimetsu-no-yaiba-3-vf\/"},{"id":83937,"blogid":1,"title":"Kimetsu no Yaiba: Mugen Ressha-hen (VF)","post_title":"Kimetsu no Yaiba: Mugen Ressha-hen (VF)","content":"Ce film adapte l'arc du Demon Train. Enmu, la premi\u00e8re Lune Inf\u00e9rieure, a \u00e9t\u00e9 charg\u00e9 de tuer Kamado ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2021\/04\/thumb_608831fd17735.png","date":"2021-07-30 16:19:37","post_date":"2021-07-30 16:19:37","post_modified":"2022-05-01 19:51:28","menu_order":0,"relevance":1102220,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":4,"link":"https:\/\/voir-anime.to\/anime\/kimetsu-no-yaiba-mugen-ressha-hen-vf\/"},{"id":100436,"blogid":1,"title":"Kimetsu no Yaiba 4 (VF)","post_title":"Kimetsu no Yaiba 4 (VF)","content":"Saison 4 de \"Kimetsu no Yaiba\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2024\/03\/thumb_65f82149a5adb.png","date":"2024-06-10 10:47:04","post_date":"2024-06-10 10:47:04","post_modified":"2024-06-10 10:47:04","menu_order":0,"relevance":1102204,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":5,"link":"https:\/\/voir-anime.to\/anime\/kimetsu-no-yaiba-4-vf\/"}]}___ASPEND_DATA___

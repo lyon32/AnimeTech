@@ -26,11 +26,12 @@ from typing import Callable
 from pathlib import Path
 from urllib.parse import urlparse
 
-from fastapi import FastAPI, HTTPException, Request
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi import Body, FastAPI, HTTPException, Request
+from fastapi.responses import FileResponse, HTMLResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 
-from . import app_config, db, monitoring, repo, service, web_data
+from . import app_config, audit, db, monitoring, panel_downloads, repo, service, web_auth, web_data
+from .catalog import SourceCatalog
 from .schema import current_schema_version
 from .timeutil import now_utc
 
@@ -52,9 +53,13 @@ _CFG: Callable[[], app_config.AppConfig] | None = None
 _FETCH = None          # page fetcher for adding an anime by URL (injected in tests; default = real HTTP)
 
 
+PUBLIC_PATHS = ("/healthz", "/readyz", "/api/login")       # reachable without a session; /ui/* is static, holds no data
+
+
 def create_app(connect: Callable[[], sqlite3.Connection] | None = None,
                cfg_factory: Callable[[], app_config.AppConfig] | None = None,
-               fetch: Callable[[str], str] | None = None) -> FastAPI:
+               fetch: Callable[[str], str] | None = None,
+               auth: "web_auth.WebAuth | None | str" = "env") -> FastAPI:
     global _CONN, _CFG, _FETCH
     if connect is not None:
         _CONN = connect
@@ -72,6 +77,48 @@ def create_app(connect: Callable[[], sqlite3.Connection] | None = None,
             if origin and urlparse(origin).hostname not in LOCAL_HOSTS:
                 return JSONResponse({"detail": "origine refusée"}, status_code=403)
         return await call_next(request)
+
+    web_auth_cfg = web_auth.WebAuth.from_env() if auth == "env" else auth
+
+    @app.middleware("http")
+    async def authenticate(request: Request, call_next):
+        """Every route but the public ones needs a valid session when authentication is configured; the acting admin is
+        recorded for the audit log."""
+        path = request.url.path
+        user = "local"
+        if web_auth_cfg is not None and path not in PUBLIC_PATHS and not path.startswith("/ui/"):
+            user = web_auth_cfg.user_of(request.cookies.get(web_auth.COOKIE))
+            if user is None:
+                if path == "/":
+                    return HTMLResponse(web_auth.LOGIN_PAGE, headers={"Cache-Control": "no-store"})
+                return JSONResponse({"detail": "authentification requise"}, status_code=401)
+        with audit.acting_as("web", user):
+            return await call_next(request)
+
+    @app.post("/api/login")
+    def login(request: Request, body: dict = Body(...)):
+        if web_auth_cfg is None:
+            return {"ok": True, "auth": "disabled"}
+        client = request.client.host if request.client else "?"
+        if web_auth_cfg.limited(client):
+            return JSONResponse({"detail": "trop de tentatives"}, status_code=429)
+        if not web_auth_cfg.check(str(body.get("username", "")), str(body.get("password", "")), client):
+            return JSONResponse({"detail": "identifiants invalides"}, status_code=401)
+        resp = JSONResponse({"ok": True})
+        resp.set_cookie(web_auth.COOKIE, web_auth_cfg.issue(), httponly=True, samesite="strict",
+                        max_age=web_auth.SESSION_TTL_S, path="/")
+        return resp
+
+    @app.post("/api/logout")
+    def logout():
+        resp = JSONResponse({"ok": True})
+        resp.delete_cookie(web_auth.COOKIE, path="/")
+        return resp
+
+    @app.get("/api/whoami")
+    def whoami(request: Request) -> dict:
+        who = web_auth_cfg.user_of(request.cookies.get(web_auth.COOKIE)) if web_auth_cfg else None
+        return {"authenticated": who is not None or web_auth_cfg is None, "user": who, "auth": web_auth_cfg is not None}
 
     def conn() -> sqlite3.Connection:
         return _CONN()
@@ -248,6 +295,30 @@ def create_app(connect: Callable[[], sqlite3.Connection] | None = None,
             raise HTTPException(400, res.get("message", "erreur"))
         return res
 
+    @app.get("/api/search")
+    def panel_search(q: str = "") -> dict:
+        res = panel_downloads.search(conn(), get_cfg(), q)
+        if not res.get("ok"):
+            raise HTTPException(400, res.get("message", "erreur"))
+        return res
+
+    @app.get("/api/anime-episodes")
+    def panel_episodes(url: str) -> dict:
+        res = panel_downloads.episodes(conn(), get_cfg(), url, catalog=SourceCatalog(get_cfg(), fetch=_FETCH))
+        if not res.get("ok"):
+            raise HTTPException(400, res.get("message", "erreur"))
+        return res
+
+    @app.post("/api/downloads")
+    def panel_download(payload: dict = Body(...)) -> dict:
+        res = service.panel_download(conn(), str(payload.get("source_url") or ""), cfg=get_cfg(),
+                                     mode=str(payload.get("mode") or ""), version=str(payload.get("version") or "VOSTFR"),
+                                     numbers=payload.get("numbers") or [], n=int(payload.get("n") or 1),
+                                     title=payload.get("title"), watch=bool(payload.get("watch")), fetch=_FETCH)
+        if not res.get("ok"):
+            raise HTTPException(400, res.get("message", "erreur"))
+        return res
+
     @app.post("/api/animes/{anime_key}/edit")
     def animes_edit(anime_key: str, title: str | None = None, source_url: str | None = None,
                     language: str | None = None) -> dict:
@@ -346,6 +417,84 @@ def create_app(connect: Callable[[], sqlite3.Connection] | None = None,
         except ValueError:
             raise HTTPException(404, "notification inconnue")
         return {"ok": True, "key": key, "enabled": on}
+
+    # ── V2 user side: requests, users, deliveries, Telegram, audit, manual actions ──
+
+    def _confirmed(body: dict | None) -> bool:
+        return bool(body and body.get("confirm") is True)
+
+    def _act(res: dict) -> dict:
+        if res.get("needs_confirmation"):
+            raise HTTPException(428, res["message"])
+        if not res.get("ok"):
+            raise HTTPException(409, res.get("message", "refusé"))
+        return res
+
+    @app.get("/api/requests")
+    def requests_list(state: str | None = None, user_id: int | None = None, limit: int = 100) -> dict:
+        return {"items": service.requests_overview(conn(), state=state, user_id=user_id, limit=limit)}
+
+    @app.get("/api/requests/{request_id}")
+    def request_get(request_id: int) -> dict:
+        d = service.request_detail(conn(), request_id)
+        if d is None:
+            raise HTTPException(404, "inconnue")
+        return d
+
+    @app.post("/api/requests/{request_id}/cancel")
+    def request_cancel(request_id: int, body: dict | None = Body(None)) -> dict:
+        return _act(service.cancel_request(conn(), request_id, confirm=_confirmed(body)))
+
+    @app.get("/api/users")
+    def users_list(limit: int = 200) -> dict:
+        return {"items": service.users_overview(conn(), limit)}
+
+    @app.get("/api/users/{telegram_id}")
+    def user_get(telegram_id: int) -> dict:
+        d = service.user_detail(conn(), telegram_id)
+        if d is None:
+            raise HTTPException(404, "inconnu")
+        return d
+
+    @app.get("/api/deliveries")
+    def deliveries_list(limit: int = 100) -> dict:
+        return {"items": service.deliveries_recent(conn(), limit)}
+
+    @app.post("/api/deliveries/{delivery_id}/retry")
+    def delivery_retry(delivery_id: int, body: dict | None = Body(None)) -> dict:
+        return _act(service.retry_delivery(conn(), delivery_id, confirm=_confirmed(body)))
+
+    @app.post("/api/episodes/{episode_id}/download-now")
+    def episode_download_now(episode_id: int) -> dict:
+        return _act(service.download_now(conn(), episode_id))
+
+    @app.post("/api/episodes/{episode_id}/send-to-user")
+    def episode_send_to_user(episode_id: int, body: dict = Body(...)) -> dict:
+        try:
+            uid = int(body.get("user_id"))
+        except (TypeError, ValueError):
+            raise HTTPException(422, "user_id requis")
+        return _act(service.send_to_user(conn(), episode_id, uid, confirm=_confirmed(body)))
+
+    @app.post("/api/episodes/{episode_id}/republish")
+    def episode_republish(episode_id: int, body: dict | None = Body(None)) -> dict:
+        return _act(service.republish_episode(conn(), episode_id, confirm=_confirmed(body)))
+
+    @app.get("/api/bot-activity")
+    def bot_activity_data(limit: int = 100) -> dict:
+        return service.bot_activity(conn(), limit)
+
+    @app.get("/api/telegram")
+    def telegram_state() -> dict:
+        return service.telegram_overview(conn(), get_cfg())
+
+    @app.get("/api/stats")
+    def stats_data() -> dict:
+        return service.stats(conn())
+
+    @app.get("/api/audit")
+    def audit_list(limit: int = 100, action: str | None = None) -> dict:
+        return {"items": audit.recent(conn(), limit, action=action)}
 
     @app.get("/", response_class=FileResponse)
     def dashboard() -> FileResponse:

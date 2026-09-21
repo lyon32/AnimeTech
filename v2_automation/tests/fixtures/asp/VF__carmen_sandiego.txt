@@ -1,0 +1,52 @@
+___ASPSTART_HTML___<div id="asp-res-60548" class='item asp_r_pagepost asp_r_pagepost_60548 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/carmen-sandiego-s3-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/10/Carmen-Sandiego-s3-va.jpg">
+	                <img loading="lazy" alt="Carmen Sandiego S3 (VF)" src="https://voir-anime.to/wp-content/uploads/2020/10/Carmen-Sandiego-s3-va.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/carmen-sandiego-s3-vf/'>
+                Carmen Sandiego S3 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Les aventures de Carmen Sandiego, une voleuse de premier ordre.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-60547" class='item asp_r_pagepost asp_r_pagepost_60547 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/carmen-sandiego-s2-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/10/Carmen-Sandiego-s2-va.jpg">
+	                <img loading="lazy" alt="Carmen Sandiego S2 (VF)" src="https://voir-anime.to/wp-content/uploads/2020/10/Carmen-Sandiego-s2-va.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/carmen-sandiego-s2-vf/'>
+                Carmen Sandiego S2 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Les aventures de Carmen Sandiego, une voleuse de premier ordre.        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-60545" class='item asp_r_pagepost asp_r_pagepost_60545 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/carmen-sandiego-s1-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/10/Carmen-Sandiego-img-va.jpg">
+	                <img loading="lazy" alt="Carmen Sandiego S1 (VF)" src="https://voir-anime.to/wp-content/uploads/2020/10/Carmen-Sandiego-img-va.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/carmen-sandiego-s1-vf/'>
+                Carmen Sandiego S1 (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Les aventures de Carmen Sandiego, une voleuse de premier ordre.        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":3,"full_results_count":3,"results":[{"id":60548,"blogid":1,"title":"Carmen Sandiego S3 (VF)","post_title":"Carmen Sandiego S3 (VF)","content":"Les aventures de Carmen Sandiego, une voleuse de premier ordre.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/10\/Carmen-Sandiego-s3-va.jpg","date":"2020-10-13 11:34:08","post_date":"2020-10-13 11:34:08","post_modified":"2021-11-23 12:27:33","menu_order":0,"relevance":1110408,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/carmen-sandiego-s3-vf\/"},{"id":60547,"blogid":1,"title":"Carmen Sandiego S2 (VF)","post_title":"Carmen Sandiego S2 (VF)","content":"Les aventures de Carmen Sandiego, une voleuse de premier ordre.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/10\/Carmen-Sandiego-s2-va.jpg","date":"2020-10-13 11:30:47","post_date":"2020-10-13 11:30:47","post_modified":"2021-11-23 12:27:18","menu_order":0,"relevance":1110408,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/carmen-sandiego-s2-vf\/"},{"id":60545,"blogid":1,"title":"Carmen Sandiego S1 (VF)","post_title":"Carmen Sandiego S1 (VF)","content":"Les aventures de Carmen Sandiego, une voleuse de premier ordre.","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/10\/Carmen-Sandiego-img-va.jpg","date":"2020-10-13 11:28:43","post_date":"2020-10-13 11:28:43","post_modified":"2021-11-23 12:27:05","menu_order":0,"relevance":1110408,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":2,"link":"https:\/\/voir-anime.to\/anime\/carmen-sandiego-s1-vf\/"}]}___ASPEND_DATA___

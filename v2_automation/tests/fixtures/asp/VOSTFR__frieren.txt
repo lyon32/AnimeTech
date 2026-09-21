@@ -1,0 +1,35 @@
+___ASPSTART_HTML___<div id="asp-res-96616" class='item asp_r_pagepost asp_r_pagepost_96616 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/sousou-no-frieren/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2023/09/thumb_650d6d2a0493b.jpg">
+	                <img loading="lazy" alt="Sousou no Frieren" src="https://voir-anime.to/wp-content/uploads/2023/09/thumb_650d6d2a0493b.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/sousou-no-frieren/'>
+                Sousou no Frieren                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Que deviennent les héros une fois le mal vaincu ? Le jeune héros Himmel et ses compagnons, l'elfe ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-110708" class='item asp_r_pagepost asp_r_pagepost_110708 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/sousou-no-frieren-2/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2025/12/thumb_69467b0b0272a.jpg">
+	                <img loading="lazy" alt="Sousou no Frieren 2" src="https://voir-anime.to/wp-content/uploads/2025/12/thumb_69467b0b0272a.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/sousou-no-frieren-2/'>
+                Sousou no Frieren 2                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Saison 2 de "Sousou no Frieren"        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":2,"full_results_count":2,"results":[{"id":96616,"blogid":1,"title":"Sousou no Frieren","post_title":"Sousou no Frieren","content":"Que deviennent les h\u00e9ros une fois le mal vaincu ? Le jeune h\u00e9ros Himmel et ses compagnons, l'elfe ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2023\/09\/thumb_650d6d2a0493b.jpg","date":"2023-09-22 11:08:38","post_date":"2023-09-22 11:08:38","post_modified":"2023-09-29 15:36:55","menu_order":0,"relevance":1010340,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/sousou-no-frieren\/"},{"id":110708,"blogid":1,"title":"Sousou no Frieren 2","post_title":"Sousou no Frieren 2","content":"Saison 2 de \"Sousou no Frieren\"","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2025\/12\/thumb_69467b0b0272a.jpg","date":"2025-12-20 18:33:07","post_date":"2025-12-20 18:33:07","post_modified":"2026-01-16 15:22:22","menu_order":0,"relevance":1001740,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/sousou-no-frieren-2\/"}]}___ASPEND_DATA___

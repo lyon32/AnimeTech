@@ -1,0 +1,35 @@
+___ASPSTART_HTML___<div id="asp-res-3346" class='item asp_r_pagepost asp_r_pagepost_3346 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/cowboy-bebop-tengoku-no-tobira-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13629e1e70d.jpg">
+	                <img loading="lazy" alt="Cowboy Bebop: Tengoku no Tobira (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e13629e1e70d.jpg" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/cowboy-bebop-tengoku-no-tobira-vf/'>
+                Cowboy Bebop: Tengoku no Tobira (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Sur la planète Mars, en 2071, un camion-citerne explose dans le cratère d'Alba City. Aux dizaines ...        </div>
+    </div>
+    <div class='clear'></div>
+</div><div id="asp-res-2071" class='item asp_r_pagepost asp_r_pagepost_2071 asp_r_wp-manga'>
+    <div class='asp_content'>
+            <a class='asp_res_image_url' href='https://voir-anime.to/anime/cowboy-bebop-vf/'>
+                <div class='asp_image' data-src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e31e25838a.png">
+	                <img loading="lazy" alt="Cowboy Bebop (VF)" src="https://voir-anime.to/wp-content/uploads/2020/01/thumb_5e0e31e25838a.png" />
+	                <div class="void"></div>
+                </div>
+            </a>
+        <h3><a class="asp_res_url" href='https://voir-anime.to/anime/cowboy-bebop-vf/'>
+                Cowboy Bebop (VF)                                <span class='overlap'></span>
+                        </a></h3>
+        <div class='etc'>
+        </div>
+                <div class="asp_res_text">
+            Sur la planète Mars, en 2071, un camion-citerne explose dans le cratère d'Alba City. Aux dizaines ...        </div>
+    </div>
+    <div class='clear'></div>
+</div>___ASPEND_HTML______ASPSTART_DATA___{"results_count":2,"full_results_count":2,"results":[{"id":3346,"blogid":1,"title":"Cowboy Bebop: Tengoku no Tobira (VF)","post_title":"Cowboy Bebop: Tengoku no Tobira (VF)","content":"Sur la plan\u00e8te Mars, en 2071, un camion-citerne explose dans le crat\u00e8re d'Alba City. Aux dizaines ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e13629e1e70d.jpg","date":"2020-01-09 14:53:33","post_date":"2020-01-09 14:53:33","post_modified":"2020-01-09 14:53:33","menu_order":0,"relevance":1110312,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":0,"link":"https:\/\/voir-anime.to\/anime\/cowboy-bebop-tengoku-no-tobira-vf\/"},{"id":2071,"blogid":1,"title":"Cowboy Bebop (VF)","post_title":"Cowboy Bebop (VF)","content":"Sur la plan\u00e8te Mars, en 2071, un camion-citerne explose dans le crat\u00e8re d'Alba City. Aux dizaines ...","excerpt":"","image":"https:\/\/voir-anime.to\/wp-content\/uploads\/2020\/01\/thumb_5e0e31e25838a.png","date":"2020-01-05 22:56:51","post_date":"2020-01-05 22:56:51","post_modified":"2020-01-05 22:56:51","menu_order":0,"relevance":1102288,"priority":100,"group_priority":1,"p_type_priority":1,"post_type":"wp-manga","average_rating":0,"customfp":"1","customfs":"1","content_type":"pagepost","g_content_type":"post_page_cpt","primary_order":1,"link":"https:\/\/voir-anime.to\/anime\/cowboy-bebop-vf\/"}]}___ASPEND_DATA___

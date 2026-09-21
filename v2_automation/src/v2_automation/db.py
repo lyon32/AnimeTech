@@ -162,7 +162,13 @@ def migrate(conn: sqlite3.Connection) -> list[int]:
             for version in sorted(MIGRATIONS):
                 if version in applied:
                     continue
-                conn.executescript(MIGRATIONS[version])
+                try:
+                    conn.executescript(MIGRATIONS[version])   # executescript commits first: another PROCESS may win the race
+                except sqlite3.OperationalError as exc:
+                    if ("duplicate column" in str(exc) or "already exists" in str(exc)) \
+                            and version in applied_versions(conn):
+                        continue                              # a concurrent start (worker + panel) already applied it
+                    raise
                 conn.execute("INSERT INTO schema_migrations(version, applied_at) VALUES (?, ?)",
                              (version, now_utc()))
                 newly.append(version)
@@ -170,4 +176,7 @@ def migrate(conn: sqlite3.Connection) -> list[int]:
         except Exception:
             conn.rollback()
             raise
+    if newly:                                 # rows recorded before v4 get their media_key (idempotent)
+        from . import media
+        media.backfill_media_keys(conn)
     return newly
