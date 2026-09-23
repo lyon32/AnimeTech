@@ -107,6 +107,9 @@ class FakeOutbox:
     def answer(self, callback_id, text=None):
         pass
 
+    def typing(self, chat_id):
+        pass
+
 
 class Members:
     def __init__(self):

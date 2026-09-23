@@ -81,6 +81,7 @@ class Outbox(Protocol):
     def send(self, chat_id: int, text: str, keyboard: Keyboard | None = None) -> int | None: ...
     def edit(self, chat_id: int, message_id: int, text: str, keyboard: Keyboard | None = None) -> None: ...
     def answer(self, callback_id: str, text: str | None = None) -> None: ...
+    def typing(self, chat_id: int) -> None: ...
 
 
 class UserBotRouter:
@@ -191,6 +192,8 @@ class UserBotRouter:
         active = self.mgr.active_request(inc.user_id)
         if active is not None:
             return self._refuse_second(inc.chat_id, active)
+        self.out.typing(inc.chat_id)
+        loader_id = self.out.send(inc.chat_id, f"{note}🔎 Recherche en cours…")
         try:
             hits = self.search.search(q.title)
             approx = getattr(self.search, "approximate", False)
@@ -208,10 +211,16 @@ class UserBotRouter:
         except Exception as exc:
             code = errors.classify(exc)
             logger.warning("[USERBOT] recherche impossible (%s): %s", code, exc)
-            return self.out.send(inc.chat_id, f"⚠️ La recherche du site ne répond pas ({code}). Réessayez dans un instant.")
+            msg = f"⚠️ La recherche du site ne répond pas ({code}). Réessayez dans un instant."
+            if loader_id is not None:
+                return self.out.edit(inc.chat_id, loader_id, msg)
+            return self.out.send(inc.chat_id, msg)
         if not hits:
-            return self.out.send(inc.chat_id, f"{note}😕 Aucun anime trouvé pour « {q.title} », ni en VF ni en VOSTFR.\n"
-                                              "Le site connaît aussi les titres japonais et anglais : essayez un autre nom.")
+            msg = (f"{note}😕 Aucun anime trouvé pour « {q.title} », ni en VF ni en VOSTFR.\n"
+                   "Le site connaît aussi les titres japonais et anglais : essayez un autre nom.")
+            if loader_id is not None:
+                return self.out.edit(inc.chat_id, loader_id, msg)
+            return self.out.send(inc.chat_id, msg)
         series = group(hits, q.title)[:MAX_SERIES]
         st = {"step": "choose_series", "query": asdict(q), "series": [_ser(s) for s in series], "approx": approx,
               "truncated": truncated}
@@ -221,9 +230,10 @@ class UserBotRouter:
             head += "\nAucun titre ne contient exactement ces mots : ce sont des correspondances par un autre titre."
         if truncated:
             head += "\n⚠️ Le site limite ses réponses : précisez le titre pour affiner."
-        self._show_series(inc, st, "main", 0, head)
+        self._show_series(inc, st, "main", 0, head, edit_message_id=loader_id)
 
-    def _show_series(self, inc: Incoming, st: dict, view: str, page: int, head: str) -> None:
+    def _show_series(self, inc: Incoming, st: dict, view: str, page: int, head: str,
+                      edit_message_id: int | None = None) -> None:
         series = st["series"]
         main = [i for i, s in enumerate(series) if s.get("is_main", True)]
         other = [i for i, s in enumerate(series) if not s.get("is_main", True)]
@@ -252,8 +262,11 @@ class UserBotRouter:
         elif view == "other" and main:
             rows.append([Button("↩ Séries", data="sv:main")])
         rows.append([Button("✖ Annuler la recherche", data="xs")])
-        self.out.send(inc.chat_id, head + ("\nChoisissez l'anime :" if not head.endswith(":") else "")
-                      + (f"\n(page {page + 1}/{pages})" if pages > 1 else ""), rows)
+        text = (head + ("\nChoisissez l'anime :" if not head.endswith(":") else "")
+                + (f"\n(page {page + 1}/{pages})" if pages > 1 else ""))
+        if edit_message_id is not None:
+            return self.out.edit(inc.chat_id, edit_message_id, text, rows)
+        self.out.send(inc.chat_id, text, rows)
 
     # ── the steps: series -> season -> version -> episode.  Every step is SHOWN; nothing is chosen for the user. ──
     @staticmethod
@@ -290,6 +303,15 @@ class UserBotRouter:
         s = st["series"][st["series_idx"]]
         seasons = s["seasons"]
         urls = [next(iter(o["versions"].values()))["url"] for o in seasons[:24]]
+        self.out.typing(inc.chat_id)
+        if urls:
+            if inc.message_id is not None:
+                self.out.edit(inc.chat_id, inc.message_id, "⏳ Chargement des saisons…")
+                loader_id = inc.message_id
+            else:
+                loader_id = self.out.send(inc.chat_id, "⏳ Chargement des saisons…")
+        else:
+            loader_id = inc.message_id
         details = self.mgr.catalog.details_many(urls) if urls else {}
         rows: Keyboard = []
         for k, o in enumerate(seasons[:24]):
@@ -299,7 +321,10 @@ class UserBotRouter:
             rows.append([Button(f"📅 {o['label']}{eps} {flags}", data=f"n:{k}")])
         rows.append([Button("✖ Annuler la recherche", data="xs")])
         only = "\n(seule saison disponible)" if len(seasons) == 1 else ""
-        self.out.send(inc.chat_id, head + only, rows)
+        text = head + only
+        if loader_id is not None:
+            return self.out.edit(inc.chat_id, loader_id, text, rows)
+        self.out.send(inc.chat_id, text, rows)
 
     def _pick_season(self, inc: Incoming, st: dict, j: int) -> None:
         s = st["series"][st["series_idx"]]
@@ -464,8 +489,13 @@ class UserBotRouter:
         except ActiveRequestExists as exc:
             return self._refuse_second(inc.chat_id, exc.request)
         self._reset(inc.user_id)
+        self.out.typing(inc.chat_id)
+        loader_id = self.out.send(inc.chat_id, "⏳ Traitement de votre demande…")
         req = self.mgr.process(req["id"])
-        self.out.send(inc.chat_id, self._created_text(req), [[Button("❌ Annuler", data=f"xr:{req['id']}")]])
+        text, kb = self._created_text(req), [[Button("❌ Annuler", data=f"xr:{req['id']}")]]
+        if loader_id is not None:
+            return self.out.edit(inc.chat_id, loader_id, text, kb)
+        self.out.send(inc.chat_id, text, kb)
 
     def _plausible(self, inc: Incoming, st: dict, hit: dict, episode: int) -> bool:
         """An episode far beyond the last one the source lists will not appear in 20 minutes: say so, let the user decide."""
@@ -617,6 +647,14 @@ class TelegramOutbox:
             self.t.run(_impl())
         except Exception:
             pass                                            # a stale button is not an error
+
+    def typing(self, chat_id):
+        async def _impl():
+            return await self.t.bot().send_chat_action(chat_id=chat_id, action="typing")
+        try:
+            self.t.run(_impl())
+        except Exception:
+            pass                                            # a missing typing indicator is not an error
 
 
 def to_incoming(u) -> Incoming | None:
